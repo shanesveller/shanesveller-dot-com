@@ -12,6 +12,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
+RUN apt-get -qq update && apt-get -yq install python
 RUN bundle exec rake generate
 
 EXPOSE 80
