@@ -13,3 +13,8 @@ vendor
 node_modules
 /bin
 .envrc
+source/_includes
+source/_layouts
+source/font
+source/javascripts
+
