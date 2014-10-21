@@ -1,20 +1,20 @@
-FROM octohost/octopress-nginx
+FROM ruby:2.1
 
-WORKDIR /srv/www
-
-ADD Gemfile /srv/www/Gemfile
-ADD Gemfile.lock /srv/www/Gemfile.lock
-RUN bundle install --quiet
-ADD . /srv/www/
-
-RUN locale-gen  en_US.UTF-8
+RUN apt-get update -qq && apt-get -y install locales && rm -rf /var/lib/apt/lists/*
+RUN dpkg-reconfigure -fnoninteractive locales && \
+    locale-gen en_US en_US.UTF-8 && \
+    /usr/sbin/update-locale en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -qq update && apt-get -yq install python
-RUN bundle exec rake generate
+WORKDIR /octopress
 
-EXPOSE 80
+ADD Gemfile /octopress/Gemfile
+ADD Gemfile.lock /octopress/Gemfile.lock
+RUN bundle install --system
+ADD . /octopress/
 
-CMD nginx
+VOLUME /octopress/public
+
+CMD bundle exec rake generate

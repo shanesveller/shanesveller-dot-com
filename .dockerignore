@@ -1,0 +1,6 @@
+.git
+.themes
+.sass-cache
+.gist-cache
+.pygments-cache
+public/*
