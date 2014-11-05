@@ -9,7 +9,7 @@ footer: true
 
 # Quick Contents
 
-* [Résumé](/downloads/resume.pdf)
+* [R&#xE9;sum&#xE9;](/downloads/resume.pdf)
 * [Study Interests](#interests)
 * [Pull Requests](#pr)
 * [Blog Posts](#blog)
