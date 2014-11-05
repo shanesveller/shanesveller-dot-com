@@ -20,7 +20,7 @@ My current custom-built gaming PC is as follows:
 * Windows 8.1 Pro x64
 * Razer Naga mouse
 * Logitech G15 (2nd-gen) keyboard
-* Samsung 23″ LCD at 1920×1080
+* Samsung 23" LCD at 1920x1080
 * Acer 23" LCD at 1920x1080
 * Logitech Z-2300 speakers
 
