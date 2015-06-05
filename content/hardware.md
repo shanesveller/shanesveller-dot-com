@@ -2,6 +2,11 @@
 date = "2013-12-06T17:30:00-05:00"
 draft = true
 title = "Hardware"
+noauthor = true
+nocomment = true
+nodate = true
+nopaging = true
+noread = true
 +++
 
 My current custom-built gaming PC is as follows:
@@ -20,7 +25,7 @@ My current custom-built gaming PC is as follows:
 * Razer Black Widow Chroma keyboard
 * LG 34UM95-P 34" Ultrawide monitor
 * Logitech Z-2300 speakers
-
+<!--more-->
 I do most of my hobby development work on my MacBook Pro:
 
 * 2012 Non-Retina MacBook Pro

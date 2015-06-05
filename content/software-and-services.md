@@ -2,11 +2,16 @@
 date = "2012-08-05T19:41:00-05:00"
 draft = true
 title = "Software and Services"
+noauthor = true
+nocomment = true
+nodate = true
+nopaging = true
+noread = true
 +++
 
 In no particular order, I endorse the following software, products and services
 on a personal level:
-
+<!--more-->
 # OSX Software
 
 * [Adium](http://adium.im/)
@@ -27,7 +32,7 @@ on a personal level:
   and [O'Reilly](http://shop.oreilly.com/category/customer-service/dropbox.do)
   for near-instant notificaiton of new e-book revisions!
 * [SublimeText 2](http://sublimetext.com/2) - see my 1-month impressions
-  [here](/blog/2012/08/05/sublimetext-2/)!
+  [here](/posts/2012-08-05-sublimetext-2/)!
 * [Spotify](http://spotify.com/) - the only streaming music service I'm still
   consistently glad I subscribe to. Works like a charm on Windows and OSX, and
   even has a [Linux port](http://spotify.com/us/download/previews/)!
