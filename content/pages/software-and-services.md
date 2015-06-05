@@ -1,6 +1,7 @@
 +++
 date = "2012-08-05T19:41:00-05:00"
 draft = true
+menu = ["main", "footer"]
 noauthor = true
 nocomment = true
 nodate = true
