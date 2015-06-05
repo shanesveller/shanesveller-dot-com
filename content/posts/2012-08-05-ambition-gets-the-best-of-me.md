@@ -1,15 +1,11 @@
----
-layout: post
-title: "Ambition gets the best of me"
-date: 2012-08-05T19:21:00-05:00
-comments: true
-categories:
-- Programming
-- iOS
-- RubyMotion
-- Ruby on Rails
-- Projects
----
++++
+categories = ["Programming", "iOS", "RubyMotion", "Ruby on Rails", "Projects"]
+comments = true
+date = "2012-08-05T19:21:00-05:00"
+layout = "post"
+title = "Ambition gets the best of me"
+
++++
 
 Recently I splashed on a [RubyMotion](http://www.rubymotion.com/) license, and
 I've been itching to put it to good use as soon as I got my grubby little hands

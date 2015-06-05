@@ -1,16 +1,15 @@
----
-date: '2008-05-01T12:17:48-05:00'
-layout: post
-slug: osx-apps-i-cant-live-without
-status: publish
-title: OSX apps I can't live without
-wordpress_id: '22'
-categories:
-- OSX
-- Software
----
++++
+categories = ["OSX", "Software"]
+date = "2008-05-01T12:17:48-05:00"
+layout = "post"
+slug = "osx-apps-i-cant-live-without"
+status = "publish"
+title = "OSX apps I can't live without"
+wordpress_id = "22"
 
-  * [Adium](http://adiumx.com) Multi-protocol IM client; supports AIM, Yahoo, MSN, MySpace, Google Talk, and loads more.
++++
+
+* [Adium](http://adiumx.com) Multi-protocol IM client; supports AIM, Yahoo, MSN, MySpace, Google Talk, and loads more.
   * [Growl](http://growl.info) pop-up notifications for anything and everything
   * [Safari](http://www.apple.com/safari/) - included with OSX
   * [Mail](http://www.apple.com/macosx/features/mail.html) and Address Book- included with OSX

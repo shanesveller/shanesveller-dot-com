@@ -1,15 +1,13 @@
----
-date: '2008-12-21T23:17:07-05:00'
-layout: post
-slug: att-iphone-3g-versus-verizon-blackberry-curve
-status: publish
-title: AT&T iPhone 3G versus Verizon Blackberry Curve
-wordpress_id: '90'
-categories:
-- Life
-- Smartphones
-- Reviews
----
++++
+categories = ["Life", "Smartphones", "Reviews"]
+date = "2008-12-21T23:17:07-05:00"
+layout = "post"
+slug = "att-iphone-3g-versus-verizon-blackberry-curve"
+status = "publish"
+title = "AT&T iPhone 3G versus Verizon Blackberry Curve"
+wordpress_id = "90"
+
++++
 
 Having used a Blackberry Curve 8330 on Verizon's network for many months, I
 feel I can provide a fairly deep comparison between that and my new iPhone 3G.

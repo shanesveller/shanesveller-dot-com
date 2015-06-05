@@ -1,17 +1,13 @@
----
-date: '2008-03-28T14:24:40-05:00'
-layout: post
-slug: all-kinds-of-new-stuff
-status: publish
-title: All kinds of new stuff
-wordpress_id: '15'
-categories:
-- Linux
-- Programming
-- Ruby On Rails
-- Ruby
++++
+categories = ["Linux", "Programming", "Ruby On Rails", "Ruby"]
+date = "2008-03-28T14:24:40-05:00"
+layout = "post"
+slug = "all-kinds-of-new-stuff"
+status = "publish"
+title = "All kinds of new stuff"
+wordpress_id = "15"
 
----
++++
 
 I got the idea for this post from [Robby on
 Rails](http://www.robbyonrails.com/articles/2008/03/25/things-in-the-rails-

@@ -1,10 +1,10 @@
----
-layout: post
-title: "Using Docker transparently on OSX"
-date: 2014-02-04T10:47:09-05:00
-comments: true
-categories:
----
++++
+comments = true
+date = "2014-02-04T10:47:09-05:00"
+layout = "post"
+title = "Using Docker transparently on OSX"
+
++++
 
 [Docker](http://www.docker.io) current requires a Linux OS to run due to using
 kernel technologies that are specific to this platform, such as `lxc`.

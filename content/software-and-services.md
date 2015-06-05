@@ -1,12 +1,13 @@
 +++
 date = "2012-08-05T19:41:00-05:00"
 draft = true
-title = "Software and Services"
 noauthor = true
 nocomment = true
 nodate = true
 nopaging = true
 noread = true
+title = "Software and Services"
+
 +++
 
 In no particular order, I endorse the following software, products and services

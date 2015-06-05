@@ -1,13 +1,11 @@
----
-layout: post
-title: "SublimeText 2"
-date: 2012-08-05T18:00:00-05:00
-comments: true
-categories:
-- Text Editors
-- SublimeText 2
-- Programming
----
++++
+categories = ["Text Editors", "SublimeText 2", "Programming"]
+comments = true
+date = "2012-08-05T18:00:00-05:00"
+layout = "post"
+title = "SublimeText 2"
+
++++
 
 It's been a full month since I purchased my license for
 [SublimeText 2](http://www.sublimetext.com/2) and I couldn't be happier.

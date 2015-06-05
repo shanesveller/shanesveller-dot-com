@@ -1,16 +1,15 @@
----
-date: '2008-05-27T15:12:53-05:00'
-layout: post
-slug: more-osx-apps-i-love
-status: publish
-title: More OSX apps I love
-wordpress_id: '26'
-categories:
-- OSX
-- Software
----
++++
+categories = ["OSX", "Software"]
+date = "2008-05-27T15:12:53-05:00"
+layout = "post"
+slug = "more-osx-apps-i-love"
+status = "publish"
+title = "More OSX apps I love"
+wordpress_id = "26"
 
-  * [TextMate](http://macromates.com/) - Programmer's text editor
++++
+
+* [TextMate](http://macromates.com/) - Programmer's text editor
   * [1Password](http://1password.com/) - secure password and information manager that integrates into your browser(s)
   * [AppZapper](http://appzapper.com/) - clean up behind software you decide to axe
   * Boot Camp - Yeah, there's still some Windows apps I use. (built into OSX)

@@ -1,15 +1,11 @@
----
-layout: post
-title: "Local Gem Documentation with YARD, pow and Alfred 2"
-date: 2013-03-19T11:48:00-05:00
-comments: true
-categories:
-- RubyGems
-- Documentation
-- Pow
-- OSX
-- Programming
----
++++
+categories = ["RubyGems", "Documentation", "Pow", "OSX", "Programming"]
+comments = true
+date = "2013-03-19T11:48:00-05:00"
+layout = "post"
+title = "Local Gem Documentation with YARD, pow and Alfred 2"
+
++++
 
 I _love_ [rubydoc.info][rubydoc], but I was curious how hard it
 might be to run a local copy. The site is powered by the [YARD gem][YARD].

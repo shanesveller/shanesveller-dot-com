@@ -1,10 +1,11 @@
----
-layout: post
-title: "Load-balancing Docker containers with Nginx and Consul-Template"
-date: 2014-10-29T17:00:00-05:00
-published: false
-comments: true
----
++++
+comments = true
+date = "2014-10-29T17:00:00-05:00"
+layout = "post"
+published = false
+title = "Load-balancing Docker containers with Nginx and Consul-Template"
+
++++
 
 > This article has been cross-posted here from my employer's [technical blog](http://tech.bellycard.com/).
 

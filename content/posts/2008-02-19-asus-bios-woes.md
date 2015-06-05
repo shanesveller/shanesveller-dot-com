@@ -1,13 +1,13 @@
----
-date: '2008-02-19T09:56:29-05:00'
-layout: post
-slug: asus-bios-woes
-status: publish
-title: ASUS BIOS woes
-wordpress_id: '12'
-categories:
-- Computer Hardware
----
++++
+categories = ["Computer Hardware"]
+date = "2008-02-19T09:56:29-05:00"
+layout = "post"
+slug = "asus-bios-woes"
+status = "publish"
+title = "ASUS BIOS woes"
+wordpress_id = "12"
+
++++
 
 Yesterday I attempted to update the BIOS on my motherboard in anticipation of
 eventually picking up an [Intel

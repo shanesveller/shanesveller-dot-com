@@ -1,12 +1,13 @@
 +++
 date = "2013-12-06T17:30:00-05:00"
 draft = true
-title = "Hardware"
 noauthor = true
 nocomment = true
 nodate = true
 nopaging = true
 noread = true
+title = "Hardware"
+
 +++
 
 My current custom-built gaming PC is as follows:
