@@ -1,3 +1,24 @@
 baseurl = "http://shanesveller.com/"
 languageCode = "en-us"
 title = "Shane Sveller"
+subtitle = "Somewhere between happy and total f**king wreck"
+
+canonifyURLs = true
+disqusShortname = "shanesveller"
+
+[params]
+    author = "Shane Sveller"
+    authorlinkedin = "https://www.linkedin.com/in/shanesveller"
+    authortwitter = "shanesveller"
+    copyright = "&copy; 2015 Shane Sveller"
+    description = "System Engineer at BellyCard"
+    sidebartitle = "Shane Sveller"
+    sidebartagline = "Somewhere between happy and total f**king wreck"
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:title/"
+
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "http://www.twitter.com/shanesveller"
+    identifier = "twitter"
