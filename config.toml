@@ -1,7 +1,7 @@
 baseurl = "http://shanesveller.com/"
 languageCode = "en-us"
 title = "Shane Sveller"
-subtitle = "Somewhere between happy and total f**king wreck"
+subtitle = "Docker, Elixir, Chef, AWS, DevOps"
 
 canonifyURLs = true
 disqusShortname = "shanesveller"
@@ -13,7 +13,7 @@ disqusShortname = "shanesveller"
     copyright = "&copy; 2015 Shane Sveller"
     description = "System Engineer at BellyCard"
     sidebartitle = "Shane Sveller"
-    sidebartagline = "Somewhere between happy and total f**king wreck"
+    sidebartagline = "Docker, Elixir, Chef, AWS, DevOps"
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:title/"
