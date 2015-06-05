@@ -25,9 +25,9 @@ wordpress_id = "22"
   * [Transmission](http://transmissionbt.com) bittorrent client
   * [VLC](http://www.videolan.org/) media player for files Quicktime won't handle
 
-{% img /a/2008-05-01-osx-apps-i-cant-live-without/adium.png 64 64 Adium Icon %}
-{% img /a/2008-05-01-osx-apps-i-cant-live-without/512-safari-leopard.png 64 64 Leopard Icon %}
-{% img /a/2008-05-01-osx-apps-i-cant-live-without/512-mail-leopard.png 64 64 Mail Icon %}
-{% img /a/2008-05-01-osx-apps-i-cant-live-without/quicksilvericon.png 64 64 Quicksilver Icon %}
-{% img /a/2008-05-01-osx-apps-i-cant-live-without/extra-firefox.png 64 64 Firefox Icon %}
+{% img /images/2008-05-01-osx-apps-i-cant-live-without/adium.png 64 64 Adium Icon %}
+{% img /images/2008-05-01-osx-apps-i-cant-live-without/512-safari-leopard.png 64 64 Leopard Icon %}
+{% img /images/2008-05-01-osx-apps-i-cant-live-without/512-mail-leopard.png 64 64 Mail Icon %}
+{% img /images/2008-05-01-osx-apps-i-cant-live-without/quicksilvericon.png 64 64 Quicksilver Icon %}
+{% img /images/2008-05-01-osx-apps-i-cant-live-without/extra-firefox.png 64 64 Firefox Icon %}
 
