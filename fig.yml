@@ -1,4 +1,0 @@
-octopress:
-  build: .
-  volumes:
-    - /Users/shanesveller/src/shanesveller-dot-com/public:/octopress/public
