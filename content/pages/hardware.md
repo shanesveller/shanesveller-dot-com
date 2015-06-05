@@ -1,6 +1,5 @@
 +++
 date = "2013-12-06T17:30:00-05:00"
-draft = true
 menu = ["main", "footer"]
 noauthor = true
 nocomment = true
