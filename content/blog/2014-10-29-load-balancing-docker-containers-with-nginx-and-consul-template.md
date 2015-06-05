@@ -1,5 +1,8 @@
 +++
 date = "2014-10-29T17:00:00-05:00"
+categories = ["Docker"]
+socialsharing = true
+tags = ["docker","nginx","consul","consul-template"]
 title = "Load-balancing Docker containers with Nginx and Consul-Template"
 weight = -10
 
