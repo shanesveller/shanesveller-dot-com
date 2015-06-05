@@ -19,8 +19,8 @@ We are very passionate fans of the work of [HashiCorp][hashic] at Belly, and the
 [hashic]: https://www.hashicorp.com
 [kevin]: https://tech.bellycard.com/team/kevin-reedy
 
-Let me walk you through a proof of concept I whipped up last week. Starting from an OSX computer with Homebrew and VirtualBox installed, we will be able to spin up a Docker-based environment that will load-balance HTTP traffic via Nginx to an arbitrary number of backend processes, all running in separate Docker containers.READMORE
-
+Let me walk you through a proof of concept I whipped up last week. Starting from an OSX computer with Homebrew and VirtualBox installed, we will be able to spin up a Docker-based environment that will load-balance HTTP traffic via Nginx to an arbitrary number of backend processes, all running in separate Docker containers.
+<!--more-->
 ## Architecture
 
 At a high level, here is the construction of the current PoC. The following Docker containers are launched prior to the load-balancer being able to serve HTTP traffic correctly:

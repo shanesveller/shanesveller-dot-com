@@ -14,7 +14,7 @@ You can use YARD to generate documentation for your installed gems, even if you
 use `--no-rdoc` when running `gem install` (or have included it in your `.gemrc`,
 as I have). This can be done by running `yard server --gems` and browsing to
 http://localhost:8808/.
-
+<!--more-->
 I already run [Pow][pow] on my MacBook, so I set up the `yard server` command to
 run in the background via OSX LaunchAgents:
 

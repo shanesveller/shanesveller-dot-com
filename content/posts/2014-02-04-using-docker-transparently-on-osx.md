@@ -11,7 +11,7 @@ kernel technologies that are specific to this platform, such as `lxc`.
 
 You can use Docker fairly painlessly on an OSX development machine by leveraging
 vagrant and some work by Mitchell Hashimoto and Steeve Morin.
-
+<!--more-->
 # Installing prerequisites
 
 These commands require `homebrew`.

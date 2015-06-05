@@ -12,7 +12,7 @@ wordpress_id = "15"
 I got the idea for this post from [Robby on
 Rails](http://www.robbyonrails.com/articles/2008/03/25/things-in-the-rails-
 world-you-dont-yet-understand)...
-
+<!--more-->
 Things I've been using/playing with lately:
 
   * [GitHub](http://www.github.com) / [Gitorious](http://gitorious.org)
