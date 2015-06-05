@@ -174,12 +174,6 @@ server {
 }
 ```
 
-## See It In Action
-
-This short, silent video demonstration was captured at 1280x720, so a full-screen or separate-tab viewing is recommended.
-
-<iframe src="//player.vimeo.com/video/110409547" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 ## Help Wanted
 
 Even as a proof of concept, there is plenty of room for improvement here. We&apos;ve open sourced the current code [here](https://github.com/bellycard/docker-loadbalancer). Please feel free to play around with it!
