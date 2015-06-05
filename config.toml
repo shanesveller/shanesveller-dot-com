@@ -18,6 +18,10 @@ disqusShortname = "shanesveller"
 [permalinks]
     blog = "/blog/:year/:month/:day/:title/"
 
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+
 [[menu.social]]
     pre = "<i class='fa fa-twitter'></i>"
     url = "http://www.twitter.com/shanesveller"
