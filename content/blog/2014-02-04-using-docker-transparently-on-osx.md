@@ -1,7 +1,6 @@
 +++
-comments = true
 date = "2014-02-04T10:47:09-05:00"
-layout = "post"
+draft = true
 title = "Using Docker transparently on OSX"
 
 +++
@@ -16,7 +15,18 @@ vagrant and some work by Mitchell Hashimoto and Steeve Morin.
 
 These commands require `homebrew`.
 
-{% gist 4bd9c19de92ace4216ac INSTALL.md %}
+## Virtualbox + Vagrant
+``` shell
+$ brew tap phinze/cask
+$ brew install brew-cask
+$ brew cask install virtualbox vagrant
+```
+
+## Docker
+``` shell
+$ brew tap homebrew/binary
+$ brew install docker
+```
 
 # Vagrantfile
 
@@ -28,11 +38,29 @@ as necessary depending on what services you're developing, or add a
 for convenient external access, etc. Please see the
 [Vagrant docs](http://docs.vagrantup.com/v2/) for more information.
 
-{% gist 4bd9c19de92ace4216ac Vagrantfile %}
+```ruby
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "boot2docker-0.5.4"
+
+  config.vm.box_url = "https://github.com/mitchellh/boot2docker-vagrant-box/releases/download/v0.5.4/boot2docker_virtualbox.box"
+
+  config.vm.network :forwarded_port, guest: 80, host: 8080
+end
+```
 
 # Usage
 
-{% gist 4bd9c19de92ace4216ac USAGE.md %}
+``` shell
+$ cd <path to Vagrantfile> && vagrant up
+$ export DOCKER_HOST=localhost
+$ docker version
+$ docker pull ubuntu:12.04
+$ docker run -i -t ubuntu /bin/bash
+$ docker build -t <tag> <OSX-local path to folder with Dockerfile>
+$ docker run -i -t <tag> [<command>]
+```
 
 # Gotchas
 
