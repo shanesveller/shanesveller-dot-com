@@ -1,5 +1,7 @@
 +++
+categories = ["Docker","Elixir","Phoenix"]
 date = "2015-06-11T13:00:00-05:00"
+tags = ["docker","docker-compose","elixir","phoenix","tutorial"]
 title = "Running a Phoenix app via Docker-Compose"
 
 +++
