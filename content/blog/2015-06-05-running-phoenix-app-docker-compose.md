@@ -8,7 +8,13 @@ title = "Running a Phoenix app via Docker-Compose"
 
 It's possible to run Chris McCord's [sample Phoenix chat app][chat_app] in a [Docker][docker] environment easily using
 [`docker-compose`][docker_compose].
+
+[chat_app]: https://github.com/chrismccord/phoenix_chat_example
+[docker]: https://www.docker.com/whatisdocker/
+[docker_compose]: https://docs.docker.com/compose/ 
+
 <!--more-->
+
 # Concept
 
 When complete, this project will launch an instance of the chat app, along with a Postgres database, in a Docker-based
@@ -25,9 +31,6 @@ Expect possible future content from me about deployment methods that are more ap
 Lastly, this article has little to no beginner-friendly material about Docker itself. There is lots of material on this
 subject already available, but if you have trouble finding some, please let me know and I'll help you look!
 
-[chat_app]: https://github.com/chrismccord/phoenix_chat_example
-[docker]: https://www.docker.com/whatisdocker/
-[docker_compose]: https://docs.docker.com/compose/ 
 [docker_compose_cli]: https://docs.docker.com/compose/cli/
 
 # Prerequisites
