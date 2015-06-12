@@ -123,7 +123,7 @@ automate certain steps when it used as a base image, which automate a few of the
 
 ```
 # Dockerfile
-FROM shanesveller/phoenix:latest
+FROM shanesveller/phoenix-framework:latest
 
 COPY . /usr/src/app
 RUN node_modules/brunch/bin/brunch build --production
