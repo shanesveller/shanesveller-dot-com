@@ -1,5 +1,5 @@
 +++
-date = "2013-12-06T17:30:00-05:00"
+date = "2015-11-15T20:30:00-06:00"
 menu = ["main", "footer"]
 noauthor = true
 nocomment = true
@@ -12,25 +12,38 @@ title = "Hardware"
 
 My current custom-built gaming PC is as follows:
 
-* Cooler Master HAF912 case
-* ASUS P8Z77-V Deluxe motherboard
-* Intel Core i5-3570k (Ivy Bridge) at 3.8GHz
-* Cooler Master Hyper 212 EVO CPU cooler
-* 16GB (4x4GB) Corsair Vengeance DDR3-1600 RAM
+* Fractal Design R5 Black case
+* Gigabyte GA-Z170X-Gaming GT motherboard
+* Intel Core i7-6700k (Skylake) at 4.0GHz
+* Corsair H110i GT liquid CPU cooler
+* 32GB (4x8GB) Crucial Ballistix Elite DDR4-2666 RAM
 * EVGA GeForce GTX 980 Superclocked 4GB
-* Corsair Force GT 120GB solid-state drive
-* Samsung 830 128GB solid-state drive
-* 2x1TB Western Digital Red data drive
-* Windows 8.1 Pro x64
+* Samsung 950 Pro 256GB m.2 solid-state drive
+* Samsung 850 Pro 512GB solid-state drive
+* Western Digital Red 1TB 7200rpm hard drive (2)
+* Windows 10 Pro x64
 * Razer Naga mouse
 * Razer Black Widow Chroma keyboard
 * LG 34UM95-P 34" Ultrawide monitor
 * Logitech Z-2300 speakers
 <!--more-->
-I do most of my hobby development work on my MacBook Pro:
+I do all of my professional/hobby development work on:
 
-* 2012 Non-Retina MacBook Pro
-* 8GB DDR3-1600
-* 2.3 GHz Core i7
-* 250GB OCZ SSD
-* OSX 10.10 Yosemite
+* Mid-2015 Retina MacBook Pro
+* 16GB DDR3-1600
+* 2.8 GHz Intel Core i7
+* 500GB Apple/Samsung PCI-E solid-state drive
+* OSX 10.11 El Capitan
+
+I have a file server:
+
+* Synology 1513+
+* Western Digital Red 4TB 7200rpm hard drive (5)
+
+I also have a SmartOS/SDC virtualization server:
+
+* Lenovo ThinkServer TS140
+* Intel Xeon E3-1225 v3 3.2GHz
+* 32GB (4x8GB) Crucial ECC DDR3-1600
+* Western Digital Red 1TB 7200rpm (3)
+* Intel I340-T4 (PCIE 2.0 x 4 lane, 4x1Gb NIC)
