@@ -5,7 +5,7 @@ RUN apt-get update -qq && \
     apt-get clean -y && \
     rm -rf /var/cache/apt/*
 
-RUN curl -sSL -o /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb && \
+RUN curl -sSL -o /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_amd64.deb && \
     dpkg -i /tmp/hugo.deb && rm /tmp/hugo.deb
 
 RUN mkdir -p /srv/blog

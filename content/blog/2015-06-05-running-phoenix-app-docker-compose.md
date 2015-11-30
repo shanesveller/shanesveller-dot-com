@@ -443,4 +443,4 @@ index f9cdc8f..e3963bc 100644
 +  url: {:system, "DATABASE_URL"}
 ```
 
-[preparing]: {{< relref "preparing-the-app" >}}
+[preparing]: {{< relref "#preparing-the-app" >}}
