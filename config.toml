@@ -1,4 +1,4 @@
-baseurl = "http://shanesveller.com/"
+baseurl = "https://shanesveller.com/"
 languageCode = "en-us"
 title = "Shane Sveller"
 subtitle = "Docker, Elixir, Chef, AWS, DevOps"
