@@ -5,6 +5,7 @@ subtitle = "Docker, Elixir, Chef, AWS, DevOps"
 
 canonifyURLs = true
 disqusShortname = "shanesveller"
+uglyurls = true
 
 [params]
     author = "Shane Sveller"
@@ -17,7 +18,7 @@ disqusShortname = "shanesveller"
     sidebartagline = "Docker, Elixir, Chef, AWS, DevOps"
 
 [permalinks]
-    blog = "/blog/:year/:month/:day/:title/"
+    blog = "/blog/:year/:month/:day/:title.html"
 
 [[menu.main]]
     name = "Blog"
