@@ -124,6 +124,39 @@ Finally, I install the chart with my supplied values in a ~monitoring~ namespace
 #+END_SRC
 
 ** TODO Building and testing software with Jenkins on Kubernetes
+* Shell Programming                                                 :@shells:
+** Fish Shell                                                         :@fish:
+*** TODO Getting your feet wet with Fish Shell
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_FILE_NAME: getting-your-feet-wet-with-fish-shell
+   :EXPORT_HUGO_WEIGHT: auto
+   :END:
+
+**** Software/Tool Versions
+
+| Software   | Version |
+|------------+---------|
+| OSX        | 10.12.6 |
+| iTerm 2    |   3.1.5 |
+| Fish       |   2.7.0 |
+| Oh My Fish |       6 |
+
+**** Installation
+
+#+BEGIN_SRC shell-script
+  brew install fish
+#+END_SRC
+
+Now, install oh-my-fish via ~git~ because curl-bash is for suckers!
+
+#+BEGIN_SRC shell-script
+  git clone https://github.com/oh-my-fish/oh-my-fish
+  cd oh-my-fish
+  bin/install --offline
+#+END_SRC
+
+No, really!
 
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
