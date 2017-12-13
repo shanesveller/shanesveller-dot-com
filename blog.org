@@ -112,6 +112,15 @@ Finally, I install the chart with my supplied values in a ~monitoring~ namespace
        coreos/prometheus-operator
 #+END_SRC
 
+*** Using kube-prometheus for basic cluster metrics
+
+#+BEGIN_SRC shell-script
+  helm install --name kube-prometheus \
+       --namespace monitoring \
+       --values kube-prometheus-values.yaml \
+       coreos/kube-prometheus
+#+END_SRC
+
 ** TODO Building and testing software with Jenkins on Kubernetes
 
 * Footnotes
