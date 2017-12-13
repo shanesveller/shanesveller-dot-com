@@ -1,0 +1,99 @@
+#+TITLE: Shane Sveller
+#+AUTHOR: Shane Sveller
+#+HUGO_BASE_DIR: .
+#+HUGO_SECTION: blog
+
+* Emacs                                                              :@emacs:
+** TODO Blogging with org-mode and ox-hugo                         :hugo:org:
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_DATE: 2017-12-12
+   :EXPORT_FILE_NAME: blogging-with-org-mode-and-ox-hugo
+   :EXPORT_HUGO_WEIGHT: auto
+   :END:
+
+*** Test
+ Testing!
+
+ Live reload!
+
+** TODO Second Blog Post
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_DATE: 2017-12-13
+   :EXPORT_FILE_NAME: second-blog-post
+   :EXPORT_HUGO_WEIGHT: auto
+   :END:
+
+Test test!
+* Kubernetes                                                    :@kubernetes:
+** TODO Monitoring GKE with CoreOS' Prometheus Operator :coreos:monitoring:prometheus:gke:kubernetes:
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_FILE_NAME: monitoring-gke-with-coreos-prometheus-operator
+   :EXPORT_HUGO_WEIGHT: auto
+   :END:
+
+*** Software/Tool Versions
+
+| Project             |     Version |
+|---------------------+-------------|
+| Google Cloud SDK    |     182.0.0 |
+| Kubernetes          | 1.8.3-gke.0 |
+| Helm                |       2.7.2 |
+| Prometheus Operator |      0.15.0 |
+| Prometheus          |       1.8.2 |
+
+*** Background
+
+[[https://prometheus.io/][Prometheus]] is all the rage in the Kubernetes community, especially after
+becoming a Cloud Native Computing Foundation [[https://www.cncf.io/projects/][hosted project]].
+
+CoreOS has a project called [[https://github.com/coreos/prometheus-operator][prometheus-operator]] which helps manage instances
+of a Prometheus server, or its compatriot AlertManager, via Kubernetes manifests.
+
+*** Getting Started
+
+I've chosen to install the Operator via the project's provided [[https://github.com/coreos/prometheus-operator/tree/v0.15.0/helm/prometheus-operator][Helm Chart]].
+
+First, install CoreOS' Helm repository
+
+#+BEGIN_SRC bash
+  helm init --client-only
+  helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+#+END_SRC
+
+I've also provided some customized values:
+
+#+BEGIN_SRC yaml
+  global:
+    ## Hyperkube image to use when getting ThirdPartyResources & cleaning up
+    ##
+    hyperkube:
+      repository: quay.io/coreos/hyperkube
+      # https://quay.io/repository/coreos/hyperkube?tag=latest&tab=tags
+      tag: v1.8.4_coreos.0
+      pullPolicy: IfNotPresent
+
+  ## Prometheus-operator image
+  ##
+  image:
+    repository: quay.io/coreos/prometheus-operator
+    # https://quay.io/repository/coreos/prometheus-operator?tag=latest&tab=tags
+    tag: v0.15.0
+    pullPolicy: IfNotPresent
+#+END_SRC
+
+Finally, I install the chart with my supplied values in a ~monitoring~ namespace:
+
+#+BEGIN_SRC bash
+  helm install --name prometheus-operator \
+       --namespace monitoring \
+       --values prometheus-operator-values.yaml \
+       coreos/prometheus-operator
+#+END_SRC
+* Footnotes
+* COMMENT Local Variables                                                   :ARCHIVE:
+# Local Variables:
+# eval: (add-hook 'after-save-hook #'org-hugo-export-subtree-to-md-after-save :append :local)
+# End:
