@@ -2,6 +2,7 @@
 #+AUTHOR: Shane Sveller
 #+HUGO_BASE_DIR: .
 #+HUGO_SECTION: blog
+#+HUGO_AUTO_SET_LASTMOD: t
 
 * Utility Commands
 
