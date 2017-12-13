@@ -44,6 +44,8 @@
 
 Test test!
 * Kubernetes                                                    :@kubernetes:
+** TODO Allowing HTTP traffic with nginx-ingress
+** TODO Securing HTTPS traffic with cert-manager
 ** TODO Monitoring GKE with CoreOS' Prometheus Operator :coreos:monitoring:prometheus:gke:kubernetes:
    :PROPERTIES:
    :EXPORT_AUTHOR: Shane Sveller
@@ -109,6 +111,9 @@ Finally, I install the chart with my supplied values in a ~monitoring~ namespace
        --values prometheus-operator-values.yaml \
        coreos/prometheus-operator
 #+END_SRC
+
+** TODO Building and testing software with Jenkins on Kubernetes
+
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
 # Local Variables:
