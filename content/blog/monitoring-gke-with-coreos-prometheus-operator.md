@@ -8,13 +8,14 @@ draft = true
 
 ## Software/Tool Versions {#software-tool-versions}
 
-| Project             | Version     |
-|---------------------|-------------|
-| Google Cloud SDK    | 182.0.0     |
-| Kubernetes          | 1.8.3-gke.0 |
-| Helm                | 2.7.2       |
-| Prometheus Operator | 0.15.0      |
-| Prometheus          | 1.8.2       |
+| Project                   | Version     |
+|---------------------------|-------------|
+| Google Cloud SDK          | 182.0.0     |
+| Kubernetes                | 1.8.3-gke.0 |
+| Helm                      | 2.7.2       |
+| Prometheus Operator       | 0.15.0      |
+| Prometheus Operator Chart | 0.0.7       |
+| Prometheus                | 1.8.2       |
 
 
 ## Background {#background}
