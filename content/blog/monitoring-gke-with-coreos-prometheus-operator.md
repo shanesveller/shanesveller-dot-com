@@ -32,7 +32,7 @@ I've chosen to install the Operator via the project's provided [Helm Chart](http
 
 First, install CoreOS' Helm repository
 
-```bash
+```shell-script
 helm init --client-only
 helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
 ```
@@ -60,9 +60,19 @@ image:
 
 Finally, I install the chart with my supplied values in a `monitoring` namespace:
 
-```bash
+```shell-script
 helm install --name prometheus-operator \
      --namespace monitoring \
      --values prometheus-operator-values.yaml \
      coreos/prometheus-operator
+```
+
+
+## Using kube-prometheus for basic cluster metrics {#using-kube-prometheus-for-basic-cluster-metrics}
+
+```shell-script
+helm install --name kube-prometheus \
+     --namespace monitoring \
+     --values kube-prometheus-values.yaml \
+     coreos/kube-prometheus
 ```
