@@ -3,6 +3,11 @@
 #+HUGO_BASE_DIR: .
 #+HUGO_SECTION: blog
 
+* Utility Commands
+
+~pkg-info-package-version~
+~browse-url http://localhost:1313~
+
 * Emacs                                                              :@emacs:
 ** TODO Blogging with org-mode and ox-hugo                         :hugo:org:
    :PROPERTIES:
