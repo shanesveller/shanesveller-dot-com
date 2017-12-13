@@ -156,8 +156,6 @@ Now, install oh-my-fish via ~git~ because curl-bash is for suckers!
   bin/install --offline
 #+END_SRC
 
-No, really!
-
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
 # Local Variables:
