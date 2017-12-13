@@ -9,6 +9,31 @@
 ~pkg-info-package-version~
 ~browse-url http://localhost:1313~
 
+* Elixir                                                            :@elixir:
+** TODO Managing Elixir runtime version with Nix                 :elixir:nix:
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-nix
+   :END:
+
+*** Software/Tool Versions
+
+| Software | Verison |
+|----------+---------|
+| OSX      | 10.12.6 |
+| Nix      | 1.11.16 |
+
+*** Installation
+
+#+BEGIN_SRC shell-script
+brew cask install nix
+#+END_SRC
+
+*** Getting Started
+
+*** References
+
+
 * Emacs                                                              :@emacs:
 ** TODO Blogging with org-mode and ox-hugo               :hugo:org:spacemacs:
    :PROPERTIES:
