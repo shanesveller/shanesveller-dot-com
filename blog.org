@@ -34,6 +34,58 @@ brew cask install nix
 *** References
 
 
+** TODO Managing Elixir runtime version with ASDF        :asdf:elixir:erlang:
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-asdf
+   :END:
+
+*** Software/Tool Versions
+
+| Software | Version |
+|----------+---------|
+| OSX      | 10.12.6 |
+| asdf     |   0.4.0 |
+| Elixir   |   1.5.2 |
+| Erlang   |    20.1 |
+| Node.js  |   8.9.0 |
+
+*** Installation
+
+#+BEGIN_SRC shell-script
+  brew install asdf
+#+END_SRC
+
+Follow the instructions in the output, which you can read again with ~brew info asdf~.
+
+#+BEGIN_SRC shell-script
+  asdf plugin-list-all
+  asdf plugin-install erlang
+  asdf plugin-install elixir
+  asdf plugin-install nodejs
+#+END_SRC
+
+*** Usage
+
+#+BEGIN_SRC shell-script
+  asdf install erlang 20.1
+  asdf install elixir 1.5.2
+#+END_SRC
+
+*** Keeping up to date
+
+#+BEGIN_SRC shell-script
+  asdf update
+  asdf plugin-update --all
+#+END_SRC
+
+*** Benefits
+
+*** Alternatives
+
+- Homebrew
+- Nix and ~nix-shell~ (blog post forthcoming!)
+   
 * Emacs                                                              :@emacs:
 ** TODO Blogging with org-mode and ox-hugo               :hugo:org:spacemacs:
    :PROPERTIES:
