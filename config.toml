@@ -7,6 +7,8 @@ canonifyURLs    = true
 disqusShortname = "shanesveller"
 uglyurls        = true
 
+pygmentsCodeFences = true
+
 [params]
     author         = "Shane Sveller"
     authorlinkedin = "https://www.linkedin.com/in/shanesveller"
