@@ -162,8 +162,8 @@ I also have a SmartOS/SDC virtualization server:
   :EXPORT_HUGO_SECTION: blog
   :END:
 
-** Terraform
-*** DONE Managing GitLab groups and projects with Terraform
+** Terraform                            :@terraform:infrastructure__as__code:
+*** DONE Managing GitLab groups and projects with Terraform          :gitlab:
     CLOSED: [2017-12-17 Sun 11:26]
     :PROPERTIES:
     :EXPORT_DATE: 2017-12-17

@@ -2,7 +2,9 @@
 title = "Managing GitLab groups and projects with Terraform"
 author = ["Shane Sveller"]
 date = 2017-12-17T11:26:00-06:00
-lastmod = 2017-12-17T11:32:16-06:00
+lastmod = 2017-12-17T11:37:26-06:00
+tags = ["infrastructure as code", "gitlab"]
+categories = ["terraform"]
 draft = false
 +++
 
