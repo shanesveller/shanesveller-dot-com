@@ -20,7 +20,7 @@ pygmentsCodeFences = true
     sidebartagline = "Docker, Elixir, Chef, AWS, DevOps"
 
 [permalinks]
-    blog = "/blog/:year/:month/:day/:title.html"
+    blog = "/blog/:year/:month/:day/:title"
 
 [[menu.main]]
     name = "Blog"
