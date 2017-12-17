@@ -4,7 +4,7 @@
 #+HUGO_BASE_DIR: .
 #+HUGO_AUTO_SET_LASTMOD: t
 
-* Utility Commands
+* Utility Commandso                                                :noexport:
 ~pkg-info-package-version~
 ~browse-url http://localhost:1313~
 
@@ -47,108 +47,207 @@ I've experimented recently with managing multiple versions of Erlang and Elixir 
     :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-asdf
     :END:
 
-**** Software/Tool Versions
-
- | Software | Version |
- |----------+---------|
- | OSX      | 10.12.6 |
- | asdf     |   0.4.0 |
- | Elixir   |   1.5.2 |
- | Erlang   |    20.1 |
- | Node.js  |   8.9.0 |
-
 **** Installation
 
- #+BEGIN_SRC shell-script
+     #+BEGIN_SRC sh
    brew install asdf
- #+END_SRC
+     #+END_SRC
 
- Follow the instructions in the output, which you can read again with ~brew info asdf~.
+     Follow the instructions in the output, which you can read again with ~brew info asdf~.
 
- #+BEGIN_SRC shell-script
+     #+CAPTION: Install asdf plugins
+     #+BEGIN_SRC sh
    asdf plugin-list-all
    asdf plugin-install erlang
    asdf plugin-install elixir
    asdf plugin-install nodejs
- #+END_SRC
+     #+END_SRC
 
 **** Usage
 
- #+BEGIN_SRC shell-script
+     #+BEGIN_SRC sh
    asdf install erlang 20.1
    asdf install elixir 1.5.2
- #+END_SRC
+     #+END_SRC
 
 **** Keeping up to date
 
- #+BEGIN_SRC shell-script
+     #+BEGIN_SRC sh
    asdf update
    asdf plugin-update --all
- #+END_SRC
+     #+END_SRC
 
 **** Benefits
 
 **** Alternatives
 
- - Homebrew
- - Nix and ~nix-shell~ (blog post forthcoming!)
-   
+     - Homebrew
+     - Nix and ~nix-shell~ (blog post forthcoming!)
+
+**** Software/Tool Versions
+
+     | Software | Version |
+     |----------+---------|
+     | OSX      | 10.12.6 |
+     | asdf     |   0.4.0 |
+     | Elixir   |   1.5.2 |
+     | Erlang   |    20.1 |
+     | Node.js  |   8.9.0 |
+
 ** Emacs                                                             :@emacs:
 *** TODO Blogging with org-mode and ox-hugo              :hugo:org:spacemacs:
     :PROPERTIES:
     :EXPORT_AUTHOR: Shane Sveller
-    :EXPORT_DATE: 2017-12-12
+    :EXPORT_DATE: 2017-12-17
     :EXPORT_FILE_NAME: blogging-with-org-mode-and-ox-hugo
     :EXPORT_HUGO_WEIGHT: auto
     :END:
 
- I've recently assembled a workflow for blogging with [[https://gohugo.io/][Hugo]], [[http://orgmode.org/][org-mode]], and
- [[https://www.netlify.com/][Netlify]] via a single ~.org~ document, with live reload during writing and ~git
- push~ driven deployments.
+    I've recently assembled a workflow for blogging with [[https://gohugo.io/][Hugo]], [[http://orgmode.org/][org-mode]], and
+    [[https://www.netlify.com/][Netlify]] via a single ~.org~ document, with live reload during writing and ~git
+    push~ driven deployments.
 
 **** Requirements
 
- I've detailed my current environment in the
- [[#ox-hugo-software-tool-versions][Software/Tool Versions]] appendix below.
- Strictly speaking, the hard requirements of the
- [[https://melpa.org/#/ox-hugo][ox-hugo]] package are:
+     I've detailed my current environment in the
+     [[#ox-hugo-software-tool-versions][Software/Tool Versions]] appendix below.
+     Strictly speaking, the hard requirements of the
+     [[https://melpa.org/#/ox-hugo][ox-hugo]] package are:
 
- - Emacs 24.4+
- - org-mode 9.0+
+     - Emacs 24.4+
+     - org-mode 9.0+
+
+     To use the ~git~-based publishing part of this workflow, you'll also need:
+
+     - A GitHub account (free or otherwise)
+     - A Netlify account (free or otherwise)
+
+**** Features
+
+     - Compose and organize content in a single Org file
+     - Each post automatically gets a Table of Contents if sub-headings are present
+     - Preview in your local browser including live-reload behavior
+     - Syntax highlighting, including custom line numbers and line highlights
+     - Manage draft / publication status
+     - Manage categories and tags
+     - Manage post aliases
+     - Manage custom front-matter
+     - Publish via ~git push~, perhaps via [[https://magit.vc/][Magit]]
+     - Free hosting via Netlify (dear Netlify, please let me give you money
+       without a multi-user/Pro account!)
+     - Free HTTPS via Netlify's Lets Encrypt integration
 
 **** Installation
 
+     I've included snippets for ~use-package~ users and Spacemacs users - others
+     should look at the repository for the ~ox-hugo~ package for more
+     information.
 ***** ~use-package~ Users
 
- #+BEGIN_SRC emacs-lisp
-   (use-package ox-hugo
-     :after ox)
- #+END_SRC
+      #+BEGIN_SRC emacs-lisp
+        (use-package ox-hugo
+          :after ox)
+      #+END_SRC
 
 ***** Spacemacs Users
 
- Use @@html:<kbd>@@ SPC f e d @@html:</kbd>@@ to open ~\~/.spacemacs~ (or
- ~\~/.spacemacs/init.el~) and within the ~dotspacemacs/layers~ function, add or
- update an entry to the ~dotspacemacs-configuration-layers~ list like so:
+      Use @@html:<kbd>@@ SPC f e d @@html:</kbd>@@ to open ~\~/.spacemacs~ (or
+      ~\~/.spacemacs/init.el~) and within the ~dotspacemacs/layers~ function, add or
+      update an entry to the ~dotspacemacs-configuration-layers~ list like so:
 
- #+BEGIN_SRC emacs-lisp
-   (org :variables org-enable-hugo-support t)
- #+END_SRC
+      #+BEGIN_SRC emacs-lisp
+        (org :variables
+             org-enable-hugo-support t)
+      #+END_SRC
 
- Restart emacs or use @@html:<kbd>@@ SPC f e R @@html:</kbd>@@ to reload your
- configuration on-the-fly. If you already have an entry for the ~org~ layer,
- just include the variable ~org-enable-hugo-support~ with value ~t~.
+      Restart emacs or use @@html:<kbd>@@ SPC f e R @@html:</kbd>@@ to reload your
+      configuration on-the-fly. If you already have an entry for the ~org~ layer,
+      just include the variable ~org-enable-hugo-support~ with value ~t~.
 
-**** Workflow                                                      :noexport:
+**** Workflow
 
-**** Benefits                                                      :noexport:
+***** Project Structure                                            :noexport:
+
+***** File Structure
+      :PROPERTIES:
+      :END:
+
+      There are several options for organizing the ~.org~ file you store your blog
+      posts and pages in, but here's one that works well for me. Some highlights
+      include:
+
+      - Automatic export upon save as documented on the ox-hugo site
+      - Manage multiple types of Hugo content from one file
+        - Manage traditional blog posts (~blog~ type in my site)
+        - Manage static pages that disable most blog-like functionality (~page~
+          type in my site)
+      - Direct control of content ordering via ~EXPORT_HUGO_WEIGHT: auto~ - just
+        change the order of your Org headings to reorder content on your Hugo
+        site
+
+      #+NAME: all-content-org
+      #+CAPTION: All content in a single Org file
+      #+BEGIN_SRC org -n 1 :hl_lines 3,4,7,9,10,21,33-37,43-47
+        ,#+STARTUP: content
+        ,#+AUTHOR: Shane Sveller
+        ,#+HUGO_BASE_DIR: .
+        ,#+HUGO_AUTO_SET_LASTMOD: t
+        ,* Pages
+          :PROPERTIES:
+          :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+          :EXPORT_HUGO_MENU: :menu main
+          :EXPORT_HUGO_SECTION: pages
+          :EXPORT_HUGO_WEIGHT: auto
+          :END:
+        ,** Page Title
+           :PROPERTIES:
+           :EXPORT_FILE_NAME: page-title
+           :END:
+
+           Page content
+
+        ,* Posts
+          :PROPERTIES:
+          :EXPORT_HUGO_SECTION: blog
+          :END:
+        ,** Topic                                                             :@topic:
+        ,*** Post Title                                                    :post:tags:
+            :PROPERTIES:
+            :EXPORT_FILE_NAME: post-title-in-slug-form
+            :END:
+
+            Content
+
+            More Content
+
+            ,#+BEGIN_SRC bash -l 7 :hl_lines 8
+              echo 'Some source code content'
+              echo 'This line will be highlighted'
+              echo "This one won't"
+            ,#+END_SRC
+
+        ,**** Post Sub-Heading
+             This is another section within the post.
+
+        ,* Footnotes
+        ,* COMMENT Local Variables                                           :ARCHIVE:
+        # Local Variables:
+        # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+        # eval: (auto-fill-mode 1)
+        # End:
+      #+END_SRC
+
+***** Creating a draft                                             :noexport:
+***** Publishing a draft                                           :noexport:
+***** Creating a draft with =org-capture=                          :noexport:
 
 **** Bonus: Live reload without a separate shell tab
 
- If you enable the ~prodigy~ layer in Spacemacs, or install the package manually,
- you can define a process in your ~dotspacemacs/user-config~ function like so:
+     If you enable the ~prodigy~ layer in Spacemacs, or install the ~Prodigy~
+     package manually, you can define a process in your
+     ~dotspacemacs/user-config~ function like so:
 
- #+BEGIN_SRC emacs-lisp
+     #+BEGIN_SRC emacs-lisp
    (prodigy-define-service
      :name "Hugo Personal Blog"
      :command "/usr/local/bin/hugo"
@@ -157,30 +256,87 @@ I've experimented recently with managing multiple versions of Erlang and Elixir 
      :tags '(personal)
      :stop-signal 'sigkill
      :kill-process-buffer-on-stop t)
- #+END_SRC
+     #+END_SRC
 
- Then, to manage the process while editing with Emacs, I use @@html:<kbd>@@ SPC a
- S @@html:</kbd>@@ to open the Prodigy buffer, highlight the service entry, and
- use @@html:<kbd>@@ s @@html:</kbd>@@ to start the process, @@html:<kbd>@@ S
- @@html:</kbd>@@ to stop the service, and @@html:<kbd>@@ $ @@html:</kbd>@@ to
- view process output. @@html:<kbd>@@ q @@html:</kbd>@@ will back out of any
- Prodigy-generated buffers.
+     Then, to manage the process while editing with Emacs, I use @@html:<kbd>@@ SPC a
+     S @@html:</kbd>@@ to open the Prodigy buffer, highlight the service entry, and
+     use @@html:<kbd>@@ s @@html:</kbd>@@ to start the process, @@html:<kbd>@@ S
+     @@html:</kbd>@@ to stop the service, and @@html:<kbd>@@ $ @@html:</kbd>@@ to
+     view process output. @@html:<kbd>@@ q @@html:</kbd>@@ will back out of any
+     Prodigy-generated buffers.
 
 **** Bonus: Publishing Your Blog With Netlify                      :noexport:
+
+**** Room for Improvement
+
+     - Linking to headings, other posts, and headings in other posts
+     - Emacs-lisp function to view Netlify preview URL
+     - Emacs-lisp function to open your browser when opening the file and hugo is running
+     - Screenshot capture workflow
+     - Org-protocol workflow
+     - Org-capture templates
+     - CI workflow
 
 **** Software/Tool Versions
      :PROPERTIES:
      :CUSTOM_ID: ox-hugo-software-tool-versions
      :END:
 
- | Software  |       Version |
- |-----------+---------------|
- | Emacs     |        25.3.1 |
- | Spacemacs |       0.300.0 |
- | Org       |         9.1.2 |
- | Hugo      |        0.31.1 |
- | ox-hugo   | 20171026.1402 |
- | prodigy   | 20170816.1114 |
+     | Software  |       Version |
+     |-----------+---------------|
+     | Emacs     |        25.3.1 |
+     | Spacemacs |       0.300.0 |
+     | Org       |         9.1.2 |
+     | Hugo      |        0.31.1 |
+     | ox-hugo   | 20171026.1402 |
+     | prodigy   | 20170816.1114 |
+**** Reference Links                                               :noexport:
+     - https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives
+*** Spaced repitition with =org-drill=                            :education:
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-17
+    :EXPORT_FILE_NAME: org-drill
+    :END:
+
+    My team at [[https://www.raise.com/][work]] has previously used
+    [[http://orgmode.org/worg/org-contrib/org-drill.html][org-drill]] to study
+    less-familiar subjects, initially focused on Kubernetes during our early
+    adoption process. Its documentation is largely excellent, but here's a few
+    extra details we've learned over time.
+
+**** Installation
+
+     #+BEGIN_SRC emacs-lisp
+       (with-eval-after-load 'org
+         (require 'cl)
+         (require 'org-drill))
+     #+END_SRC
+
+**** Usage
+***** Creating cards
+****** Single File
+       Here's what the raw ~org~ source looks like:
+
+       #+BEGIN_SRC org
+         ,* Cards
+
+         ,** Card 1                                                             :drill:
+
+         ,*** Card 1 Answer
+       #+END_SRC
+****** Directory of Files
+**** Software/Tools Versions
+     :PROPERTIES:
+     :CUSTOM_ID: org-drill-software-tools-versions
+     :END:
+
+     | Software  | Version |
+     |-----------+---------|
+     | Emacs     |  25.3.1 |
+     | Spacemacs | 0.300.0 |
+     | Org       |   9.1.2 |
+**** Reference Links                                               :noexport:
+     - http://orgmode.org/worg/org-contrib/org-drill.html
 
 ** Kubernetes                                                   :@kubernetes:
 *** TODO Allowing HTTP traffic with nginx-ingress
@@ -262,7 +418,6 @@ I've experimented recently with managing multiple versions of Erlang and Elixir 
  | Prometheus                |       1.8.2 |
 
 *** TODO Building and testing software with Jenkins on Kubernetes
-
 ** Shell Programming                                                :@shells:
 *** Fish Shell                                                        :@fish:
 **** TODO Getting your feet wet with Fish Shell
@@ -294,6 +449,131 @@ I've experimented recently with managing multiple versions of Erlang and Elixir 
    cd oh-my-fish
    bin/install --offline
  #+END_SRC
+** Terraform
+*** DONE Managing GitLab groups and projects with Terraform
+    CLOSED: [2017-12-17 Sun 10:57]
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-17
+    :EXPORT_FILE_NAME: managing-gitlab-with-terraform
+    :END:
+
+**** Configuring the provider
+
+     The following Terraform syntax can be used with the public/commercial
+     GitLab.com service or with a self-hosted installation, as long as you have
+     network connectivity and a token with the correct permissions. I'm using
+     the latter.
+
+     In my case, I used a *Personal Access Token* associated with my individual
+     administrative account, with these permissions:
+
+     - ~api~
+     - ~read_user~
+
+     #+BEGIN_SRC hcl
+       variable "gitlab_token" {
+         type = "string"
+       }
+
+       variable "gitlab_url" {
+         type    = "string"
+         default = "https://gitlab.mydomain.com/api/v4/"
+       }
+
+       provider "gitlab" {
+         base_url = "${var.gitlab_url}"
+         token    = "${var.gitlab_token}"
+         version  = "~> 1.0.0"
+       }
+     #+END_SRC
+
+     If you'd like to keep these out of your source code, Terraform also allows
+     setting variables in shell environment variables by prefixing them with
+     ~TF_VAR_~, as in ~TF_VAR_gitlab_token~ and ~TF_VAR_gitlab_url~. You can
+     manage these manually or with a tool like [[https://direnv.net/][direnv]],
+     and keep the latter's ~.envrc~ file in your ~.gitignore~.
+
+**** Creating a group
+
+     #+BEGIN_SRC hcl
+       resource "gitlab_group" "blogs" {
+         name        = "blogs"
+         path        = "blogs"
+         description = "Public blog repositories"
+       }
+     #+END_SRC
+
+***** Creating a nested group
+
+      I have a group on my GitLab site for ~infrastructure~ projects, and a
+      nested group on my site for [[https://helm.sh/][Helm]] charts within that ~infrastructure~
+      group. Here's the Terraform code that manages those two groups and their
+      relationship:
+
+      #+BEGIN_SRC hcl
+        resource "gitlab_group" "infrastructure" {
+          name        = "infrastructure"
+          path        = "infrastructure"
+        }
+
+        resource "gitlab_group" "helm-charts" {
+          name        = "helm-charts"
+          path        = "helm-charts"
+          parent_id   = "${gitlab_group.infrastructure.id}"
+        }
+      #+END_SRC
+
+      Projects created within this child group will appear on the site at
+      paths that look like ~/infrastructure/helm-charts/foo-chart~.
+
+**** Creating a project within a group
+
+     Here's the first example, a mirror of my public blog. Because of the
+     nature of its contents, I've disabled most of the extra features offered
+     by GitLab for this particular repository.
+
+     #+BEGIN_SRC hcl :hl_lines 2,7
+       resource "gitlab_project" "blogs-shanesveller-dot-com" {
+         name                   = "shanesveller-dot-com"
+         default_branch         = "master"
+         description            = ""
+         issues_enabled         = false
+         merge_requests_enabled = false
+         namespace_id           = "${gitlab_group.blogs.id}"
+         snippets_enabled       = false
+         visibility_level       = "public"
+         wiki_enabled           = false
+       }
+     #+END_SRC
+
+     With the highlighted lines in place, the repository path on the site
+     becomes ~/blogs/shanesveller-dot-com~.
+
+**** Closing Comments
+
+     The GitLab provider as of 1.0.0 is missing some API coverage for what
+     GitLab offers, and has some bugs associated with things like a project's
+     default branch. Often I use ~git-flow~ and want to set a project's default
+     branch to ~develop~, but that feature does not currently seem to work
+     reliably due to
+     [[https://github.com/terraform-providers/terraform-provider-gitlab/pull/41][this
+     code typo]].
+
+**** Software/Tools Versions
+     :PROPERTIES:
+     :CUSTOM_ID: gitlab-terraform-software-tools-versions
+     :END:
+
+     | Software                  | Version |
+     |---------------------------+---------|
+     | GitLab                    |  10.2.4 |
+     | Terraform                 |  0.10.7 |
+     | Terraform GitLab Provider |   1.0.0 |
+
+**** Reference Links                                               :noexport:
+
+     - https://www.terraform.io/docs/providers/gitlab/index.html
+
 * Pages
   :PROPERTIES:
   :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
@@ -301,7 +581,7 @@ I've experimented recently with managing multiple versions of Erlang and Elixir 
   :EXPORT_HUGO_SECTION: pages
   :END:
 ** DONE Hardware                                                  :@hardware:
-   CLOSED: [2015-11-15 Sun 20:30]
+   CLOSED: [2017-12-17 Sun 11:00]
    :PROPERTIES:
    :EXPORT_FILE_NAME: hardware
    :END:
@@ -316,20 +596,22 @@ My current custom-built gaming PC is as follows:
 - EVGA GeForce GTX 980 Superclocked 4GB
 - Samsung 950 Pro 256GB m.2 solid-state drive
 - Samsung 850 Pro 512GB solid-state drive
-- Western Digital Red 1TB 7200rpm hard drive (2)
+- 2x Western Digital Red 1TB 7200rpm hard drive
 - Windows 10 Pro x64
 - Razer Naga mouse
 - Razer Black Widow Chroma keyboard
 - LG 34UM95-P 34" Ultrawide monitor
 - Logitech Z-2300 speakers
 
-I do all of my professional/hobby development work on:
+I do all of my personal development work on:
 
 - Mid-2015 Retina MacBook Pro
 - 16GB DDR3-1600
 - 2.8 GHz Intel Core i7
 - 500GB Apple/Samsung PCI-E solid-state drive
 - OSX 10.11 El Capitan
+
+Work currently provides a 2014 MacBook Pro.
 
 I have a file server:
 
@@ -339,8 +621,8 @@ I have a file server:
 I have an Intel NUC virtualization server:
 
 - Intel Skull Canyon NUC 6i7KYK
-- 2x16GB CRUCIAL 16GB DDR4 2400 BL SODIMM
-- 2x CRUCIAL 500GB MX200 SS SSD M.2
+- 32GB (2x16GB) Crucial DDR4-2400
+- 2x Crucial 500GB MX200 M.2 SSD
 
 I also have a SmartOS/SDC virtualization server:
 
@@ -467,4 +749,5 @@ media devices.
 * COMMENT Local Variables                                                   :ARCHIVE:
 # Local Variables:
 # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+# eval: (auto-fill-mode 1)
 # End:

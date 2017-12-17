@@ -1,8 +1,9 @@
 +++
 title = "Getting your feet wet with Fish Shell"
-lastmod = 2017-12-13T17:27:32-06:00
+author = ["Shane Sveller"]
+lastmod = 2017-12-17T09:00:58-06:00
 categories = ["shells", "fish"]
-weight = 3001
+weight = 4001
 draft = true
 +++
 

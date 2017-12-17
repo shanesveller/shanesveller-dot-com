@@ -1,22 +1,12 @@
 +++
 title = "Monitoring GKE with CoreOS' Prometheus Operator"
+author = ["Shane Sveller"]
+lastmod = 2017-12-17T09:00:58-06:00
 tags = ["coreos", "monitoring", "prometheus", "gke", "kubernetes"]
 categories = ["kubernetes"]
-weight = 2001
+weight = 3001
 draft = true
 +++
-
-## Software/Tool Versions {#software-tool-versions}
-
-| Project                   | Version     |
-|---------------------------|-------------|
-| Google Cloud SDK          | 182.0.0     |
-| Kubernetes                | 1.8.3-gke.0 |
-| Helm                      | 2.7.2       |
-| Prometheus Operator       | 0.15.0      |
-| Prometheus Operator Chart | 0.0.7       |
-| Prometheus                | 1.8.2       |
-
 
 ## Background {#background}
 
@@ -77,3 +67,15 @@ helm install --name kube-prometheus \
      --values kube-prometheus-values.yaml \
      coreos/kube-prometheus
 ```
+
+
+## Software/Tool Versions {#software-tool-versions}
+
+| Project                   | Version     |
+|---------------------------|-------------|
+| Google Cloud SDK          | 182.0.0     |
+| Kubernetes                | 1.8.3-gke.0 |
+| Helm                      | 2.7.2       |
+| Prometheus Operator       | 0.15.0      |
+| Prometheus Operator Chart | 0.0.7       |
+| Prometheus                | 1.8.2       |
