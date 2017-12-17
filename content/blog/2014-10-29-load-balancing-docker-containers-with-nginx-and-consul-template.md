@@ -4,8 +4,6 @@ categories = ["Docker"]
 socialsharing = true
 tags = ["docker","nginx","consul","consul-template"]
 title = "Load-balancing Docker containers with Nginx and Consul-Template"
-weight = -10
-
 +++
 
 > This article has been cross-posted here from my employer's [technical blog](http://tech.bellycard.com/).
