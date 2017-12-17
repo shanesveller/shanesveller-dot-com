@@ -2,9 +2,16 @@
 title = "Managing GitLab groups and projects with Terraform"
 author = ["Shane Sveller"]
 date = 2017-12-17T11:26:00-06:00
-lastmod = 2017-12-17T11:29:15-06:00
+lastmod = 2017-12-17T11:32:16-06:00
 draft = false
 +++
+
+I've begun using GitLab to host some of my personal projects on my own
+domain, sometimes as a mirror of a GitHub repository and sometimes as the
+primary home of the project.
+
+<!--more-->
+
 
 ## Configuring the provider {#configuring-the-provider}
 
