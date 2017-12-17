@@ -61,6 +61,102 @@ I also have a SmartOS/SDC virtualization server:
 - Western Digital Red 1TB 7200rpm (3)
 - Intel I340-T4 (PCIE 2.0 x 4 lane, 4x1Gb NIC)
 
+** TODO Software and Services
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: software-and-services
+   :EXPORT_DATE: 2012-08-05
+   :END:
+
+   In no particular order, I endorse the following software, products and
+   services on a personal level:
+
+*** OSX Software
+
+    - [[http://adium.im/][Adium]]
+    - [[http://sprw.me/][Sparrow]] - no new development due to acquisition
+      by Google is heartbreaking
+    - [[http://mac.github.com][GitHub OSX client]]
+    - [[http://reederapp.com/mac/][Reeder]] - Best RSS reader I've ever
+      used, and it has a fantastic [[http://reederapp.com/ipad/][iOS port]]!
+    - [[http://tapbots.com/tweetbot_mac/][TweetBot]] - Originally on
+      [[http://tapbots.com/software/tweetbot/][iOS]], and is far and away my
+      preferred Twitter client on both platforms. Beats the hell out of
+      TweetDeck.
+    - [[http://www.iterm2.com][iTerm 2]]
+    - [[http://tmux.sourceforge.net][tmux]] - not OSX specific, but where I
+      use it most
+
+*** Cross-platform Software
+
+    - [[http://dropbox.com/][Dropbox]] - still one of my favorite ways to
+      keep files available on all my machines, including the iPad. Bonus:
+      integration with
+      [[http://pragprog.com/frequently-asked-questions/ebooks/read-on-desktop-laptop#dropbox][PragProg]]
+      and
+      [[http://shop.oreilly.com/category/customer-service/dropbox.do][O'Reilly]]
+      for near-instant notificaiton of new e-book revisions!
+    - [[http://sublimetext.com/2][SublimeText 2]] - see my 1-month
+      impressions [[/posts/2012-08-05-sublimetext-2/][here]]!
+    - [[http://spotify.com/][Spotify]] - the only streaming music service
+      I'm still consistently glad I subscribe to. Works like a charm on
+      Windows and OSX, and even has a
+      [[http://spotify.com/us/download/previews/][Linux port]]!
+    - [[https://kindle.amazon.com][Amazon Kindle]] - my preferred e-reader
+      platform because it has great dedicated
+      [[https://www.amazon.com/kindle-store-ebooks-newspapers-blogs/b/ref=r_ksl_h_i_gl?node=133141011][hardware
+      readers]], and a reading app for pretty much
+      [[https://www.amazon.com/gp/kindle/kcp/ref=r_kala_h_i_gl][every
+      platform under the sun]].
+
+*** Cloud/Web Apps
+
+    - [[http://heroku.com/][Heroku]]
+    - [[http://mint.com/][Mint]]
+    - [[http://pinboard.in/][Pinboard]] - bookmarking service /ala/
+      Delicious but without all the social trappings - and with great
+      integration in Twitter clients/RSS readers!
+    - [[http://pandora.com/][Pandora]] - I'm less happy with their variety
+      than I wish, but still a great service
+
+*** Screencasts
+
+    - [[http://railscasts.com/][Railscasts]] - Ryan Bates has been
+      consistently putting out focused, concise and informative screencasts
+      on a variety of topics related to Ruby on Rails or programming at
+      large. Congrats on a full year of doing RailsCasts full-time, Ryan!
+      Happy to be a Pro subscriber.
+    - [[https://peepcode.com/][PeepCode]] - May be less prolific than
+      Railscasts, but the screencasts Geoffrey puts out are very meaty and
+      I'm a big fan of the
+      [[https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails][Play
+      by Play series]].
+
+*** Podcasts
+
+    - [[http://ruby5.envylabs.com/][Ruby5]] is a great way to keep abreast
+      of new or upcoming projects from the Ruby ecosystem
+    - [[http://rubyrogues.com/][Ruby Rogues]] isn't nearly so bite-sized but
+      dives deeper into subjects and often has very interesting guests
+
+*** Reference Books
+
+    - [[http://pragprog.com/][Pragmatic Programmers]] keeps publishing
+      awesome books from great authors on exciting topics
+    - [[http://www.manning.com/][Manning]] - I still buy the odd
+      [[http://www.manning.com/about/meap][MEAP book]] on an upcoming
+      technology and have yet to regret it
+    - O'Reilly publishes most new books in an ebook format and sports
+      integration with Dropbox for delivery of updated versions
+
+*** E-Book Vendors
+
+    - [[http://rpg.drivethrustuff.com/][DriveThruRPG]] has awesome sales on
+      tabletop RPG rulebooks now and then - I've got a ton of
+      [[http://www.white-wolf.com/classic-world-of-darkness][old]]/
+      [[http://www.white-wolf.com/new-world-of-darkness][new World of
+      Darkness]] and [[http://shadowrun4.com/][Shadowrun]], some
+      Exalted/Trinity, and a dash of [[http://paizo.com/][Pathfinder]].
+
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
 # Local Variables:
