@@ -1,0 +1,19 @@
+#+STARTUP: content
+#+TITLE: Shane Sveller
+#+AUTHOR: Shane Sveller
+#+HUGO_BASE_DIR: .
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Pages
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: pages
+  :END:
+
+* Footnotes
+* COMMENT Local Variables                                                   :ARCHIVE:
+# Local Variables:
+# eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+# eval: (auto-fill-mode 1)
+# End:
