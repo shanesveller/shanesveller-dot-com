@@ -1,7 +1,7 @@
 baseurl      = "https://www.shanesveller.com"
 languageCode = "en-us"
 title        = "Shane Sveller"
-subtitle     = "Docker, Elixir, Chef, AWS, DevOps"
+subtitle     = "AWS, Chef, Docker, Elixir, Jenkins, Kubernetes, DevOps"
 
 canonifyURLs    = true
 disqusShortname = "shanesveller"
@@ -17,7 +17,7 @@ pygmentsCodeFences = true
     description    = "Senior DevOps Engineer at Raise Marketplace"
     gaid           = "UA-2369454-1"
     sidebartitle   = "Shane Sveller"
-    sidebartagline = "Docker, Elixir, Chef, AWS, DevOps"
+    sidebartagline = "AWS, Chef, Docker, Elixir, Jenkins, Kubernetes, DevOps"
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:title"
