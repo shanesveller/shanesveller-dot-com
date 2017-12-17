@@ -157,6 +157,11 @@ I also have a SmartOS/SDC virtualization server:
       Darkness]] and [[http://shadowrun4.com/][Shadowrun]], some
       Exalted/Trinity, and a dash of [[http://paizo.com/][Pathfinder]].
 
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: blog
+  :END:
+
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
 # Local Variables:
