@@ -5,7 +5,7 @@ subtitle     = "Docker, Elixir, Chef, AWS, DevOps"
 
 canonifyURLs    = true
 disqusShortname = "shanesveller"
-uglyurls        = true
+uglyurls        = false
 
 pygmentsCodeFences = true
 
