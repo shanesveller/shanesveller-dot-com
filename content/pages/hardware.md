@@ -2,7 +2,7 @@
 title = "Hardware"
 author = ["Shane Sveller"]
 date = 2017-12-17T11:00:00-06:00
-lastmod = 2017-12-17T11:00:47-06:00
+lastmod = 2017-12-17T11:01:41-06:00
 categories = ["hardware"]
 draft = false
 noauthor = true
@@ -32,13 +32,15 @@ My current custom-built gaming PC is as follows:
 -   LG 34UM95-P 34" Ultrawide monitor
 -   Logitech Z-2300 speakers
 
-I do all of my professional/hobby development work on:
+I do all of my personal development work on:
 
 -   Mid-2015 Retina MacBook Pro
 -   16GB DDR3-1600
 -   2.8 GHz Intel Core i7
 -   500GB Apple/Samsung PCI-E solid-state drive
 -   OSX 10.11 El Capitan
+
+Work currently provides a 2014 MacBook Pro.
 
 I have a file server:
 
