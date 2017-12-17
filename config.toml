@@ -30,3 +30,13 @@ pygmentsCodeFences = true
     pre        = "<i class ='fa fa-twitter'></i>"
     url        = "http://www.twitter.com/shanesveller"
     identifier = "twitter"
+
+[[menu.social]]
+    pre        = "<i class ='fa fa-github'></i>"
+    url        = "https://github.com/shanesveller"
+    identifier = "github"
+
+[[menu.social]]
+    pre        = "<i class ='fa fa-key'></i>"
+    url        = "https://keybase.io/shanesveller"
+    identifier = "keybase"
