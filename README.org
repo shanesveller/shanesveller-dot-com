@@ -1,0 +1,5 @@
+* Updating theme
+
+#+BEGIN_SRC sh
+  hub subtree pull --prefix themes/hugo-redlounge --squash https://github.com/tmaiaroto/hugo-redlounge.git master
+#+END_SRC
