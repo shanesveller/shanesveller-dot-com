@@ -2,7 +2,7 @@
 title = "Managing Elixir runtime version with asdf"
 author = ["Shane Sveller"]
 date = 2017-12-23T22:30:00-05:00
-lastmod = 2017-12-23T22:34:43-05:00
+lastmod = 2017-12-23T22:38:34-05:00
 tags = ["asdf", "elixir", "erlang"]
 categories = ["elixir"]
 draft = false
@@ -18,6 +18,15 @@ one of `rbenv`, `chruby` or `rvm`, for example. Elixir isn't much different
 in this regard.
 
 <!--more-->
+
+One available project that I find pretty promising is `asdf`, which is
+self-described as:
+
+> [An] extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
+
+It fulfills some of the same roles that `rbenv` and friends do, while
+supporting multiple languages and even other software tools in a fairly
+standardized way.
 
 
 ## Installation {#installation}

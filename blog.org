@@ -182,6 +182,17 @@ I also have a SmartOS/SDC virtualization server:
 
     <!--more-->
 
+    One available project that I find pretty promising is ~asdf~, which is
+    self-described as:
+
+    #+BEGIN_QUOTE
+    [An] extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
+    #+END_QUOTE
+
+    It fulfills some of the same roles that ~rbenv~ and friends do, while
+    supporting multiple languages and even other software tools in a fairly
+    standardized way.
+
 **** Installation
 
 ***** Homebrew
