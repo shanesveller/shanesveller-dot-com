@@ -2,7 +2,7 @@
 title = "Managing Elixir runtime version with asdf"
 author = ["Shane Sveller"]
 date = 2017-12-23T22:30:00-05:00
-lastmod = 2017-12-23T22:38:34-05:00
+lastmod = 2017-12-23T22:39:47-05:00
 tags = ["asdf", "elixir", "erlang"]
 categories = ["elixir"]
 draft = false
@@ -232,6 +232,17 @@ accounting for both global and local tool versions, with `asdf which`:
 asdf which erlang
 # /Users/shane/.asdf/installs/erlang/20.1/bin/erlang
 ```
+
+
+## Other notable plugins {#other-notable-plugins}
+
+Here are a few other asdf plugins I'm prone to using in the course of my
+infrastructure-focused work:
+
+-   [kubectl](https://github.com/Banno/asdf-kubectl)
+-   [minikube](https://github.com/alvarobp/asdf-minikube)
+-   [terraform](https://github.com/Banno/asdf-hashicorp) (recently combined
+    support for multiple Hashicorp tools in one plugin)
 
 
 ## Alternatives {#alternatives}

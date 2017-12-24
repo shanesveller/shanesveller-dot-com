@@ -390,6 +390,16 @@ I also have a SmartOS/SDC virtualization server:
        # /Users/shane/.asdf/installs/erlang/20.1/bin/erlang
      #+END_SRC
 
+**** Other notable plugins
+
+     Here are a few other asdf plugins I'm prone to using in the course of my
+     infrastructure-focused work:
+
+     - [[https://github.com/Banno/asdf-kubectl][kubectl]]
+     - [[https://github.com/alvarobp/asdf-minikube][minikube]]
+     - [[https://github.com/Banno/asdf-hashicorp][terraform]] (recently combined
+       support for multiple Hashicorp tools in one plugin)
+
 **** Alternatives
 
      There are many alternative options for
