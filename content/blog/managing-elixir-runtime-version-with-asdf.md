@@ -2,11 +2,23 @@
 title = "Managing Elixir runtime version with asdf"
 author = ["Shane Sveller"]
 date = 2017-12-23T22:30:00-05:00
-lastmod = 2017-12-23T22:30:46-05:00
+lastmod = 2017-12-23T22:34:43-05:00
 tags = ["asdf", "elixir", "erlang"]
 categories = ["elixir"]
 draft = false
 +++
+
+An uncomfortably common problem when developing for a particular programming
+language is needing to deal with compatibility issues across different
+versions of the language runtime. Most often this means keeping individual
+projects tied to their then-current version of the language until such time
+that the project can address any compatibility issues with later language
+releases. To that end, Ruby developers are probably familiar with
+one of `rbenv`, `chruby` or `rvm`, for example. Elixir isn't much different
+in this regard.
+
+<!--more-->
+
 
 ## Installation {#installation}
 

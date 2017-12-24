@@ -171,6 +171,17 @@ I also have a SmartOS/SDC virtualization server:
     :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-asdf
     :END:
 
+    An uncomfortably common problem when developing for a particular programming
+    language is needing to deal with compatibility issues across different
+    versions of the language runtime. Most often this means keeping individual
+    projects tied to their then-current version of the language until such time
+    that the project can address any compatibility issues with later language
+    releases. To that end, Ruby developers are probably familiar with
+    one of ~rbenv~, ~chruby~ or ~rvm~, for example. Elixir isn't much different
+    in this regard.
+
+    <!--more-->
+
 **** Installation
 
 ***** Homebrew
