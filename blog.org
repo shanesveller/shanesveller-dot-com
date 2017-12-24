@@ -163,7 +163,8 @@ I also have a SmartOS/SDC virtualization server:
   :END:
 
 ** Elixir                                                           :@elixir:
-*** TODO Managing Elixir runtime version with ~asdf~     :asdf:elixir:erlang:
+*** DONE Managing Elixir runtime version with ~asdf~     :asdf:elixir:erlang:
+    CLOSED: [2017-12-23 Sat 22:30]
     :PROPERTIES:
     :EXPORT_AUTHOR: Shane Sveller
     :EXPORT_DATE: 2017-12-23

@@ -1,11 +1,11 @@
 +++
 title = "Managing Elixir runtime version with asdf"
 author = ["Shane Sveller"]
-date = 2017-12-23
-lastmod = 2017-12-23T22:24:09-05:00
+date = 2017-12-23T22:30:00-05:00
+lastmod = 2017-12-23T22:30:46-05:00
 tags = ["asdf", "elixir", "erlang"]
 categories = ["elixir"]
-draft = true
+draft = false
 +++
 
 ## Installation {#installation}
