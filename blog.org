@@ -1002,6 +1002,12 @@ article. Any remaining flaws are my own.
          )
      #+END_SRC
 
+** Productivity                                               :@productivity:
+*** TODO Managing shell dotfiles with thoughbot's rcm  :@shells:dotfiles:rcm:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-shell-dotfiles-with-thoughtbots-rcm
+    :END:
+
 ** Terraform                            :@terraform:infrastructure__as__code:
    :PROPERTIES:
    :VISIBILITY: children
