@@ -1228,6 +1228,11 @@ media devices.
      | Org       |   9.1.2 |
 **** Reference Links                                               :noexport:
      - http://orgmode.org/worg/org-contrib/org-drill.html
+*** TODO Presentations with org-mode and org-reveal :org:mode:presentation:reveal_js:slideshow:
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-26
+    :EXPORT_FILE_NAME: presentations-with-org-mode-and-org-reveal
+    :END:
 
 ** Kubernetes                                                   :@kubernetes:
 *** TODO Allowing HTTP traffic with nginx-ingress
