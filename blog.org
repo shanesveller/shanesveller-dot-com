@@ -64,7 +64,7 @@ I also have a Lenovo mid-tower virtualization server:
 - Western Digital Red 1TB 7200rpm (3)
 - Intel I340-T4 (PCIE 2.0 x 4 lane, 4x1Gb NIC)
 
-** TODO Software and Services
+** TODO Software and Services                                     :@software:
    :PROPERTIES:
    :EXPORT_FILE_NAME: software-and-services
    :EXPORT_DATE: 2012-08-05
