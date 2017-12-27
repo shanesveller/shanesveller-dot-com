@@ -559,6 +559,213 @@ I also have a Lenovo mid-tower virtualization server:
 
      - https://www.terraform.io/docs/providers/gitlab/index.html
 
+* Page Ideas                                                       :noexport:
+** Networking                                                   :@networking:
+*** TODO Home Network
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_FILE_NAME: home-network
+    :END:
+
+My home network is largely made up of Ubiquiti Unifi equipment.
+
+**** Router
+
+My router is a UBNT USG 3-port. I also own a 4-port USG Pro but cannot currently
+tolerate the fan noise in an apartment, so that's still in the box.
+
+**** Switching
+
+I have a UBNT 24-port 250W POE switch for my main hub, as well as a UBNT 8-port
+switch with POE passthrough for my TV stand so I can hard-wire my game consoles and
+media devices.
+
+* Post Ideas                                                       :noexport:
+** TODO Managing Elixir runtime version with Nix                 :elixir:nix:
+   :PROPERTIES:
+   :EXPORT_AUTHOR: Shane Sveller
+   :EXPORT_DATE: 2017-12-15
+   :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-nix
+   :END:
+
+I've experimented recently with managing multiple versions of Erlang and Elixir with Nix.
+
+<!--more-->
+
+*** Software/Tool Versions
+
+| Software | Verison |
+|----------+---------|
+| OSX      | 10.12.6 |
+| Nix      | 1.11.16 |
+
+*** Installation
+
+#+BEGIN_SRC shell-script
+brew cask install nix
+#+END_SRC
+
+*** Getting Started
+
+*** References
+
+** Kubernetes                                                   :@kubernetes:
+*** TODO Allowing HTTP traffic with nginx-ingress
+*** TODO Securing HTTPS traffic with cert-manager
+*** TODO Monitoring GKE with CoreOS' Prometheus Operator :coreos:monitoring:prometheus:gke:kubernetes:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_FILE_NAME: monitoring-gke-with-coreos-prometheus-operator
+    :EXPORT_HUGO_WEIGHT: auto
+    :END:
+
+**** Background
+
+ [[https://prometheus.io/][Prometheus]] is all the rage in the Kubernetes community, especially after
+ becoming a Cloud Native Computing Foundation [[https://www.cncf.io/projects/][hosted project]].
+
+ CoreOS has a project called [[https://github.com/coreos/prometheus-operator][prometheus-operator]] which helps manage instances
+ of a Prometheus server, or its compatriot AlertManager, via Kubernetes manifests.
+
+**** Getting Started
+
+ I've chosen to install the Operator via the project's provided [[https://github.com/coreos/prometheus-operator/tree/v0.15.0/helm/prometheus-operator][Helm Chart]].
+
+ First, install CoreOS' Helm repository
+
+ #+BEGIN_SRC shell-script
+   helm init --client-only
+   helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+ #+END_SRC
+
+ I've also provided some customized values:
+
+ #+BEGIN_SRC yaml
+   global:
+     ## Hyperkube image to use when getting ThirdPartyResources & cleaning up
+     ##
+     hyperkube:
+       repository: quay.io/coreos/hyperkube
+       # https://quay.io/repository/coreos/hyperkube?tag=latest&tab=tags
+       tag: v1.8.4_coreos.0
+       pullPolicy: IfNotPresent
+
+   ## Prometheus-operator image
+   ##
+   image:
+     repository: quay.io/coreos/prometheus-operator
+     # https://quay.io/repository/coreos/prometheus-operator?tag=latest&tab=tags
+     tag: v0.15.0
+     pullPolicy: IfNotPresent
+ #+END_SRC
+
+ Finally, I install the chart with my supplied values in a ~monitoring~ namespace:
+
+ #+BEGIN_SRC shell-script
+   helm install --name prometheus-operator \
+        --namespace monitoring \
+        --values prometheus-operator-values.yaml \
+        coreos/prometheus-operator
+ #+END_SRC
+
+**** Using kube-prometheus for basic cluster metrics
+
+ #+BEGIN_SRC shell-script
+   helm install --name kube-prometheus \
+        --namespace monitoring \
+        --values kube-prometheus-values.yaml \
+        coreos/kube-prometheus
+ #+END_SRC
+
+**** Software/Tool Versions
+
+ | Project                   |     Version |
+ |---------------------------+-------------|
+ | Google Cloud SDK          |     182.0.0 |
+ | Kubernetes                | 1.8.3-gke.0 |
+ | Helm                      |       2.7.2 |
+ | Prometheus Operator       |      0.15.0 |
+ | Prometheus Operator Chart |       0.0.7 |
+ | Prometheus                |       1.8.2 |
+
+*** TODO Building and testing software with Jenkins on Kubernetes
+** Shell Programming                                                :@shells:
+*** Fish Shell                                                        :@fish:
+**** TODO Getting your feet wet with Fish Shell
+     :PROPERTIES:
+     :EXPORT_AUTHOR: Shane Sveller
+     :EXPORT_FILE_NAME: getting-your-feet-wet-with-fish-shell
+     :EXPORT_HUGO_WEIGHT: auto
+     :END:
+
+***** Software/Tool Versions
+
+ | Software   | Version |
+ |------------+---------|
+ | OSX        | 10.12.6 |
+ | iTerm 2    |   3.1.5 |
+ | Fish       |   2.7.0 |
+ | Oh My Fish |       6 |
+
+***** Installation
+
+ #+BEGIN_SRC shell-script
+   brew install fish
+ #+END_SRC
+
+ Now, install oh-my-fish via ~git~ because curl-bash is for suckers!
+
+ #+BEGIN_SRC shell-script
+   git clone https://github.com/oh-my-fish/oh-my-fish
+   cd oh-my-fish
+   bin/install --offline
+ #+END_SRC
+** Spaced repitition with =org-drill=                             :education:
+   :PROPERTIES:
+   :EXPORT_DATE: 2017-12-17
+   :EXPORT_FILE_NAME: org-drill
+   :END:
+
+   My team at [[https://www.raise.com/][work]] has previously used
+   [[http://orgmode.org/worg/org-contrib/org-drill.html][org-drill]] to study
+   less-familiar subjects, initially focused on Kubernetes during our early
+   adoption process. Its documentation is largely excellent, but here's a few
+   extra details we've learned over time.
+
+*** Installation
+
+    #+BEGIN_SRC emacs-lisp
+      (with-eval-after-load 'org
+        (require 'cl)
+        (require 'org-drill))
+    #+END_SRC
+
+*** Usage
+**** Creating cards
+***** Single File
+      Here's what the raw ~org~ source looks like:
+
+      #+BEGIN_SRC org
+        ,* Cards
+
+        ,** Card 1                                                             :drill:
+
+        ,*** Card 1 Answer
+      #+END_SRC
+***** Directory of Files
+*** Software/Tools Versions
+    :PROPERTIES:
+    :CUSTOM_ID: org-drill-software-tools-versions
+    :END:
+
+    | Software  | Version |
+    |-----------+---------|
+    | Emacs     |  25.3.1 |
+    | Spacemacs | 0.300.0 |
+    | Org       |   9.1.2 |
+*** Reference Links                                                :noexport:
+    - http://orgmode.org/worg/org-contrib/org-drill.html
+
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
   # Local Variables:
