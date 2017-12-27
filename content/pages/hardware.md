@@ -1,8 +1,8 @@
 +++
 title = "Hardware"
 author = ["Shane Sveller"]
-date = 2015-11-15T20:30:00-06:00
-lastmod = 2017-12-17T11:06:46-06:00
+date = 2017-12-26T10:00:00-06:00
+lastmod = 2017-12-27T08:56:01-06:00
 categories = ["hardware"]
 draft = false
 noauthor = true
@@ -25,20 +25,22 @@ My current custom-built gaming PC is as follows:
 -   EVGA GeForce GTX 980 Superclocked 4GB
 -   Samsung 950 Pro 256GB m.2 solid-state drive
 -   Samsung 850 Pro 512GB solid-state drive
--   Western Digital Red 1TB 7200rpm hard drive (2)
+-   2x Western Digital Red 1TB 7200rpm hard drive
 -   Windows 10 Pro x64
 -   Razer Naga mouse
 -   Razer Black Widow Chroma keyboard
 -   LG 34UM95-P 34" Ultrawide monitor
 -   Logitech Z-2300 speakers
 
-I do all of my professional/hobby development work on:
+I do all of my personal development work on:
 
 -   Mid-2015 Retina MacBook Pro
 -   16GB DDR3-1600
 -   2.8 GHz Intel Core i7
 -   500GB Apple/Samsung PCI-E solid-state drive
 -   OSX 10.11 El Capitan
+
+Work currently provides a 2014 MacBook Pro.
 
 I have a file server:
 
@@ -48,10 +50,10 @@ I have a file server:
 I have an Intel NUC virtualization server:
 
 -   Intel Skull Canyon NUC 6i7KYK
--   2x16GB CRUCIAL 16GB DDR4 2400 BL SODIMM
--   2x CRUCIAL 500GB MX200 SS SSD M.2
+-   32GB (2x16GB) Crucial DDR4-2400
+-   2x Crucial 500GB MX200 M.2 SSD
 
-I also have a SmartOS/SDC virtualization server:
+I also have a Lenovo mid-tower virtualization server:
 
 -   Lenovo ThinkServer TS140
 -   Intel Xeon E3-1225 v3 3.2GHz
