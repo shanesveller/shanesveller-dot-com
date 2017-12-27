@@ -9,6 +9,7 @@
   :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
   :EXPORT_HUGO_MENU: :menu main
   :EXPORT_HUGO_SECTION: pages
+  :VISIBILITY: children
   :END:
 
 ** DONE Hardware                                                  :@hardware:
@@ -165,6 +166,9 @@ I also have a Lenovo mid-tower virtualization server:
   :END:
 
 ** Elixir                                                           :@elixir:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** DONE Managing Elixir runtime version with ~asdf~     :asdf:elixir:erlang:
     CLOSED: [2017-12-23 Sat 22:30]
     :PROPERTIES:
@@ -999,6 +1003,9 @@ article. Any remaining flaws are my own.
      #+END_SRC
 
 ** Terraform                            :@terraform:infrastructure__as__code:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** DONE Managing GitLab groups and projects with Terraform          :gitlab:
     CLOSED: [2017-12-17 Sun 11:26]
     :PROPERTIES:
@@ -1131,7 +1138,13 @@ article. Any remaining flaws are my own.
      - https://www.terraform.io/docs/providers/gitlab/index.html
 
 * Page Ideas                                                       :noexport:
+  :PROPERTIES:
+  :VISIBILITY: content
+  :END:
 ** Networking                                                   :@networking:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** TODO Home Network
     :PROPERTIES:
     :EXPORT_AUTHOR: Shane Sveller
@@ -1153,7 +1166,10 @@ media devices.
 
 * Post Ideas                                                       :noexport:
 
-** Elixir
+** Elixir                                                           :@elixir:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** TODO Managing Elixir runtime version with Nix                :elixir:nix:
     :PROPERTIES:
     :EXPORT_AUTHOR: Shane Sveller
@@ -1182,7 +1198,10 @@ media devices.
 
 **** References
 
-** Emacs
+** Emacs                                                             :@emacs:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** TODO Spaced repitition with =org-drill=                       :education:
     :PROPERTIES:
     :EXPORT_DATE: 2017-12-17
@@ -1235,6 +1254,9 @@ media devices.
     :END:
 
 ** Kubernetes                                                   :@kubernetes:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** TODO Allowing HTTP traffic with nginx-ingress
 *** TODO Securing HTTPS traffic with cert-manager
 *** TODO Monitoring GKE with CoreOS' Prometheus Operator :coreos:monitoring:prometheus:gke:kubernetes:
@@ -1315,7 +1337,13 @@ media devices.
 
 *** TODO Building and testing software with Jenkins on Kubernetes
 ** Shell Programming                                                :@shells:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
 *** Fish Shell                                                        :@fish:
+    :PROPERTIES:
+    :VISIBILITY: children
+    :END:
 **** TODO Getting your feet wet with Fish Shell
      :PROPERTIES:
      :EXPORT_AUTHOR: Shane Sveller
