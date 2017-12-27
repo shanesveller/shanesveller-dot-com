@@ -1152,33 +1152,82 @@ switch with POE passthrough for my TV stand so I can hard-wire my game consoles 
 media devices.
 
 * Post Ideas                                                       :noexport:
-** TODO Managing Elixir runtime version with Nix                 :elixir:nix:
-   :PROPERTIES:
-   :EXPORT_AUTHOR: Shane Sveller
-   :EXPORT_DATE: 2017-12-15
-   :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-nix
-   :END:
 
-I've experimented recently with managing multiple versions of Erlang and Elixir with Nix.
+** Elixir
+*** TODO Managing Elixir runtime version with Nix                :elixir:nix:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2017-12-15
+    :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-nix
+    :END:
 
-<!--more-->
+ I've experimented recently with managing multiple versions of Erlang and Elixir with Nix.
 
-*** Software/Tool Versions
+ <!--more-->
 
-| Software | Verison |
-|----------+---------|
-| OSX      | 10.12.6 |
-| Nix      | 1.11.16 |
+**** Software/Tool Versions
 
-*** Installation
+ | Software | Verison |
+ |----------+---------|
+ | OSX      | 10.12.6 |
+ | Nix      | 1.11.16 |
 
-#+BEGIN_SRC shell-script
-brew cask install nix
-#+END_SRC
+**** Installation
 
-*** Getting Started
+ #+BEGIN_SRC shell-script
+ brew cask install nix
+ #+END_SRC
 
-*** References
+**** Getting Started
+
+**** References
+
+** Emacs
+*** TODO Spaced repitition with =org-drill=                       :education:
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-17
+    :EXPORT_FILE_NAME: org-drill
+    :END:
+
+    My team at [[https://www.raise.com/][work]] has previously used
+    [[http://orgmode.org/worg/org-contrib/org-drill.html][org-drill]] to study
+    less-familiar subjects, initially focused on Kubernetes during our early
+    adoption process. Its documentation is largely excellent, but here's a few
+    extra details we've learned over time.
+
+**** Installation
+
+     #+BEGIN_SRC emacs-lisp
+       (with-eval-after-load 'org
+         (require 'cl)
+         (require 'org-drill))
+     #+END_SRC
+
+**** Usage
+***** Creating cards
+****** Single File
+       Here's what the raw ~org~ source looks like:
+
+       #+BEGIN_SRC org
+         ,* Cards
+
+         ,** Card 1                                                             :drill:
+
+         ,*** Card 1 Answer
+       #+END_SRC
+****** Directory of Files
+**** Software/Tools Versions
+     :PROPERTIES:
+     :CUSTOM_ID: org-drill-software-tools-versions
+     :END:
+
+     | Software  | Version |
+     |-----------+---------|
+     | Emacs     |  25.3.1 |
+     | Spacemacs | 0.300.0 |
+     | Org       |   9.1.2 |
+**** Reference Links                                               :noexport:
+     - http://orgmode.org/worg/org-contrib/org-drill.html
 
 ** Kubernetes                                                   :@kubernetes:
 *** TODO Allowing HTTP traffic with nginx-ingress
@@ -1291,51 +1340,6 @@ brew cask install nix
    cd oh-my-fish
    bin/install --offline
  #+END_SRC
-** Spaced repitition with =org-drill=                             :education:
-   :PROPERTIES:
-   :EXPORT_DATE: 2017-12-17
-   :EXPORT_FILE_NAME: org-drill
-   :END:
-
-   My team at [[https://www.raise.com/][work]] has previously used
-   [[http://orgmode.org/worg/org-contrib/org-drill.html][org-drill]] to study
-   less-familiar subjects, initially focused on Kubernetes during our early
-   adoption process. Its documentation is largely excellent, but here's a few
-   extra details we've learned over time.
-
-*** Installation
-
-    #+BEGIN_SRC emacs-lisp
-      (with-eval-after-load 'org
-        (require 'cl)
-        (require 'org-drill))
-    #+END_SRC
-
-*** Usage
-**** Creating cards
-***** Single File
-      Here's what the raw ~org~ source looks like:
-
-      #+BEGIN_SRC org
-        ,* Cards
-
-        ,** Card 1                                                             :drill:
-
-        ,*** Card 1 Answer
-      #+END_SRC
-***** Directory of Files
-*** Software/Tools Versions
-    :PROPERTIES:
-    :CUSTOM_ID: org-drill-software-tools-versions
-    :END:
-
-    | Software  | Version |
-    |-----------+---------|
-    | Emacs     |  25.3.1 |
-    | Spacemacs | 0.300.0 |
-    | Org       |   9.1.2 |
-*** Reference Links                                                :noexport:
-    - http://orgmode.org/worg/org-contrib/org-drill.html
 
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
