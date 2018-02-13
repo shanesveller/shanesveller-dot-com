@@ -427,6 +427,577 @@ I also have a Lenovo mid-tower virtualization server:
      - https://github.com/asdf-vm/asdf/tree/8794210b8e7d87fcead78ae3b7b903cf87dcf0d6#setup
      - https://github.com/asdf-vm/asdf-erlang/issues/48#issuecomment-339137374
 
+** Emacs                                                             :@emacs:
+*** DONE Blogging with org-mode and ox-hugo      :hugo:netlify:org:spacemacs:
+    CLOSED: [2018-02-13 Tue 12:30]
+    :PROPERTIES:
+    :EXPORT_DATE: 2018-02-13
+    :EXPORT_FILE_NAME: blogging-with-org-mode-and-ox-hugo
+    :END:
+
+    I've recently assembled a workflow for blogging with [[https://gohugo.io/][Hugo]], [[http://orgmode.org/][org-mode]], and
+    [[https://www.netlify.com/][Netlify]] via a single ~.org~ document, with live reload during writing and ~git
+    push~ driven deployments.
+
+    <!--more-->
+
+**** Recommended Reading                                   :noexport:rewrite:
+
+     Before pursing a workflow like this, you should be somewhat familiar with
+     the separate behaviors of [[https://www.gnu.org/software/emacs/][Emacs]], [[http://orgmode.org/][org-mode]], org's [[http://orgmode.org/manual/Exporting.html#Exporting][Exporting]] functionality,
+     and the [[https://gohugo.io][Hugo]] static site generator.
+
+**** Requirements
+
+     I've detailed my current environment in the
+     [[#ox-hugo-software-tool-versions][Software/Tool Versions]] appendix below.
+     Strictly speaking, the hard requirements of the
+     [[https://melpa.org/#/ox-hugo][ox-hugo]] package are:
+
+     - Emacs 24.4+
+     - org-mode 9.0+
+
+     To use the ~git~-based publishing part of this workflow, you'll also need:
+
+     - A GitHub account (free or otherwise)
+     - A Netlify account (free or otherwise)
+
+**** Features
+
+     - Compose and organize content in a single Org file
+     - Each post automatically gets a Table of Contents if sub-headings are present
+     - Preview in your local browser including live-reload behavior
+     - Syntax highlighting, including custom line numbers and line highlights
+     - Manage draft / publication status
+     - Manage categories and tags
+     - Manage post aliases
+     - Manage custom front-matter
+     - Publish via ~git push~, perhaps via [[https://magit.vc/][Magit]]
+     - Free hosting via Netlify (dear Netlify, please let me give you money
+       without a multi-user/Pro account!)
+     - Free HTTPS via Netlify's Lets Encrypt integration
+
+**** Installation
+
+     I've included snippets for ~use-package~ users and Spacemacs users - others
+     should look at the [[https://github.com/kaushalmodi/ox-hugo][repository]] for the ~ox-hugo~ package for more
+     information.
+
+***** ~use-package~ Users
+
+      #+BEGIN_SRC emacs-lisp
+        (use-package ox-hugo
+          :after ox)
+      #+END_SRC
+
+***** Spacemacs Users
+
+      Use @@html:<kbd>@@ SPC f e d @@html:</kbd>@@ to open ~~/.spacemacs~ (or
+      ~~/.spacemacs/init.el~) and within the ~dotspacemacs/layers~ function, add or
+      update an entry to the ~dotspacemacs-configuration-layers~ list like so:
+
+      #+BEGIN_SRC emacs-lisp
+        (org :variables
+             org-enable-hugo-support t)
+      #+END_SRC
+
+      Restart Emacs or use @@html:<kbd>@@ SPC f e R @@html:</kbd>@@ to reload your
+      configuration on-the-fly. If you already have an entry for the ~org~ layer,
+      just include the variable ~org-enable-hugo-support~ with value ~t~.
+
+**** Workflow
+***** Project Structure
+
+      I'm working within a vanilla Hugo project with the following structure,
+      similar to what you'd see right after a ~hugo new site~ command:
+
+      #+BEGIN_SRC sh
+        $ tree -d -L 2
+        .
+        ├── archetypes
+        ├── content
+        │   ├── blog
+        │   └── pages
+        ├── data
+        ├── layouts
+        ├── static
+        │   └── images
+        └── themes
+            └── hugo-redlounge
+      #+END_SRC
+
+      My ~blog.org~ file sits at the root of my repository, but could be placed
+      nearly anywhere within and re-targeted with the ~HUGO_BASE_DIR~ setting.
+      Subtrees get exported to a subdirectory of ~content~ based on their
+      ~EXPORT_HUGO_SECTION~ property.
+
+***** File Structure
+
+      There are several options for organizing the ~.org~ file you store your
+      blog posts and pages in, but here's a single-file structure that works
+      well for me.
+
+****** Global settings and metadata
+
+       #+BEGIN_SRC org -n 1
+         ,#+STARTUP: content
+         ,#+AUTHOR: Shane Sveller
+         ,#+HUGO_BASE_DIR: .
+         ,#+HUGO_AUTO_SET_LASTMOD: t
+       #+END_SRC
+
+       Line 1 is an ~org-mode~ setting that tells Emacs that upon opening this
+       file, default to showing all headings and subheadings but not the inner
+       content until @@html:<kbd>@@ TAB @@html:</kbd>@@ is pressed while the
+       pointer is on a particular heading.
+
+       Line 2 sets my global author information, which propagates into each post
+       and page I manage with this ~.org~ file.
+
+       Line 3 tells ~ox-hugo~ that the current ~.org~ file is located in the
+       root of the overall Hugo project, which means that exported data will
+       be saved into the ~content~ directory and appropriate subdirectory that
+       reside next to the ~.org~ file. Relative and absolute paths both work here.
+
+       Finally line 4 tells ~ox-hugo~ to update the ~lastmod~ property of each
+       exported item to match the current time and date, which can be reflected
+       on your site in various ways based on your theme and configuration.
+
+****** Creating a page
+       :PROPERTIES:
+       :END:
+
+       #+BEGIN_SRC org -n 5
+         ,* Pages
+           :PROPERTIES:
+           :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+           :EXPORT_HUGO_MENU: :menu main
+           :EXPORT_HUGO_SECTION: pages
+           :EXPORT_HUGO_WEIGHT: auto
+           :END:
+       #+END_SRC
+
+       My ~.org~ file has a dedicated top-level Org heading to contain my ~Page~
+       content, and this heading sets a number of shared *properties* that are
+       inherited by the individual sub-headings representing each page.
+
+       Line 7 includes multiple key-value pairs that get inserted as-is into the
+       [[https://gohugo.io/content-management/front-matter/#front-matter-variables][Hugo
+       front matter]]. It largely disables all the "frills" one might typically
+       associate with a regular blog post - commenting, pagination, metadata, etc.
+
+       Line 8 indicates that Hugo should include a link to this content on the
+       ~main~ menu of my site, which is currently displayed on the left sidebar
+       of every page.
+
+       Line 9 tells ~ox-hugo~ to export the files into the ~/content/pages~
+       subdirectory of my Hugo project, which has a slightly different Hugo
+       template file than a standard blog post.
+
+       Line 10 tells ~ox-hugo~ to manage the ~weight~ property of the Hugo
+       front matter data. It will calculate the appropriate relative numbers to
+       fill in during the export process.
+
+       #+BEGIN_SRC org -n12
+         ,** Page Title
+            :PROPERTIES:
+            :EXPORT_FILE_NAME: page-title
+            :END:
+
+            Page content
+       #+END_SRC
+
+       To create a new ~page~ on my Hugo site, I insert a new sub-heading under
+       the ~Pages~ heading from the snippet just above. That heading's title is
+       somewhat arbitrary, but this sub-heading will directly inform the ~title~
+       of the exported content.
+
+       Line 14 demonstrates the first truly required property,
+       ~EXPORT_FILE_NAME~, with tells ~ox-hugo~ what filename under
+       ~/content/pages~ to export this sub-tree to. Under my current settings
+       this also directly determines the actual path portion of the resulting
+       URL. For example, this one would be visible at ~/pages/page-title/~.
+
+       Pages can include fairly arbitrary content below the sub-heading,
+       including further sub-headings to break up a longer page or post. You can
+       include links, images, and formatting, all using standard Org syntax.
+
+****** Creating posts
+       :PROPERTIES:
+       :END:
+
+       #+BEGIN_SRC org -n 19
+         ,* Posts
+           :PROPERTIES:
+           :EXPORT_HUGO_SECTION: blog
+           :END:
+       #+END_SRC
+
+       As with Pages above, I create a top-level Org heading to contain my
+       standard blog posts.
+
+       Line 20 configures ~ox-hugo~ to export any sub-headings to
+       ~/content/blog~ in my Hugo project, versus ~pages~ above.
+
+      #+BEGIN_SRC org -n 23
+        ,** Topic                                                             :@topic:
+      #+END_SRC
+
+      I sort my posts into categories by topic and create sub-headings for each
+      topic, and assign Org tags to each sub-heading that are prefixed with ~@~.
+      Org tags on a post that have an ~@~ prefix will generate a ~category~
+      entry in the exported front matter, which is one of the [[https://gohugo.io/content-management/taxonomies/#hugo-taxonomy-defaults][default taxonomies]]
+      built into a new Hugo project. Org tags are inherited from parent headings
+      by sub-headings, so all further subheadings under this subheading will
+      include the ~@topic~ tag.
+
+      #+BEGIN_SRC org -n 24
+        ,*** DONE Post Title                                               :post:tags:
+            CLOSED: [2017-12-19 Tue 17:00]
+            :PROPERTIES:
+            :EXPORT_DATE: 2017-12-19
+            :EXPORT_FILE_NAME: post-title-in-slug-form
+            :END:
+      #+END_SRC
+
+      This sub-heading begins a new post, and is marked as *DONE* in Org syntax
+      with a *CLOSED* timestamp. It also has Org tags named ~post~ and ~tags~
+      which will be inserted into the exported front matter as ~tags~. It
+      includes an ~EXPORT_DATE~ property, which would be used as the post's
+      publication date in the absense of the *CLOSED* timestamp on line 25.
+      Finally it includes the same ~EXPORT_FILE_NAME~ property as mentioned
+      above under Page management.
+
+      #+BEGIN_SRC org -n31
+        Content
+
+        More content
+
+        ,#+BEGIN_SRC bash -l 7 :hl_lines 8
+          echo 'Some source code content'
+          echo 'This line will be highlighted'
+          echo "This one won't"
+        ,#+END_SRC
+      #+END_SRC
+
+      This snippet demonstrates the syntax needed to include a
+      syntax-highlighted code snippet within a post. You can quickly start a
+      code block with @@html:<kbd>@@ < s TAB @@html:</kbd>@@.
+
+      If you append a valid language to ~#+BEGIN_SRC~, and your copy of Emacs
+      has an associated major mode that is named ~$language-mode~, you'll get
+      automatic syntax highlighting while composing the post, and the exported
+      markdown will include either the ~highlight~ [[https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode][shortcode]] or [[https://gohugo.io/content-management/syntax-highlighting/#highlight-in-code-fences][Markdown "code
+      fences"]]. As an added bonus, you can use ~org-edit-special~ (@@html:<kbd>@@
+      , ' @@html:</kbd>@@ for Spacemacs or @@html:<kbd>@@ C-c ' @@html:</kbd>@@
+      for vanilla Emacs) to open a new popover window that lets you edit that
+      code snippet in a separate Emacs buffer. This will behave nearly
+      identically to editing a standalone file with that major mode, including
+      any extra behavior like auto-complete, linting, etc.
+
+****** Excluding/heading sub-headings from export
+
+       On some posts I like to create a private space to jot down ad hoc notes,
+       research and reference links, unrefined code snippets, etc. that
+       shouldn't appear in the final product but are useful to me during the
+       writing process. By configuring the ~org-export-exclude-tags~ variable,
+       or an ~EXCLUDE_TAGS~ file variable, then inserting a matching Org tag on
+       a sub-heading, that content will not appear in the exported Markdown or
+       in the published post, but will remain intact in the original ~.org~
+       file. In my case, it's a ~:noexport:~ tag.
+
+****** Automatic export on save
+
+       The ox-hugo site includes [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][great documentation]] for adding a local variable
+       to your ~.org~ file to enable automatic "what I mean" export whenever you
+       save the file.
+
+       The resulting syntax after following these instructions is:
+
+       #+BEGIN_SRC org -n 51
+         ,* Footnotes
+         ,* COMMENT Local Variables                                           :ARCHIVE:
+         # Local Variables:
+         # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+         # eval: (auto-fill-mode 1)
+         # End:
+       #+END_SRC
+
+****** Full Sample
+
+      #+BEGIN_SRC org -n 1 :hl_lines 3,4,7,9,10,21,24-29,35-39,44,51-56
+        ,#+STARTUP: content
+        ,#+AUTHOR: Shane Sveller
+        ,#+HUGO_BASE_DIR: .
+        ,#+HUGO_AUTO_SET_LASTMOD: t
+        ,* Pages
+          :PROPERTIES:
+          :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+          :EXPORT_HUGO_MENU: :menu main
+          :EXPORT_HUGO_SECTION: pages
+          :EXPORT_HUGO_WEIGHT: auto
+          :END:
+        ,** Page Title
+           :PROPERTIES:
+           :EXPORT_FILE_NAME: page-title
+           :END:
+
+           Page content
+
+        ,* Posts
+          :PROPERTIES:
+          :EXPORT_HUGO_SECTION: blog
+          :END:
+        ,** Topic                                                             :@topic:
+        ,*** DONE Post Title                                               :post:tags:
+            CLOSED: [2017-12-19 Tue 17:00]
+            :PROPERTIES:
+            :EXPORT_DATE: 2017-12-19
+            :EXPORT_FILE_NAME: post-title-in-slug-form
+            :END:
+
+            Content
+
+            More Content
+
+            ,#+BEGIN_SRC bash -l 7 :hl_lines 8
+              echo 'Some source code content'
+              echo 'This line will be highlighted'
+              echo "This one won't"
+            ,#+END_SRC
+
+        ,**** Post Sub-Heading
+             This is another section within the post.
+
+        ,*** TODO Draft Post Title
+            :PROPERTIES:
+            :EXPORT_FILE_NAME: draft-post-title
+            :END:
+
+            This article *will* be exported but will be marked ~draft = true~ in the front matter.
+
+        ,* Footnotes
+        ,* COMMENT Local Variables                                           :ARCHIVE:
+        # Local Variables:
+        # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+        # eval: (auto-fill-mode 1)
+        # End:
+      #+END_SRC
+
+***** Marking a post as a Draft
+
+      To create a new draft post, add a new heading or subheading, and set it to
+      *TODO* status, perhaps via ~M-x org-todo~ or @@html:<kbd>@@ C-c C-t
+      @@html:</kbd>@@.
+
+      *TODO* status ensures that the post will be rendered to Markdown with
+      ~draft = true~ in its frontmatter, which configures Hugo itself to prevent
+      a premature publish of the article to your live site unless specifically
+      instructed to include draft content.
+
+      /A heading without *TODO* or *DONE* is *not* considered a draft/.
+
+***** Publishing a Draft
+
+      To publish a draft post, toggle its *TODO* state to *DONE*. If you have
+      ~org-log-done~ set to ~'time~, toggling to *DONE* automatically adds a
+      *CLOSED:* timestamp that will be respected in favor of ~EXPORT_DATE~
+      property for setting the ~date~ in the rendered post's front matter.
+
+***** Creating a draft with =org-capture=                          :noexport:
+
+***** Optional: Live reload without a separate shell tab
+      :PROPERTIES:
+      :CUSTOM_ID: prodigy-hugo-service
+      :END:
+
+      If you enable the ~prodigy~ layer in Spacemacs, or install the ~Prodigy~
+      package manually, you can define a process in your
+      ~dotspacemacs/user-config~ function like so:
+
+      #+BEGIN_SRC emacs-lisp -n1
+        (prodigy-define-service
+          :name "Hugo Personal Blog"
+          :command "/usr/local/bin/hugo"
+          :args '("server" "-D" "--navigateToChanged" "-t" "hugo-redlounge")
+          :cwd "~/src/shanesveller-dot-com"
+          :tags '(personal)
+          :stop-signal 'sigkill
+          :kill-process-buffer-on-stop t)
+      #+END_SRC
+
+      Then, to manage the process while editing with Emacs, I use @@html:<kbd>@@ SPC a
+      S @@html:</kbd>@@ to open the Prodigy buffer, highlight the service entry, and
+      use @@html:<kbd>@@ s @@html:</kbd>@@ to start the process, @@html:<kbd>@@ S
+      @@html:</kbd>@@ to stop the service, and @@html:<kbd>@@ $ @@html:</kbd>@@ to
+      view process output. @@html:<kbd>@@ q @@html:</kbd>@@ will back out of any
+      Prodigy-generated buffers.
+
+***** TODO Bonus: Publishing Your Blog With Netlify                :noexport:
+
+**** Room for Improvement                                          :noexport:
+
+     /Ed: These are candidates for inclusion before this post goes live./
+
+     - Linking to headings, other posts, and headings in other posts
+       (~CUSTOM_ID~ property seems to work within a document)
+     - Emacs-lisp function to view Netlify preview URL by Git SHA
+     - Emacs-lisp function to open your browser when opening the ~.org~ file and
+       Hugo is running
+     - [[https://ox-hugo.scripter.co/doc/images-in-content/][Screenshot capture workflow]]
+     - [[http://orgmode.org/worg/org-contrib/org-protocol.html][Org-protocol workflow]]
+     - [[https://ox-hugo.scripter.co/doc/org-capture-setup/][Org-capture templates]]
+     - CI workflow if not using the Netlify / GitHub webhooks integration
+
+**** Software/Tool Versions
+     :PROPERTIES:
+     :CUSTOM_ID: ox-hugo-software-tool-versions
+     :END:
+
+     | Software  |       Version |
+     |-----------+---------------|
+     | Emacs     |        25.3.1 |
+     | Spacemacs |       0.300.0 |
+     | Org       |         9.1.2 |
+     | Hugo      |        0.31.1 |
+     | ox-hugo   | 20171026.1402 |
+     | prodigy   | 20170816.1114 |
+
+**** Emacs Lisp Snippets
+
+     Here's a snippet that can build off of [[#prodigy-hugo-service][the Prodigy service snippet]] to
+     automatically visit your local Hugo server in a browser once it's running.
+
+     I'm still learning emacs-lisp, and will probably find in the future that
+     this style doesn't suit me, particularly the trailing parentheses.
+
+     I'd also like to investigate ~defcustom~ to allow these default values to
+     be more configurable.
+
+     #+BEGIN_SRC emacs-lisp
+       (defun browse-hugo-maybe ()
+         (interactive)
+         (let ((hugo-service-name "Hugo Personal Blog")
+               (hugo-service-port "1313"))
+           (if (prodigy-service-started-p (prodigy-find-service hugo-service-name))
+               (progn
+                 (message "Hugo detected, launching browser...")
+                 (browse-url (concat "http://localhost:" hugo-service-port))))))
+     #+END_SRC
+
+**** Credits
+
+Thank you to [[https://twitter.com/jrnt30][Justin Nauman]] for great feedback on an early version of this
+article. Any remaining flaws are my own.
+
+**** Reference Links                                               :noexport:
+     - https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives
+     - https://github.com/kaushalmodi/ox-hugo/blob/dffb7e970f33959a0b97fb8df267a54d01a98a2a/ox-hugo.el#L2570
+**** Emacs-Lisp Scratch Pad                                        :noexport:
+
+     #+BEGIN_SRC emacs-lisp
+       (defun browse-hugo-maybe ()
+         (interactive)
+         (let ((hugo-service-name "Hugo Personal Blog")
+               (hugo-service-port "1313"))
+           (if (prodigy-service-started-p (prodigy-find-service hugo-service-name))
+               (progn
+                 (message "Hugo detected, launching browser...")
+                 (browse-url (concat "http://localhost:" hugo-service-port))))))
+
+       (defun current-magit-commit ()
+         (interactive)
+         (progn
+           (message "Current file: %s" (buffer-file-name))
+           (message "Current file status: %s" (vc-working-revision (buffer-file-name)))
+           (let '(short-name "shanesveller-dot-com")
+             (browse-url (format "https://%s--%s.netlify.com" (truncate-string-to-width (vc-working-revision (buffer-file-name)) 24) short-name))
+             )
+           )
+         )
+
+       ;; https://5a3998c20b79b7514937073d--shanesveller-dot-com.netlify.com/
+       ;; 5a3998c20b79b7514937073d
+
+       (defun toolbox ()
+         (interactive)
+
+         (save-excursion
+           (org-back-to-heading :invisible-ok)
+           (let* (
+                  (this-element (org-element-at-point))
+                  (prop-name :EXPORT_FILE_NAME)
+                  (element-prop (org-element-property prop-name this-element))
+                  )
+             (message "%s" element-prop)
+             )
+           )
+         )
+
+       (defun format-subtree-permalink (date filename)
+         (let* (
+                (split-date (split-string date "-"))
+                (date-year (nth 0 split-date))
+                (date-month (nth 1 split-date))
+                (date-day (nth 2 split-date))
+                )
+           (message "%s/%s/%s/%s" date-year date-month date-day filename)
+           )
+         )
+
+       (defun destructure-test (date filename)
+         (require 'cl)
+         (destructuring-bind (date-year date-month date-day)
+             (split-string date "-")
+           (message "%s/%s/%s/%s" date-year date-month date-day filename)
+           )
+         )
+
+       ;; (destructure-test "2017-12-29" "my-filename")
+
+       ;; https://5a3af02a4c4b932e03d474a9--shanesveller-dot-com.netlify.com/
+       (defun browse-netlify-branch-deploy (git-sha site-name &optional sub-path)
+         (let* (
+                (netlify-proto "https")
+                (netlify-hostname "netlify.com")
+                (netlify-url-format "%s://%s--%s.%s%s")
+                )
+           ;; (browse-url (format netlify-url-format netlify-proto git-sha site-name netlify-hostname (or sub-path "")))
+           (message netlify-url-format netlify-proto git-sha site-name netlify-hostname (or sub-path ""))
+           )
+         )
+
+       (browse-netlify-branch-deploy "5a3af02a4c4b932e03d474a9" "shanesveller-dot-com")
+
+       ;; https://www.shanesveller.com/blog/2017/12/19/blogging-with-org-mode-and-ox-hugo/
+       (defun my/preview-post-on-netlify ()
+         (interactive)
+
+         (save-excursion
+           (ignore-errors
+             (org-back-to-heading :invisible-ok))
+           (let* (
+                  (post-element (org-hugo--get-valid-subtree))
+                  (post-filename (org-element-property :EXPORT_FILE_NAME post-element))
+                  ;; (upstream (magit-get-upstream-remote))
+                  ;; (remote-url (magit-git-string "remote" "get-url" upstream))
+                  ;; (remote-components (split-string remote-url "/"))
+                  ;; (raw-repo (car (last remote-components)))
+                  ;; (repo (replace-regexp-in-string "\.git$" "" raw-repo))
+                  (branch (magit-get-current-branch))
+                  (upstream-remote (magit-get-upstream-remote branch))
+                  (upstream-branch (magit-get-upstream-branch branch))
+                  ;; (sanitized-branch (url-hexify-string branch))
+                  (git-sha (magit-rev-parse-safe upstream-branch))
+                  (sub-path (format "/blog/%s/%s/%s/%s/" "2017" "12" "19" "blogging-with-org-mode-and-ox-hugo"))
+                  )
+             (message "%s/%s/%s/%s" branch upstream-remote upstream-branch (magit-get-upstream-ref branch))
+             ;; (message "%s" (browse-netlify-branch-deploy git-sha "shanesveller-dot-com" sub-path))
+             )
+           )
+         )
+     #+END_SRC
+
 ** Terraform                            :@terraform:infrastructure__as__code:
 *** DONE Managing GitLab groups and projects with Terraform          :gitlab:
     CLOSED: [2017-12-17 Sun 11:26]
