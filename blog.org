@@ -429,6 +429,75 @@ I have a Lenovo mid-tower virtualization server:
      - https://github.com/asdf-vm/asdf/tree/8794210b8e7d87fcead78ae3b7b903cf87dcf0d6#setup
      - https://github.com/asdf-vm/asdf-erlang/issues/48#issuecomment-339137374
 
+*** TODO Optimized Elixir Docker Images :docker:elixir:phoenix:umbrella:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-21
+    :EXPORT_FILE_NAME: optimized-elixir-docker-images
+    :END:
+
+    Back in August of this year, I [[https://github.com/oestrich/ex_venture/pull/69][helped my friend Eric add a Docker image and
+    Docker Compose environment]] for his multiplayer game server, [[https://exventure.org/][ExVenture]]. This
+    was primarily based on an iteration of [[https://gist.github.com/shanesveller/d6e58ef40bbb1c11ca32ef0d62fda4a8][my own multi-stage Docker work]] back
+    in February, which was for a Phoenix Umbrella app I'd been working on as a
+    side project at the time.
+
+    Let's pull back the curtain on my current active side project, which is also
+    a text-based multiplayer game server like Eric's, and talk through the
+    implications of and thought process behind each line of its Dockerfile.
+
+    #+BEGIN_SRC dockerfile
+      FROM elixir:1.7.3-alpine as builder
+
+      # The nuclear approach:
+      # RUN apk add --no-cache alpine-sdk
+      RUN apk add --no-cache \
+          gcc \
+          git \
+          make \
+          musl-dev
+
+      RUN mix local.rebar --force && \
+          mix local.hex --force
+
+      FROM builder as releaser
+
+      WORKDIR /app
+      ENV MIX_ENV=prod
+      COPY mix.* /app/
+
+      # Explicit list of umbrella apps
+      RUN mkdir -p \
+          /app/apps/chat \
+          /app/apps/client \
+          /app/apps/command_parser \
+          /app/apps/game_world \
+          /app/apps/gateway \
+          /app/apps/metrics_exporter
+      COPY apps/chat/mix.* /app/apps/chat/
+      COPY apps/client/mix.* /app/apps/client/
+      COPY apps/command_parser/mix.* /app/apps/command_parser/
+      COPY apps/game_world/mix.* /app/apps/game_world/
+      COPY apps/gateway/mix.* /app/apps/gateway/
+      COPY apps/metrics_exporter/mix.* /app/apps/metrics_exporter/
+      RUN mix deps.get --only prod
+      RUN mix deps.compile
+
+      COPY . /app/
+      RUN mix release --env=prod --no-tar --name=ex_mud
+
+      FROM alpine:3.8 as runner
+      RUN apk add -U bash libssl1.0
+      WORKDIR /app
+      COPY --from=releaser /app/_build/prod/rel/ex_mud /app
+      EXPOSE 5556 5559
+      ENTRYPOINT ["/app/bin/ex_mud"]
+      CMD ["foreground"]
+    #+END_SRC
+
+    <!--more-->
+
+
 ** Emacs                                                             :@emacs:
 *** DONE Blogging with org-mode and ox-hugo      :hugo:netlify:org:spacemacs:
     CLOSED: [2018-02-13 Tue 12:30]
