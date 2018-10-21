@@ -13,7 +13,7 @@
   :END:
 
 ** DONE Hardware                                                  :@hardware:
-   CLOSED: [2017-12-26 Tue 10:00]
+   CLOSED: [2018-10-21 Sun 08:30]
    :PROPERTIES:
    :EXPORT_FILE_NAME: hardware
    :END:
@@ -25,7 +25,7 @@ My current custom-built gaming PC is as follows:
 - Intel Core i7-6700k (Skylake) at 4.0GHz
 - Corsair H110i GT liquid CPU cooler
 - 32GB (4x8GB) Crucial Ballistix Elite DDR4-2666 RAM
-- EVGA GeForce GTX 980 Superclocked 4GB
+- Asus Strix GeForce GTX 1080ti 11GB
 - Samsung 950 Pro 256GB m.2 solid-state drive
 - Samsung 850 Pro 512GB solid-state drive
 - 2x Western Digital Red 1TB 7200rpm hard drive
@@ -37,13 +37,11 @@ My current custom-built gaming PC is as follows:
 
 I do all of my personal development work on:
 
-- Mid-2015 Retina MacBook Pro
-- 16GB DDR3-1600
-- 2.8 GHz Intel Core i7
-- 500GB Apple/Samsung PCI-E solid-state drive
-- OSX 10.11 El Capitan
-
-Work currently provides a 2014 MacBook Pro.
+- 2018 15" MacBook Pro
+- 32GB DDR4-2400Mhz
+- 2.9 GHz Intel Core i9 (6 cores)
+- 1TB ApplePCI-E solid-state drive
+- OSX 10.13 High Sierra
 
 I have a file server:
 
@@ -56,7 +54,7 @@ I have an Intel NUC virtualization server:
 - 32GB (2x16GB) Crucial DDR4-2400
 - 2x Crucial 500GB MX200 M.2 SSD
 
-I also have a Lenovo mid-tower virtualization server:
+I have a Lenovo mid-tower virtualization server:
 
 - Lenovo ThinkServer TS140
 - Intel Xeon E3-1225 v3 3.2GHz
