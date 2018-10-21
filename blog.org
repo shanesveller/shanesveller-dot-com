@@ -1381,6 +1381,6 @@ media devices.
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
   # Local Variables:
-  # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+  # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md :append :local)
   # eval: (auto-fill-mode 1)
   # End:
