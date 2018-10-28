@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Introduction"
 author = ["Shane Sveller"]
 date = 2018-10-28T11:00:00-05:00
-lastmod = 2018-10-28T14:17:00-05:00
+lastmod = 2018-10-28T14:21:47-05:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -60,7 +60,7 @@ assumptions:
 
 ## Planned series content {#planned-series-content}
 
--   [Part 1](/blog/2018/10/26/kubernetes-native-phoenix-apps-part-1/)
+-   [Part 1](/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/)
     -   New [Phoenix](https://phoenixframework.org/) 1.4 project
     -   [Distillery](https://github.com/bitwalker/distillery/) 2
         -   [Configuration Providers](https://hexdocs.pm/distillery/config/runtime.html#config-providers)
