@@ -510,6 +510,8 @@ I have a Lenovo mid-tower virtualization server:
     for companies and developers who don't find a comfortable fit with [[#alternate-deployment-tooling][other
     options]] that make different trade-offs.
 
+    <!--more-->
+
     I've spent most of the last two years helping several companies leverage
     Kubernetes effectively, both as a direct employee on a systems/platform team
     and as a specialized consultant, and I'd like to share some of those
@@ -689,6 +691,8 @@ I have a Lenovo mid-tower virtualization server:
     the installation of Distillery 2 as well as including a deeper philosophical
     and technical explanation of how I structure multi-stage Docker images for
     Elixir/Phoenix applications.
+
+    <!--more-->
 
     Published articles in this series:
 

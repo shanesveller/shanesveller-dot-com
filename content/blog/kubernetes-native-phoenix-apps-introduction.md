@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Introduction"
 author = ["Shane Sveller"]
 date = 2018-10-28T11:00:00-05:00
-lastmod = 2018-10-28T11:36:59-05:00
+lastmod = 2018-10-28T14:17:00-05:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -12,6 +12,8 @@ I'm kicking off a new blog series that focuses on the intersection of Elixir
 and Kubernetes. This is becoming a more and more popular deployment target
 for companies and developers who don't find a comfortable fit with [other
 options](#alternate-deployment-tooling) that make different trade-offs.
+
+<!--more-->
 
 I've spent most of the last two years helping several companies leverage
 Kubernetes effectively, both as a direct employee on a systems/platform team
