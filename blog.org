@@ -552,7 +552,7 @@ I have a Lenovo mid-tower virtualization server:
       learning these from [[https://kubernetes.io/docs/][another reference]]
 
 **** Planned series content
-     - Part 1
+     - [[/blog/2018/10/26/kubernetes-native-phoenix-apps-part-1/][Part 1]]
        - New [[https://phoenixframework.org/][Phoenix]] 1.4 project
        - [[https://github.com/bitwalker/distillery/][Distillery]] 2
          - [[https://hexdocs.pm/distillery/config/runtime.html#config-providers][Configuration Providers]]
