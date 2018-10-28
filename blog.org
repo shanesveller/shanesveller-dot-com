@@ -687,7 +687,7 @@ I have a Lenovo mid-tower virtualization server:
     :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-part-1
     :END:
 
-    As described in the introductory post, this article will briefly describe
+    As described in the introductory post, this article will briefly outline
     the installation of Distillery 2 as well as including a deeper philosophical
     and technical explanation of how I structure multi-stage Docker images for
     Elixir/Phoenix applications.

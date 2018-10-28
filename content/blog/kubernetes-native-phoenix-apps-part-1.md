@@ -2,13 +2,13 @@
 title = "Kubernetes Native Phoenix Apps: Part 1"
 author = ["Shane Sveller"]
 date = 2018-10-28T14:15:00-05:00
-lastmod = 2018-10-28T14:17:24-05:00
+lastmod = 2018-10-28T14:34:23-05:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
 +++
 
-As described in the introductory post, this article will briefly describe
+As described in the introductory post, this article will briefly outline
 the installation of Distillery 2 as well as including a deeper philosophical
 and technical explanation of how I structure multi-stage Docker images for
 Elixir/Phoenix applications.
