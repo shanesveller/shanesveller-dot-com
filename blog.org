@@ -429,7 +429,7 @@ I have a Lenovo mid-tower virtualization server:
      - https://github.com/asdf-vm/asdf/tree/8794210b8e7d87fcead78ae3b7b903cf87dcf0d6#setup
      - https://github.com/asdf-vm/asdf-erlang/issues/48#issuecomment-339137374
 
-*** TODO Optimized Elixir Docker Images :docker:elixir:phoenix:umbrella:
+*** Optimized Elixir Docker Images  :docker:elixir:phoenix:umbrella:noexport:
     :PROPERTIES:
     :EXPORT_AUTHOR: Shane Sveller
     :EXPORT_DATE: 2018-10-21
@@ -497,7 +497,503 @@ I have a Lenovo mid-tower virtualization server:
 
     <!--more-->
 
+*** DONE Kubernetes Native Phoenix Apps: Introduction :docker:elixir:phoenix:umbrella:kubernetes:
+    CLOSED: [2018-10-28 Sun 11:00]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-28
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-introduction
+    :END:
 
+    I'm kicking off a new blog series that focuses on the intersection of Elixir
+    and Kubernetes. This is becoming a more and more popular deployment target
+    for companies and developers who don't find a comfortable fit with [[#alternate-deployment-tooling][other
+    options]] that make different trade-offs.
+
+    I've spent most of the last two years helping several companies leverage
+    Kubernetes effectively, both as a direct employee on a systems/platform team
+    and as a specialized consultant, and I'd like to share some of those
+    learnings with the community that is nearest and dearest to my heart:
+    Elixir. These companies varied in size and scope, but their chief
+    commonality is that Kubernetes has proved to be an accelerant for their
+    business goals.
+
+    In particular, I consider Kubernetes an excellent target for deployment when
+    dealing with teams that are shipping polygot solutions, teams who are
+    managing multiple products without a dedicated team for each product,
+    organizations looking to achieve better infrastructure density or
+    standardization, or organizations who highly value infrastructure agility.
+
+    Elixir's deployment story has come a long way since I started working with
+    the language in 2015, but depending on your needs, there is still a *lot* of
+    information to assimilate, and a lot of practices to synthesize into a
+    unified, effective solution.
+
+**** Prerequisites
+
+    Infrastructure and deployment practices are not and can not be a
+    one-size-fits-all problem space, so I'm going to focus on presenting an
+    opinionated, focused, and polished approach that makes a few simplifying
+    assumptions:
+
+    - You have at least one Elixir app that leverages Phoenix for a web
+      interface
+    - You are already using, prepared to upgrade to, or are otherwise capable of
+      using Distillery 2.x in your project
+    - You are deploying your product on one of the infrastructure-as-a-service
+      platforms that are suitable for use with production-grade Kubernetes,
+      such as:
+      - AWS via [[https://github.com/kubernetes/kops][Kops]]/[[https://aws.amazon.com/eks/][EKS]]
+      - GCP via [[https://cloud.google.com/kubernetes-engine/][GKE]]
+      - Azure via [[https://docs.microsoft.com/en-us/azure/aks/][AKS]]
+    - Importantly, you *already have* a viable Kubernetes cluster in place with
+      ~kubectl~ access ready to go
+    - You are already comfortable with Kubernetes primitives or are capable of
+      learning these from [[https://kubernetes.io/docs/][another reference]]
+
+**** Planned series content
+     - Part 1
+       - New [[https://phoenixframework.org/][Phoenix]] 1.4 project
+       - [[https://github.com/bitwalker/distillery/][Distillery]] 2
+         - [[https://hexdocs.pm/distillery/config/runtime.html#config-providers][Configuration Providers]]
+         - [[https://hexdocs.pm/distillery/guides/running_migrations.html][Database Migrations/Seeds]]
+       - [[https://docs.docker.com/develop/develop-images/multistage-build/][Multi-stage Docker build]]
+         - Dockerfile
+         - Dockerignore
+         - [[https://elixir-lang.org/getting-started/mix-otp/dependencies-and-umbrella-projects.html#umbrella-projects][Umbrella]] support
+         - [[https://webpack.js.org/][Webpack]] assets
+         - Caching image stages
+     - Part 2
+       - Running your application via [[https://docs.docker.com/compose/][Docker Compose]]
+       - Running migrations/seeds via Docker Compose
+       - Configuring secrets and runtime data via volumes
+     - Part 3
+       - Building your image on [[https://github.com/kubernetes/minikube][Minikube]]
+       - [[https://github.com/helm/helm][Helm]] introduction
+         - Deploy [[https://www.postgresql.org/][Postgres]] via [[https://github.com/helm/charts/tree/master/stable/postgresql][community Helm chart]]
+       - Deploy your application via YAML
+         - Configuring runtime data via ConfigMap
+         - Configuring secrets vai Secret
+         - Expose your application via Service
+       - Running migrations/seeds via ~kubectl exec~
+       - Running migrations/seeds via Job
+     - Part 4
+       - Deploying your application via Helm
+         - [[https://github.com/futuresimple/helm-secrets][Helm-secrets]]
+         - [[https://github.com/roboll/helmfile][Helmfile]]
+       - Seeds during Helm install
+       - Migrations during Helm upgrades
+     - Part 5
+       - Expose your application via Ingress
+       - Managing DNS with [[https://github.com/kubernetes-incubator/external-dns][external-dns]]
+       - Managing HTTPS with [[https://github.com/jetstack/cert-manager/][cert-manager]]
+     - Part 6
+       - Clustering your application with [[https://github.com/bitwalker/libcluster][libcluster]]
+       - DNS- vs RBAC-based Kubernetes integration
+       - Phoenix PubSub / Channels / Presence
+       - ETS/Registry implications
+     - Part 7
+       - Local HTTPS via ~mix phx.gen.cert~ or [[https://github.com/FiloSottile/mkcert][mkcert]]
+       - HTTP2 with [[https://ninenines.eu/docs/en/cowboy/2.5/guide/][Cowboy 2]]
+       - Exposing HTTP2 via Service
+       - HTTP2 Ingress ramifications
+     - Part 8
+       - HTTP2 with [[https://istio.io/][Istio]]
+     - Part 9
+       - Metrics with [[https://prometheus.io/][Prometheus]] and [[https://github.com/coreos/prometheus-operator][Prometheus Operator]]
+       - Visualization with [[https://grafana.com/][Grafana]] and [[https://github.com/weaveworks/grafanalib][Grafanalib]]/[[https://github.com/grafana/grafonnet-lib][Grafonnet]]
+       - Quality of service with Resource Request/Limits
+       - Cluster-wide resource constraints with LimitRange
+     - Part 10
+       - Remote Observer via [[https://www.telepresence.io/][Telepresence]]
+
+**** Off-topic Subjects
+     This series will avoid deep coverage of a few topics that are worthy
+     of their own separate coverage and will distract from the ideas being
+     presented here:
+
+     - CI/CD practices or tooling recommendations - I've worked with almost all
+       of them by now other than GoCD, and I've assumed the position that these
+       needs are heavily informed by your organizational structure and tolerance
+       for certain constraints or limitations, and aren't able to be addressed
+       in a generalized way
+     - Automating the actual deployment workflows from SCM - similar to the
+       above, it's hard to cover this adequately in a generic way
+     - Kubernetes-as-development-environment tools - Tools like [[https://github.com/azure/draft][Draft]], [[https://github.com/GoogleContainerTools/skaffold/][Skaffold]],
+       Knative, along with some of the other features of Telepresence, don't
+       currently offer a compelling use-case for me. I've attempted several
+       iterations where I've tried to evaluate them in earnest, and I
+       unfortunately found them to be feature-incomplete, unreliable, hard to
+       triage without RTFS, and high-friction to use.
+
+     Additionally, I will avoid covering subjects that I consider to be
+     out-of-scope:
+     - Elixir/Phoenix fundamentals
+     - Elixir/Phoenix development environment
+     - Kubernetes fundamentals
+     - A direct treatment of the pros/cons of using containers with the BEAM
+     - Individual merits of alternate container schedulers (K8s vs GKE/AKS/EKS
+       vs OpenShift vs ECS vs Mesos vs Nomad)
+     - Hot code upgrades in the context of Docker/Kubernetes
+
+**** Other Caveats
+     This series will avoid documenting certain practices that I strongly
+     consider to be development or deployment antipatterns. I'm aware that there
+     are some situations where they are more appropriate, or at very least more
+     expedient under the constraints in play, but these are generally to be
+     avoided if you have the opportunity to choose otherwise.
+
+     - Long-term use of Docker images and long-lived containers as your actual
+       development environment - stick with native development practices for
+       best productivity
+     - Single-stage Docker images which include a full development/compilation
+       toolchain in the final product
+     - Building Docker images *on* your Kubernetes cluster by mounting the
+       Docker daemon's socket into a container (with a partial exception for the
+       Minikube phase)
+     - Raw YAML templates as a long-term solution for managing Kubernetes
+       workloads
+     - Tools such as Kompose which translate directly from ~docker-compose.yml~
+       to Kubernetes resource manifests
+     - Namespaces and RBAC as your sole boundary between logical environments
+       (such as dev/staging/production as implied by ~MIX_ENV~ conventions)
+
+**** Alternate Deployment Tooling
+     :PROPERTIES:
+     :CUSTOM_ID: alternate-deployment-tooling
+     :END:
+
+   - Platform-as-a-service offerings
+     - [[https://github.com/dokku/dokku][Dokku]]
+     - [[https://github.com/flynn/flynn][Flynn]]
+     - [[https://gigalixir.com/][Gigalixir]]
+     - [[https://github.com/nanobox-io/nanobox][Nanobox]]
+     - [[https://www.heroku.com/][Heroku]]
+   - Imperative tools which espouse a Capistrano-like workflow
+     - [[https://github.com/annkissam/akd][akd]]
+     - [[https://github.com/labzero/bootleg][bootleg]]
+     - [[https://github.com/edeliver/edeliver][edeliver]]
+     - [[https://github.com/hashrocket/gatling][gatling]] (possibly unmaintained)
+   - Specialized configuration management
+     - [[https://github.com/HashNuke/ansible-elixir-stack][ansible-elixir-stack]]
+
+*** TODO Kubernetes Native Phoenix Apps: Part 1 :docker:elixir:phoenix:umbrella:kubernetes:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-26
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-part-1
+    :END:
+
+**** Appendix                                                      :noexport:
+***** Shell Transcript                                             :noexport:
+      #+BEGIN_SRC shell
+        # Prerequisites
+        ## PostgreSQL
+        brew install postgresql
+        brew services start postgresql
+        ## Elixir
+        asdf update
+        asdf plugin-update erlang
+        asdf plugin-update elixir
+        asdf install erlang 21.1.1
+        asdf global erlang 21.1.1
+        asdf install elixir 1.7.3-otp-21
+        asdf global elixir 1.7.3-otp-21
+
+        ## Phoenix
+        mix archive.install hex phx_new 1.4.0-rc.2
+
+        # Create Project
+        mix phx.new kube_native --binary-id --umbrella
+        cd kube_native_umbrella
+        git init
+        git add .
+        git commit -am 'Initial commit'
+        ## Edit config/dev.exs, delete username/password/hostname
+
+        # Release
+        mix hex.info distillery
+        ## Edit root mix.exs
+        mix do deps.get, deps.compile
+        mix release.init
+
+        # Dockerize
+        sed -e 's/^\///' .gitignore > .dockerignore
+        touch Dockerfile
+        docker-show-context
+      #+END_SRC
+
+      #+BEGIN_SRC gitignore
+        # .dockerignore content
+
+        # Developer tools
+        .git
+        .tool-versions
+
+        # Umbrella
+        apps/**/config/*.secret.exs
+        apps/**/node_modules
+        apps/**/priv/cert
+        apps/**/priv/static
+
+        # Docker
+        .dockerignore
+        Dockerfile
+        docker-compose.yml
+      #+END_SRC
+
+      #+BEGIN_SRC shell
+        # Capture base image
+        docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+      #+END_SRC
+
+      #+BEGIN_SRC dockerfile
+        FROM elixir:1.7.3-alpine as builder
+        RUN apk add --no-cache \
+            gcc \
+            git \
+            make \
+            musl-dev
+        RUN mix local.rebar --force && \
+            mix local.hex --force
+        WORKDIR /app
+        ENV MIX_ENV=prod
+        # docker build -t kube_native:builder --target=builder .
+
+        FROM builder as deps
+        COPY mix.* /app/
+        # Explicit list of umbrella apps
+        RUN mkdir -p \
+            /app/apps/kube_native \
+            /app/apps/kube_native_web
+        COPY apps/kube_native/mix.* /app/apps/kube_native/
+        COPY apps/kube_native_web/mix.* /app/apps/kube_native_web/
+        RUN mix do deps.get --only prod, deps.compile
+        # docker build -t kube_native:deps --target=deps .
+
+        FROM node:10.12-alpine as frontend
+        WORKDIR /app
+        COPY apps/kube_native_web/assets/package*.json /app/
+        COPY --from=deps /app/deps/phoenix /deps/phoenix
+        COPY --from=deps /app/deps/phoenix_html /deps/phoenix_html
+        RUN npm ci
+        COPY apps/kube_native_web/assets /app
+        RUN npm run deploy
+        RUN ls -al
+        # docker build -t kube_native:frontend --target=frontend .
+
+        FROM deps as releaser
+        COPY . /app/
+        COPY --from=frontend /priv/static apps/kube_native_web/priv/static
+        RUN mix do phx.digest, release --env=prod --no-tar
+        # docker build -t kube_native:releaser --target=releaser .
+
+        # docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+        FROM alpine:3.8 as runner
+        RUN apk add -U bash libssl1.0
+        WORKDIR /app
+        COPY --from=releaser /app/_build/prod/rel/kube_native_umbrella /app
+        EXPOSE 4000
+        ENTRYPOINT ["/app/bin/kube_native"]
+        CMD ["foreground"]
+      #+END_SRC
+
+      #+BEGIN_SRC elixir
+        # Config providers
+        # https://hexdocs.pm/distillery/2.0.10/config/runtime.html#config-providers
+        # https://hexdocs.pm/distillery/2.0.10/config/runtime.html#mix-config-provider
+
+        # rel/config.exs
+        environment :prod do
+          set include_erts: true
+          set include_src: false
+          set cookie: :hunter2
+
+          # highlight below
+          set config_providers: [
+            {Mix.Releases.Config.Providers.Elixir, ["${RELEASE_ROOT_DIR}/etc/config.exs"]}
+          ]
+          set overlays: [
+            {:copy, "rel/config/config.exs", "etc/config.exs"}
+          ]
+        end
+
+        release :kube_native_umbrella do
+          set version: current_version(:kube_native) # highlight
+          set applications: [
+            :runtime_tools,
+            kube_native: :permanent,
+            kube_native_web: :permanent
+          ]
+        end
+
+        # rel/config/config.exs
+        config :kube_native, KubeNative.Repo,
+          url: System.get_env("DATABASE_URL")
+
+        # apps/kube_native_web/config/prod.exs
+        config :phoenix, :serve_endpoints, true
+      #+END_SRC
+
+      Migrations:
+      #+BEGIN_SRC elixir
+        defmodule KubeNative.ReleaseTasks do
+          @start_apps [
+            :crypto,
+            :ssl,
+            :postgrex,
+            :ecto,
+            :telemetry
+          ]
+
+          @repos Application.get_env(:kube_native, :ecto_repos, [])
+
+          def migrate(_argv) do
+            start_services()
+
+            run_migrations()
+
+            stop_services()
+          end
+
+          def seed(_argv) do
+            start_services()
+
+            run_migrations()
+
+            run_seeds()
+
+            stop_services()
+          end
+
+          defp start_services do
+            IO.puts("Starting dependencies..")
+            # Start apps necessary for executing migrations
+            Enum.each(@start_apps, &Application.ensure_all_started/1)
+
+            # Start the Repo(s) for app
+            IO.puts("Starting repos..")
+            Enum.each(@repos, & &1.start_link(pool_size: 2))
+          end
+
+          defp stop_services do
+            IO.puts("Success!")
+            :init.stop()
+          end
+
+          defp run_migrations do
+            Enum.each(@repos, &run_migrations_for/1)
+          end
+
+          defp run_migrations_for(repo) do
+            app = Keyword.get(repo.config, :otp_app)
+            IO.puts("Running migrations for #{app}")
+            migrations_path = priv_path_for(repo, "migrations")
+            Ecto.Migrator.run(repo, migrations_path, :up, all: true)
+          end
+
+          defp run_seeds do
+            Enum.each(@repos, &run_seeds_for/1)
+          end
+
+          defp run_seeds_for(repo) do
+            # Run the seed script if it exists
+            seed_script = priv_path_for(repo, "seeds.exs")
+
+            if File.exists?(seed_script) do
+              IO.puts("Running seed script..")
+              Code.eval_file(seed_script)
+            end
+          end
+
+          defp priv_path_for(repo, filename) do
+            app = Keyword.get(repo.config, :otp_app)
+
+            repo_underscore =
+              repo
+              |> Module.split()
+              |> List.last()
+              |> Macro.underscore()
+
+            priv_dir = "#{:code.priv_dir(app)}"
+
+            Path.join([priv_dir, repo_underscore, filename])
+          end
+        end
+      #+END_SRC
+      #+BEGIN_SRC shell
+        mix run -e "KubeNative.ReleaseTasks.migrate([])"
+        mix run -e "KubeNative.ReleaseTasks.seed([])"
+      #+END_SRC
+      #+BEGIN_SRC shell
+        #!/bin/sh
+
+        release_ctl eval --mfa "KubeNative.ReleaseTasks.migrate/1" --argv -- "$@"
+      #+END_SRC
+      #+BEGIN_SRC elixir
+        # rel/config.exs
+        release :kube_native do
+          # ...
+          set commands: [
+            migrate: "rel/commands/migrate.sh",
+            seed: "rel/commands/seed.sh",
+          ]
+        end
+      #+END_SRC
+      #+BEGIN_SRC shell
+        docker-compose run --rm kube_native migrate
+      #+END_SRC
+      #+BEGIN_SRC shell
+        cd apps/kube_native_web
+        mix phx.gen.cert
+      #+END_SRC
+      #+BEGIN_SRC elixir
+        # apps/kube_native_web/config/dev.exs
+        # ...
+        config :kube_native_web, KubeNativeWeb.Endpoint,
+          http: [port: 4000],
+          https: [
+            port: 4001,
+            cipher_suite: :strong,
+            certfile: "priv/cert/selfsigned.pem",
+            keyfile: "priv/cert/selfsigned_key.pem"
+          ],
+        # ...
+      #+END_SRC
+      #+BEGIN_SRC yaml
+        steps:
+          - name: 'gcr.io/cloud-builders/docker'
+            args: ['build', '-t', 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA', '.']
+          - name: 'gcr.io/cloud-builders/docker'
+            args: ['tag', 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA', 'gcr.io/$PROJECT_ID/kube_native:latest']
+        images:
+          - 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA'
+          - 'gcr.io/$PROJECT_ID/kube_native:latest'
+      #+END_SRC
+      #+BEGIN_SRC gitignore
+
+      #+END_SRC
+      #+BEGIN_SRC shell
+        # https://cloud.google.com/cloud-build/docs/build-debug-locally
+        cloud-build-local -config=cloudbuild.yaml -substitutions=COMMIT_SHA=(hub rev-parse HEAD) --dryrun=false .
+        gcloud builds submit --config=cloudbuild.yaml --substitutions=COMMIT_SHA=(hub rev-parse HEAD) .
+      #+END_SRC
+      #+BEGIN_SRC shell
+        mkdir -p .deployment/chart
+        cd .deployment/chart
+        helm create kube_native
+      #+END_SRC
+      #+BEGIN_SRC shell
+        helm init --upgrade --skip-refresh --history-max 10 --service-account tiller --wait --replicas=2 -i gcr.io/kubernetes-helm/tiller:v2.11.0
+        helm install stable/postgresql --name kube-native-postgresql --set 'imageTag=10.5-alpine,postgresDatabase=kube-native,postgresPassword=kube-native,postgresUser=kube-native'
+      #+END_SRC
+      https://hexdocs.pm/libcluster/Cluster.Strategy.Gossip.html#content
+      #+BEGIN_SRC elixir
+        use Mix.Config
+
+        config :libcluster,
+          debug: true
+      #+END_SRC
 ** Emacs                                                             :@emacs:
 *** DONE Blogging with org-mode and ox-hugo      :hugo:netlify:org:spacemacs:
     CLOSED: [2018-02-13 Tue 12:30]
@@ -795,6 +1291,8 @@ I have a Lenovo mid-tower virtualization server:
        #+END_SRC
 
 ****** Full Sample
+       :PROPERTIES:
+       :END:
 
       #+BEGIN_SRC org -n 1 :hl_lines 3,4,7,9,10,21,24-29,35-39,44,51-56
         ,#+STARTUP: content
