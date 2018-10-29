@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Introduction"
 author = ["Shane Sveller"]
 date = 2018-10-28T11:00:00-05:00
-lastmod = 2018-10-28T14:21:47-05:00
+lastmod = 2018-11-13T11:03:26-06:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -71,7 +71,7 @@ assumptions:
         -   [Umbrella](https://elixir-lang.org/getting-started/mix-otp/dependencies-and-umbrella-projects.html#umbrella-projects) support
         -   [Webpack](https://webpack.js.org/) assets
         -   Caching image stages
--   Part 2
+-   [Part 2](/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/)
     -   Running your application via [Docker Compose](https://docs.docker.com/compose/)
     -   Running migrations/seeds via Docker Compose
     -   Configuring secrets and runtime data via volumes
