@@ -712,6 +712,9 @@ I have a Lenovo mid-tower virtualization server:
      sparse, other than to demonstrate certain common scenarios, such as native
      dependencies of well-known Hex packages.
 
+     We'll start from the initial commit ~4b2e2cb~ or the tag ~part-1-start~ if
+     you're following along from the [[https://github.com/shanesveller/kube-native-phoenix/tree/part-1-start][companion repository]].
+
 **** Installing Distillery 2
 
      Generally speaking, we'll closely follow the existing Distillery 2
@@ -735,7 +738,7 @@ I have a Lenovo mid-tower virtualization server:
      successfully run ~mix release~ and get a working application.
 
      For an example of what this looks like in our live application, please see
-     the git tree at commits ~4b2e2cb..aa6c54e~ [[https://github.com/shanesveller/kube-native-phoenix/compare/4b2e2cb...aa6c54e][here]].
+     the git tree at commits ~4b2e2cb..aa6c54e~ [[https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-distillery][here]].
 
 **** Creating our first Docker image
 
@@ -1123,8 +1126,9 @@ I have a Lenovo mid-tower virtualization server:
 
 **** Code Checkpoint
 
-     The work presented in this post is reflected in git commit d239377
-     available [[https://github.com/shanesveller/kube-native-phoenix/tree/d239377bfbc910c455b2498d2e3bdfbe6642e857][here]]. You can compare these changes to the initial commit [[https://github.com/shanesveller/kube-native-phoenix/compare/4b2e2cb...d239377][here]].
+     The work presented in this post is reflected in git commit ~d239377~ or tag
+     ~part-1-end~ available [[https://github.com/shanesveller/kube-native-phoenix/tree/part-1-end][here]]. You can compare these changes to the initial
+     commit [[https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-end][here]].
 
 **** Appendix
 

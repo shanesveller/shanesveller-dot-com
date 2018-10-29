@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 1"
 author = ["Shane Sveller"]
 date = 2018-10-28T14:15:00-05:00
-lastmod = 2018-10-28T14:34:23-05:00
+lastmod = 2018-10-29T09:28:32-05:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -34,6 +34,9 @@ Its actual content and functionality will intentionally be kept very
 sparse, other than to demonstrate certain common scenarios, such as native
 dependencies of well-known Hex packages.
 
+We'll start from the initial commit `4b2e2cb` or the tag `part-1-start` if
+you're following along from the [companion repository](https://github.com/shanesveller/kube-native-phoenix/tree/part-1-start).
+
 
 ## Installing Distillery 2 {#installing-distillery-2}
 
@@ -58,7 +61,7 @@ installation of Distillery within your application, and that you can
 successfully run `mix release` and get a working application.
 
 For an example of what this looks like in our live application, please see
-the git tree at commits `4b2e2cb..aa6c54e` [here](https://github.com/shanesveller/kube-native-phoenix/compare/4b2e2cb...aa6c54e).
+the git tree at commits `4b2e2cb..aa6c54e` [here](https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-distillery).
 
 
 ## Creating our first Docker image {#creating-our-first-docker-image}
@@ -457,8 +460,9 @@ technique.
 
 ## Code Checkpoint {#code-checkpoint}
 
-The work presented in this post is reflected in git commit d239377
-available [here](https://github.com/shanesveller/kube-native-phoenix/tree/d239377bfbc910c455b2498d2e3bdfbe6642e857). You can compare these changes to the initial commit [here](https://github.com/shanesveller/kube-native-phoenix/compare/4b2e2cb...d239377).
+The work presented in this post is reflected in git commit `d239377` or tag
+`part-1-end` available [here](https://github.com/shanesveller/kube-native-phoenix/tree/part-1-end). You can compare these changes to the initial
+commit [here](https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-end).
 
 
 ## Appendix {#appendix}
