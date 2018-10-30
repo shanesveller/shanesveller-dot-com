@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 2"
 author = ["Shane Sveller"]
 date = 2018-11-13T09:00:00-06:00
-lastmod = 2018-11-12T18:17:47-06:00
+lastmod = 2018-11-16T11:22:00-06:00
 tags = ["docker", "docker-compose", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -30,6 +30,7 @@ Published articles in this series:
 -   [Introduction](/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/)
 -   [Part 1](/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/)
 -   Part 2 (this post)
+-   [Part 3](/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/)
 
 
 ## Runtime Configuration {#runtime-configuration}
@@ -518,7 +519,7 @@ available [here](https://github.com/shanesveller/kube-native-phoenix/tree/part-2
 | Docker         | 18.06.1-ce |
 | Docker-Compose | 1.22.0     |
 | Ecto           | 3.0.1      |
-| Elixir         | 1.7.3      |
+| Elixir         | 1.7.4      |
 | Erlang         | 21.1.1     |
 | Phoenix        | 1.4.0      |
 | PostgreSQL     | 10.5       |

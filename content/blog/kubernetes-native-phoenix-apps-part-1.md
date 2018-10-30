@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 1"
 author = ["Shane Sveller"]
 date = 2018-10-28T14:15:00-05:00
-lastmod = 2018-11-13T11:04:35-06:00
+lastmod = 2018-11-16T11:21:52-06:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -20,6 +20,7 @@ Published articles in this series:
 -   [Introduction](/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/)
 -   Part 1 (this post)
 -   [Part 2](/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/)
+-   [Part 3](/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/)
 
 
 ## Our Application {#our-application}

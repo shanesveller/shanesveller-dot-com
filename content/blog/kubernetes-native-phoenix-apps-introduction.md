@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Introduction"
 author = ["Shane Sveller"]
 date = 2018-10-28T11:00:00-05:00
-lastmod = 2018-11-13T11:03:26-06:00
+lastmod = 2018-11-16T11:22:14-06:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -75,7 +75,7 @@ assumptions:
     -   Running your application via [Docker Compose](https://docs.docker.com/compose/)
     -   Running migrations/seeds via Docker Compose
     -   Configuring secrets and runtime data via volumes
--   Part 3
+-   [Part 3](/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/)
     -   Building your image on [Minikube](https://github.com/kubernetes/minikube)
     -   [Helm](https://github.com/helm/helm) introduction
         -   Deploy [Postgres](https://www.postgresql.org/) via [community Helm chart](https://github.com/helm/charts/tree/master/stable/postgresql)
