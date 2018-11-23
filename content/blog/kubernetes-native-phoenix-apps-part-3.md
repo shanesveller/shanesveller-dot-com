@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 3"
 author = ["Shane Sveller"]
 date = 2018-11-16T12:25:00-06:00
-lastmod = 2018-11-16T13:40:14-06:00
+lastmod = 2018-11-23T12:31:48-06:00
 tags = ["docker", "elixir", "helm", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -287,12 +287,12 @@ metadata:
   name: kube-native-env
   labels:
     app: kube-native
-    data:
-      HOSTNAME: localhost
-      # cannot be a YAML number, thus the quotes
-      PORT: "4000"
-      # cannot be a YAML boolean true, thus the quotes
-      REPLACE_OS_VARS: "true"
+data:
+  HOSTNAME: localhost
+  # cannot be a YAML number, thus the quotes
+  PORT: "4000"
+  # cannot be a YAML boolean true, thus the quotes
+  REPLACE_OS_VARS: "true"
 {{< /highlight >}}
 
 We instantiate this ConfigMap with `kubectl apply`:

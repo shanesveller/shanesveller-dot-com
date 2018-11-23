@@ -2240,12 +2240,12 @@ I have a Lenovo mid-tower virtualization server:
           name: kube-native-env
           labels:
             app: kube-native
-            data:
-              HOSTNAME: localhost
-              # cannot be a YAML number, thus the quotes
-              PORT: "4000"
-              # cannot be a YAML boolean true, thus the quotes
-              REPLACE_OS_VARS: "true"
+        data:
+          HOSTNAME: localhost
+          # cannot be a YAML number, thus the quotes
+          PORT: "4000"
+          # cannot be a YAML boolean true, thus the quotes
+          REPLACE_OS_VARS: "true"
       #+END_SRC
 
       We instantiate this ConfigMap with ~kubectl apply~:
