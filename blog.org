@@ -1522,7 +1522,7 @@ I have a Lenovo mid-tower virtualization server:
       :CUSTOM_ID: other-configuration-and-secrets
       :END:
 
-      Here's one of the first instances where I'm going to genuinely cut come
+      Here's one of the first instances where I'm going to genuinely cut some
       corners and gloss over a little bit, because there's not as much
       educational value in the Docker-Compose way of doing this. Some of it won't
       survive intact into the Kubernetes-based implementation. Additionally,

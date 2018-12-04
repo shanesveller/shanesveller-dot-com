@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 2"
 author = ["Shane Sveller"]
 date = 2018-11-13T09:00:00-06:00
-lastmod = 2018-11-16T11:22:00-06:00
+lastmod = 2018-12-04T09:36:45-06:00
 tags = ["docker", "docker-compose", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -69,7 +69,7 @@ this topic today than we were in 2017 when Michał's post was written.
 
 ### Other Configuration and Secrets {#other-configuration-and-secrets}
 
-Here's one of the first instances where I'm going to genuinely cut come
+Here's one of the first instances where I'm going to genuinely cut some
 corners and gloss over a little bit, because there's not as much
 educational value in the Docker-Compose way of doing this. Some of it won't
 survive intact into the Kubernetes-based implementation. Additionally,
