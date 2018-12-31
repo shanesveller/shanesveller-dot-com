@@ -11,7 +11,6 @@
   :EXPORT_HUGO_SECTION: pages
   :VISIBILITY: children
   :END:
-
 ** DONE Hardware                                                  :@hardware:
    CLOSED: [2018-10-21 Sun 08:30]
    :PROPERTIES:
@@ -2871,7 +2870,6 @@ I have a Lenovo mid-tower virtualization server:
 
       Fish users like myself can be smug about this behavior being built in.
 
-
 ** Emacs                                                             :@emacs:
 *** DONE Blogging with org-mode and ox-hugo      :hugo:netlify:org:spacemacs:
     CLOSED: [2018-02-13 Tue 12:30]
@@ -3612,9 +3610,7 @@ tolerate the fan noise in an apartment, so that's still in the box.
 I have a UBNT 24-port 250W POE switch for my main hub, as well as a UBNT 8-port
 switch with POE passthrough for my TV stand so I can hard-wire my game consoles and
 media devices.
-
 * Post Ideas                                                       :noexport:
-
 ** Elixir                                                           :@elixir:
    :PROPERTIES:
    :VISIBILITY: children
@@ -3646,7 +3642,10 @@ media devices.
 **** Getting Started
 
 **** References
-
+*** TODO Testing Phoenix applications with GitLab CI on Kubernetes :ci:gitlab:kubernetes:phoenix:testing:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: testing-phoenix-applications-with-gitlab-ci-on-kubernetes
+    :END:
 ** Emacs                                                             :@emacs:
    :PROPERTIES:
    :VISIBILITY: children
@@ -3701,7 +3700,16 @@ media devices.
     :EXPORT_DATE: 2017-12-26
     :EXPORT_FILE_NAME: presentations-with-org-mode-and-org-reveal
     :END:
-
+*** TODO Literate Emacs configuration with org-mode                     :org:
+    :PROPERTIES:
+    :EXPORT_DATE:
+    :EXPORT_FILE_NAME: literate-emacs-configuration-with-org-mode
+    :END:
+*** TODO Emacs package management with straight.el
+    :PROPERTIES:
+    :EXPORT_DATE:
+    :EXPORT_FILE_NAME: emacs-package-management-with-straight-el
+    :END:
 ** Kubernetes                                                   :@kubernetes:
    :PROPERTIES:
    :VISIBILITY: children
@@ -3785,6 +3793,23 @@ media devices.
  | Prometheus                |       1.8.2 |
 
 *** TODO Building and testing software with Jenkins on Kubernetes
+*** TODO Managing Minikube with asdf
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-minikube-with-asdf
+    :END:
+** Nix
+*** TODO Managing OSX dotfiles with home-manager
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-osx-dotfiles-with-home-manager
+    :END:
+*** TODO Packaging versioned Golang binaries with Nix
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: packaging-versioned-golang-binaries-with-nix
+    :END:
+*** TODO Perfect development environments with shell.nix and direnv
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: perfect-development-environemnts-with-shell-nix-and-direnv
+    :END:
 ** Shell Programming                                                :@shells:
    :PROPERTIES:
    :VISIBILITY: children
