@@ -3851,5 +3851,5 @@ media devices.
 * Footnotes
 * COMMENT Local Variables                                                   :ARCHIVE:
   # Local Variables:
-  # org-hugo-auto-export-on-save: t
+  # eval: (org-hugo-auto-export-mode 1)
   # End:
