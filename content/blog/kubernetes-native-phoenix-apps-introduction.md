@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Introduction"
 author = ["Shane Sveller"]
 date = 2018-10-28T11:00:00-05:00
-lastmod = 2018-11-16T11:22:14-06:00
+lastmod = 2019-10-31T10:44:49-05:00
 tags = ["docker", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -10,10 +10,15 @@ draft = false
 
 I'm kicking off a new blog series that focuses on the intersection of Elixir
 and Kubernetes. This is becoming a more and more popular deployment target
-for companies and developers who don't find a comfortable fit with [other
-options](#alternate-deployment-tooling) that make different trade-offs.
+for companies and developers who don't find a comfortable fit with
+[other options](#alternate-deployment-tooling) that make different
+trade-offs.
 
 <!--more-->
+
+> <strong>2019-10-31: Please note that due to multiple personal factors, this
+>  blog series has been discontinued without being completed. You can visit
+>  [this post](/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/) for a slightly longer note about this.</strong>
 
 I've spent most of the last two years helping several companies leverage
 Kubernetes effectively, both as a direct employee on a systems/platform team
@@ -85,34 +90,34 @@ assumptions:
         -   Expose your application via Service
     -   Running migrations/seeds via `kubectl exec`
     -   Running migrations/seeds via Job
--   Part 4
+-   ~~Part 4~~
     -   Deploying your application via Helm
         -   [Helm-secrets](https://github.com/futuresimple/helm-secrets)
         -   [Helmfile](https://github.com/roboll/helmfile)
     -   Seeds during Helm install
     -   Migrations during Helm upgrades
--   Part 5
+-   ~~Part 5~~
     -   Expose your application via Ingress
     -   Managing DNS with [external-dns](https://github.com/kubernetes-incubator/external-dns)
     -   Managing HTTPS with [cert-manager](https://github.com/jetstack/cert-manager/)
--   Part 6
+-   ~~Part 6~~
     -   Clustering your application with [libcluster](https://github.com/bitwalker/libcluster)
     -   DNS- vs RBAC-based Kubernetes integration
     -   Phoenix PubSub / Channels / Presence
     -   ETS/Registry implications
--   Part 7
+-   ~~Part 7~~
     -   Local HTTPS via `mix phx.gen.cert` or [mkcert](https://github.com/FiloSottile/mkcert)
     -   HTTP2 with [Cowboy 2](https://ninenines.eu/docs/en/cowboy/2.5/guide/)
     -   Exposing HTTP2 via Service
     -   HTTP2 Ingress ramifications
--   Part 8
+-   ~~Part 8~~
     -   HTTP2 with [Istio](https://istio.io/)
--   Part 9
+-   ~~Part 9~~
     -   Metrics with [Prometheus](https://prometheus.io/) and [Prometheus Operator](https://github.com/coreos/prometheus-operator)
     -   Visualization with [Grafana](https://grafana.com/) and [Grafanalib](https://github.com/weaveworks/grafanalib)/[Grafonnet](https://github.com/grafana/grafonnet-lib)
     -   Quality of service with Resource Request/Limits
     -   Cluster-wide resource constraints with LimitRange
--   Part 10
+-   ~~Part 10~~
     -   Remote Observer via [Telepresence](https://www.telepresence.io/)
 
 

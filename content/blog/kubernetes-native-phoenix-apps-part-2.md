@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 2"
 author = ["Shane Sveller"]
 date = 2018-11-13T09:00:00-06:00
-lastmod = 2018-12-04T09:36:45-06:00
+lastmod = 2019-10-31T10:41:59-05:00
 tags = ["docker", "docker-compose", "elixir", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -15,6 +15,10 @@ and is more generally applicable in open source projects where we can't
 fully assume Kubernetes as a target.
 
 <!--more-->
+
+> <strong>2019-10-31: Please note that due to multiple personal factors, this
+>  blog series has been discontinued without being completed. You can visit
+>  [this post](/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/) for a slightly longer note about this.</strong>
 
 That said, **Docker Compose is in no way an appropriate mechanism for
 production-grade deployments** serving paying customers. This phase of the
@@ -31,6 +35,7 @@ Published articles in this series:
 -   [Part 1](/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/)
 -   Part 2 (this post)
 -   [Part 3](/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/)
+-   [Discontinuation](/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/)
 
 
 ## Runtime Configuration {#runtime-configuration}
@@ -272,7 +277,7 @@ postgres:
 
 ## Running Migrations and Seeds {#running-migrations-and-seeds}
 
-The Distillery documentation has an excellent [guide on running migrations](https://hexdocs.pm/distillery/guides/running%255Fmigrations.html)
+The Distillery documentation has an excellent [guide on running migrations](https://hexdocs.pm/distillery/guides/running%5Fmigrations.html)
 in a release context, where **we don't have access to any Mix tasks** or Mix
 Elixir modules. The included snippet on that page can be adopted close to
 as-is for our efforts.
@@ -374,7 +379,6 @@ defmodule KubeNative.ReleaseTasks do
     Path.join([priv_dir, repo_underscore, filename])
   end
 end
-
 {{< /highlight >}}
 
 I've set the overall module namespace to `KubeNative` to match our
@@ -455,7 +459,6 @@ release :kube_native_umbrella do
     seed: "rel/commands/seed.sh"
   ]
 end
-
 ```
 
 

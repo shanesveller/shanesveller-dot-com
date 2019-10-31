@@ -2,7 +2,7 @@
 title = "Kubernetes Native Phoenix Apps: Part 3"
 author = ["Shane Sveller"]
 date = 2018-11-16T12:25:00-06:00
-lastmod = 2018-11-23T12:31:48-06:00
+lastmod = 2019-10-31T10:42:28-05:00
 tags = ["docker", "elixir", "helm", "phoenix", "umbrella", "kubernetes"]
 categories = ["elixir"]
 draft = false
@@ -14,12 +14,17 @@ running those containers on Kubernetes!
 
 <!--more-->
 
+> <strong>2019-10-31: Please note that due to multiple personal factors, this
+>  blog series has been discontinued without being completed. You can visit
+>  [this post](/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/) for a slightly longer note about this.</strong>
+
 Published articles in this series:
 
 -   [Introduction](/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/)
 -   [Part 1](/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/)
 -   [Part 2](/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/)
 -   Part 3 (this post)
+-   [Discontinuation](/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/)
 
 To test our application in a Kubernetes environment, we have two available
 routes: we can publish our Docker images to a public or private Docker
