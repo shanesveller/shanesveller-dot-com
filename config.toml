@@ -1,48 +1,15 @@
-baseurl      = "https://www.shanesveller.com"
-languageCode = "en-us"
-title        = "Shane Sveller"
-subtitle     = "AWS, Chef, Docker, Elixir, Jenkins, Kubernetes, DevOps"
+# The URL the site will be built for
+base_url = "https://www.shanesveller.com"
 
-canonifyURLs    = true
-disqusShortname = "shanesveller"
-uglyurls        = false
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-pygmentsCodeFences = true
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-[params]
-    author         = "Shane Sveller"
-    authorlinkedin = "https://www.linkedin.com/in/shanesveller"
-    authortwitter  = "shanesveller"
-    copyright      = "&copy; 2017 Shane Sveller"
-    description    = "Senior DevOps Engineer at Raise Marketplace"
-    gaid           = "UA-2369454-1"
-    sidebartitle   = "Shane Sveller"
-    sidebartagline = "AWS, Chef, Docker, Elixir, Jenkins, Kubernetes, DevOps"
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
 
-[permalinks]
-    blog = "/blog/:year/:month/:day/:title"
-
-[[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-
-
-[[menu.social]]
-    pre        = "<i class ='fa fa-github'></i>"
-    url        = "https://github.com/shanesveller"
-    identifier = "github"
-
-[[menu.social]]
-    pre        = "<i class ='fa fa-key'></i>"
-    url        = "https://keybase.io/shanesveller"
-    identifier = "keybase"
-
-[[menu.social]]
-    pre        = "<i class ='fa fa-linkedin'></i>"
-    url        = "https://www.linkedin.com/in/shanesveller"
-    identifier = "linkedin"
-
-[[menu.social]]
-    pre        = "<i class ='fa fa-twitter'></i>"
-    url        = "http://www.twitter.com/shanesveller"
-    identifier = "twitter"
+[extra]
+# Put all your custom variables here
