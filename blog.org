@@ -170,7 +170,7 @@ I have a Lenovo mid-tower virtualization server:
 :EXPORT_AUTHOR: Shane Sveller
 :EXPORT_DATE: 2020-11-29
 :EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :sort_by "date" :template "blog.html" :page_template "blog-page.html"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :sort_by "date" :template "index.html" :page_template "page.html"
 :END:
 ** Elixir                                                           :@elixir:
    :PROPERTIES:
