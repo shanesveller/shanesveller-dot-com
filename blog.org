@@ -161,7 +161,17 @@ I have a Lenovo mid-tower virtualization server:
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: blog
   :END:
-
+** Zola
+:PROPERTIES:
+:VISIBILITY: children
+:END:
+*** Index
+:PROPERTIES:
+:EXPORT_AUTHOR: Shane Sveller
+:EXPORT_DATE: 2020-11-29
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :sort_by "date" :template "blog.html" :page_template "blog-page.html"
+:END:
 ** Elixir                                                           :@elixir:
    :PROPERTIES:
    :VISIBILITY: children
