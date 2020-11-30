@@ -1,0 +1,4099 @@
+#+STARTUP: content
+#+TITLE: Shane Sveller
+#+AUTHOR: Shane Sveller
+#+HUGO_BASE_DIR: .
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Pages
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: pages
+  :VISIBILITY: children
+  :END:
+** DONE Hardware                                                  :@hardware:
+   CLOSED: [2018-10-21 Sun 08:30]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: hardware
+   :END:
+
+My current custom-built gaming PC is as follows:
+
+- Fractal Design R5 Black case
+- Gigabyte GA-Z170X-Gaming GT motherboard
+- Intel Core i7-6700k (Skylake) at 4.0GHz
+- Corsair H110i GT liquid CPU cooler
+- 32GB (4x8GB) Crucial Ballistix Elite DDR4-2666 RAM
+- Asus Strix GeForce GTX 1080ti 11GB
+- Samsung 950 Pro 256GB m.2 solid-state drive
+- Samsung 850 Pro 512GB solid-state drive
+- 2x Western Digital Red 1TB 7200rpm hard drive
+- Windows 10 Pro x64
+- Razer Naga mouse
+- Razer Black Widow Chroma keyboard
+- LG 34UM95-P 34" Ultrawide monitor
+- Logitech Z-2300 speakers
+
+I do all of my personal development work on:
+
+- 2018 15" MacBook Pro
+- 32GB DDR4-2400Mhz
+- 2.9 GHz Intel Core i9 (6 cores)
+- 1TB ApplePCI-E solid-state drive
+- OSX 10.13 High Sierra
+
+I have a file server:
+
+- Synology 1513+
+- Western Digital Red 4TB 7200rpm hard drive (5)
+
+I have an Intel NUC virtualization server:
+
+- Intel Skull Canyon NUC 6i7KYK
+- 32GB (2x16GB) Crucial DDR4-2400
+- 2x Crucial 500GB MX200 M.2 SSD
+
+I have a Lenovo mid-tower virtualization server:
+
+- Lenovo ThinkServer TS140
+- Intel Xeon E3-1225 v3 3.2GHz
+- 32GB (4x8GB) Crucial ECC DDR3-1600
+- Western Digital Red 1TB 7200rpm (3)
+- Intel I340-T4 (PCIE 2.0 x 4 lane, 4x1Gb NIC)
+
+** TODO Software and Services                                     :@software:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: software-and-services
+   :EXPORT_DATE: 2012-08-05
+   :END:
+
+   In no particular order, I endorse the following software, products and
+   services on a personal level:
+
+*** OSX Software
+
+    - [[http://adium.im/][Adium]]
+    - [[http://sprw.me/][Sparrow]] - no new development due to acquisition
+      by Google is heartbreaking
+    - [[http://mac.github.com][GitHub OSX client]]
+    - [[http://reederapp.com/mac/][Reeder]] - Best RSS reader I've ever
+      used, and it has a fantastic [[http://reederapp.com/ipad/][iOS port]]!
+    - [[http://tapbots.com/tweetbot_mac/][TweetBot]] - Originally on
+      [[http://tapbots.com/software/tweetbot/][iOS]], and is far and away my
+      preferred Twitter client on both platforms. Beats the hell out of
+      TweetDeck.
+    - [[http://www.iterm2.com][iTerm 2]]
+    - [[http://tmux.sourceforge.net][tmux]] - not OSX specific, but where I
+      use it most
+
+*** Cross-platform Software
+
+    - [[http://dropbox.com/][Dropbox]] - still one of my favorite ways to
+      keep files available on all my machines, including the iPad. Bonus:
+      integration with
+      [[http://pragprog.com/frequently-asked-questions/ebooks/read-on-desktop-laptop#dropbox][PragProg]]
+      and
+      [[http://shop.oreilly.com/category/customer-service/dropbox.do][O'Reilly]]
+      for near-instant notificaiton of new e-book revisions!
+    - [[http://sublimetext.com/2][SublimeText 2]] - see my 1-month
+      impressions [[/posts/2012-08-05-sublimetext-2/][here]]!
+    - [[http://spotify.com/][Spotify]] - the only streaming music service
+      I'm still consistently glad I subscribe to. Works like a charm on
+      Windows and OSX, and even has a
+      [[http://spotify.com/us/download/previews/][Linux port]]!
+    - [[https://kindle.amazon.com][Amazon Kindle]] - my preferred e-reader
+      platform because it has great dedicated
+      [[https://www.amazon.com/kindle-store-ebooks-newspapers-blogs/b/ref=r_ksl_h_i_gl?node=133141011][hardware
+      readers]], and a reading app for pretty much
+      [[https://www.amazon.com/gp/kindle/kcp/ref=r_kala_h_i_gl][every
+      platform under the sun]].
+
+*** Cloud/Web Apps
+
+    - [[http://heroku.com/][Heroku]]
+    - [[http://mint.com/][Mint]]
+    - [[http://pinboard.in/][Pinboard]] - bookmarking service /ala/
+      Delicious but without all the social trappings - and with great
+      integration in Twitter clients/RSS readers!
+    - [[http://pandora.com/][Pandora]] - I'm less happy with their variety
+      than I wish, but still a great service
+
+*** Screencasts
+
+    - [[http://railscasts.com/][Railscasts]] - Ryan Bates has been
+      consistently putting out focused, concise and informative screencasts
+      on a variety of topics related to Ruby on Rails or programming at
+      large. Congrats on a full year of doing RailsCasts full-time, Ryan!
+      Happy to be a Pro subscriber.
+    - [[https://peepcode.com/][PeepCode]] - May be less prolific than
+      Railscasts, but the screencasts Geoffrey puts out are very meaty and
+      I'm a big fan of the
+      [[https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails][Play
+      by Play series]].
+
+*** Podcasts
+
+    - [[http://ruby5.envylabs.com/][Ruby5]] is a great way to keep abreast
+      of new or upcoming projects from the Ruby ecosystem
+    - [[http://rubyrogues.com/][Ruby Rogues]] isn't nearly so bite-sized but
+      dives deeper into subjects and often has very interesting guests
+
+*** Reference Books
+
+    - [[http://pragprog.com/][Pragmatic Programmers]] keeps publishing
+      awesome books from great authors on exciting topics
+    - [[http://www.manning.com/][Manning]] - I still buy the odd
+      [[http://www.manning.com/about/meap][MEAP book]] on an upcoming
+      technology and have yet to regret it
+    - O'Reilly publishes most new books in an ebook format and sports
+      integration with Dropbox for delivery of updated versions
+
+*** E-Book Vendors
+
+    - [[http://rpg.drivethrustuff.com/][DriveThruRPG]] has awesome sales on
+      tabletop RPG rulebooks now and then - I've got a ton of
+      [[http://www.white-wolf.com/classic-world-of-darkness][old]]/
+      [[http://www.white-wolf.com/new-world-of-darkness][new World of
+      Darkness]] and [[http://shadowrun4.com/][Shadowrun]], some
+      Exalted/Trinity, and a dash of [[http://paizo.com/][Pathfinder]].
+
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: blog
+  :END:
+
+** Elixir                                                           :@elixir:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** DONE Managing Elixir runtime version with ~asdf~     :asdf:elixir:erlang:
+    CLOSED: [2017-12-23 Sat 22:30]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2017-12-23
+    :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-asdf
+    :END:
+
+    An uncomfortably common problem when developing for a particular programming
+    language is needing to deal with compatibility issues across different
+    versions of the language runtime. Most often this means keeping individual
+    projects tied to their then-current version of the language until such time
+    that the project can address any compatibility issues with later language
+    releases. To that end, Ruby developers are probably familiar with
+    one of ~rbenv~, ~chruby~ or ~rvm~, for example. Elixir isn't much different
+    in this regard.
+
+    <!--more-->
+
+    One available project that I find pretty promising is ~asdf~, which is
+    self-described as:
+
+    #+BEGIN_QUOTE
+    [An] extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
+    #+END_QUOTE
+
+    It fulfills some of the same roles that ~rbenv~ and friends do, while
+    supporting multiple languages and even other software tools in a fairly
+    standardized way.
+
+**** Installation
+
+***** Homebrew
+
+     #+BEGIN_SRC sh
+       brew install asdf
+     #+END_SRC
+
+     Follow the instructions in the output, which you can read again with ~brew
+     info asdf~ if you missed them. As of this writing, those instructions are:
+
+     #+BEGIN_QUOTE
+     Add the following line to your bash profile (e.g. ~/.bashrc, ~/.profile, or ~/.bash_profile)
+
+     =source /usr/local/opt/asdf/asdf.sh=
+
+     If you use Fish shell, add the following line to your fish config (e.g. ~/.config/fish/config.fish)
+
+     =source /usr/local/opt/asdf/asdf.fish=
+     #+END_QUOTE
+
+***** Git
+
+      You can follow the latest manual installation instructions from the
+      project's [[https://github.com/asdf-vm/asdf/tree/8794210b8e7d87fcead78ae3b7b903cf87dcf0d6#setup][README]], but today it includes:
+
+      #+BEGIN_SRC sh
+        git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.0
+
+        # install shell hooks
+        # I personally prefer `source` to `.`
+
+        # bash users
+        echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bash_profile
+        echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bash_profile
+
+        # zsh users
+        echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
+        echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
+
+        # fish users
+        echo 'source ~/.asdf/asdf.fish' >> ~/.config/fish/config.fish
+        mkdir -p ~/.config/fish/completions; and cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+      #+END_SRC
+
+****** Prerequisites
+
+       At the time of writing, here are the prerequisites recommended to use
+       ~asdf~, which can be installed with [[https://brew.sh/][Homebrew]]:
+
+       #+BEGIN_SRC sh
+         brew install autoconf automake coreutils \
+              libtool libxslt libyaml openssl \
+              readline unixodbc
+       #+END_SRC
+
+***** Install required asdf plugins
+
+      You can check the available plugins, based on the open-source plugin index [[https://github.com/asdf-vm/asdf-plugins][here]]:
+
+      #+BEGIN_SRC sh
+        asdf plugin-list-all
+      #+END_SRC
+
+      After identifying desirable plugins:
+
+     #+BEGIN_SRC sh
+       asdf plugin-install erlang
+       asdf plugin-install elixir
+       # phoenix users will likely also want:
+       asdf plugin-install nodejs
+     #+END_SRC
+
+**** Usage
+
+     To install the latest Erlang and Elixir versions at the time of writing:
+
+     #+BEGIN_SRC sh
+       asdf install erlang 20.2
+       asdf install elixir 1.5.3
+     #+END_SRC
+
+     Phoenix users will also want:
+
+     #+BEGIN_SRC sh
+       asdf list-all nodejs
+       asdf install nodejs 9.3.0
+     #+END_SRC
+
+***** Checking available tool versions
+
+      You can see what versions ~asdf~ currently supports for installation with
+      this command:
+
+      #+BEGIN_SRC sh
+        # asdf list-all [plugin]
+        asdf list-all erlang
+        asdf list-all elixir
+        asdf list-all nodejs
+      #+END_SRC
+
+      Each plugin is able to implement this behavior in its own way, so their
+      behavior may vary. Some are able to directly examine the releases of the
+      upstream language project, others require manual support within the ~asdf~
+      plugin in question, and so may lag behind new releases.
+
+***** Installing a specific Erlang patch version
+
+     The author of ~asdf~, @HashNuke on GitHub, cleared up in [[https://github.com/asdf-vm/asdf-erlang/issues/48#issuecomment-339137374][this GitHub issue]]
+     that any tagged release of Erlang can be installed with ~asdf-erlang~:
+
+     #+BEGIN_QUOTE
+     We already support it. You can do the following:
+
+     =asdf install erlang ref:OTP-20.1.2=
+
+     Where OTP-20.1.2 is a valid tag that you can find on
+     https://github.com/erlang/otp/releases. You can also specify a commit sha
+     or branch name if you insist on the latest super-powers.
+     #+END_QUOTE
+
+     As of this writing the latest release is [[https://github.com/erlang/otp/releases/tag/OTP-20.2.2][20.2.2]], so that can be installed
+     like so:
+
+     #+BEGIN_SRC sh
+       asdf install erlang ref:OTP-20.2.2
+       # set global default
+       asdf global erlang ref:OTP-20.2.2
+     #+END_SRC
+
+***** Installing Elixir from ~master~
+
+      If you'd like to use the latest and greatest features, such as the
+      upcoming
+      [[https://github.com/elixir-lang/elixir/blob/v1.6/CHANGELOG.md#code-formatter][~mix
+      format~ command]] slated for inclusion in Elixir 1.6, you can install the
+      current version of the elixir-lang/elixir repository's ~master~ branch:
+
+      #+BEGIN_SRC sh
+        asdf install elixir master
+      #+END_SRC
+
+      You can use this version all the time via ~asdf global~ or ~asdf local~,
+      or on one-off commands by setting the ~ASDF_ELIXIR_VERSION~ environment
+      variable to ~master~.
+
+***** Per-project tool versions
+
+      By using ~asdf local~, you can configure pre-project tool versions, which
+      are persisted in a project-local ~.tool-versions~ file you may wish to
+      include in your global ~.gitignore~. When revisiting a project later, you
+      can run ~asdf install~ with no additional arguments to ensure that the
+      project's desired software versions are available.
+
+**** Keeping up to date
+
+     To update ~asdf~ itself:
+
+     #+BEGIN_SRC sh
+       asdf update
+     #+END_SRC
+
+     To update ~asdf~ plugins:
+
+     #+BEGIN_SRC sh
+       # update all plugins
+       asdf plugin-update --all
+       # update individual plugin
+       asdf plugin-update erlang
+     #+END_SRC
+
+**** Troubleshooting
+
+     You can inspect where a particular version of a particular language is
+     installed with ~asdf where~:
+
+     #+BEGIN_SRC sh
+       asdf where erlang 20.2
+       # /Users/shane/.asdf/installs/erlang/20.2
+     #+END_SRC
+
+     You can make sure that newly-installed binaries (such as those installed by
+     ~npm~) are detected by using ~asdf reshim~:
+
+     #+BEGIN_SRC sh
+       asdf reshim nodejs 9.3.0
+       # no output
+     #+END_SRC
+
+     You can inspect which specific binary will be used in your current context,
+     accounting for both global and local tool versions, with ~asdf which~:
+
+     #+BEGIN_SRC sh
+       asdf which erlang
+       # /Users/shane/.asdf/installs/erlang/20.1/bin/erlang
+     #+END_SRC
+
+**** Other notable plugins
+
+     Here are a few other asdf plugins I'm prone to using in the course of my
+     infrastructure-focused work:
+
+     - [[https://github.com/Banno/asdf-kubectl][kubectl]]
+     - [[https://github.com/alvarobp/asdf-minikube][minikube]]
+     - [[https://github.com/Banno/asdf-hashicorp][terraform]] (recently combined
+       support for multiple Hashicorp tools in one plugin)
+
+**** Alternatives
+
+     There are many alternative options for
+     [[https://elixir-lang.github.io/install.html][installing Elixir]]. Here are
+     a few in no particular order and with no specific endorsement:
+
+     - Homebrew (~brew install erlang elixir node~)
+     - [[https://nixos.org/nix/][Nix package manager]] and ~nix-shell~ (blog post forthcoming!)
+     - [[https://github.com/taylor/kiex][kiex]] and [[https://github.com/yrashk/kerl][kerl]]
+
+**** Software/Tool Versions
+
+     | Software | Version |
+     |----------+---------|
+     | OSX      | 10.12.6 |
+     | asdf     |   0.4.0 |
+     | Elixir   |   1.5.3 |
+     | Erlang   |  20.2.2 |
+     | Node.js  |   9.3.0 |
+
+**** Reference Links                                               :noexport:
+
+     - https://github.com/asdf-vm/asdf/tree/8794210b8e7d87fcead78ae3b7b903cf87dcf0d6#setup
+     - https://github.com/asdf-vm/asdf-erlang/issues/48#issuecomment-339137374
+
+*** Optimized Elixir Docker Images  :docker:elixir:phoenix:umbrella:noexport:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-21
+    :EXPORT_FILE_NAME: optimized-elixir-docker-images
+    :END:
+
+    Back in August of this year, I [[https://github.com/oestrich/ex_venture/pull/69][helped my friend Eric add a Docker image and
+    Docker Compose environment]] for his multiplayer game server, [[https://exventure.org/][ExVenture]]. This
+    was primarily based on an iteration of [[https://gist.github.com/shanesveller/d6e58ef40bbb1c11ca32ef0d62fda4a8][my own multi-stage Docker work]] back
+    in February, which was for a Phoenix Umbrella app I'd been working on as a
+    side project at the time.
+
+    Let's pull back the curtain on my current active side project, which is also
+    a text-based multiplayer game server like Eric's, and talk through the
+    implications of and thought process behind each line of its Dockerfile.
+
+    #+BEGIN_SRC dockerfile
+      FROM elixir:1.7.3-alpine as builder
+
+      # The nuclear approach:
+      # RUN apk add --no-cache alpine-sdk
+      RUN apk add --no-cache \
+          gcc \
+          git \
+          make \
+          musl-dev
+
+      RUN mix local.rebar --force && \
+          mix local.hex --force
+
+      FROM builder as releaser
+
+      WORKDIR /app
+      ENV MIX_ENV=prod
+      COPY mix.* /app/
+
+      # Explicit list of umbrella apps
+      RUN mkdir -p \
+          /app/apps/chat \
+          /app/apps/client \
+          /app/apps/command_parser \
+          /app/apps/game_world \
+          /app/apps/gateway \
+          /app/apps/metrics_exporter
+      COPY apps/chat/mix.* /app/apps/chat/
+      COPY apps/client/mix.* /app/apps/client/
+      COPY apps/command_parser/mix.* /app/apps/command_parser/
+      COPY apps/game_world/mix.* /app/apps/game_world/
+      COPY apps/gateway/mix.* /app/apps/gateway/
+      COPY apps/metrics_exporter/mix.* /app/apps/metrics_exporter/
+      RUN mix deps.get --only prod
+      RUN mix deps.compile
+
+      COPY . /app/
+      RUN mix release --env=prod --no-tar --name=ex_mud
+
+      FROM alpine:3.8 as runner
+      RUN apk add -U bash libssl1.0
+      WORKDIR /app
+      COPY --from=releaser /app/_build/prod/rel/ex_mud /app
+      EXPOSE 5556 5559
+      ENTRYPOINT ["/app/bin/ex_mud"]
+      CMD ["foreground"]
+    #+END_SRC
+
+    <!--more-->
+
+*** DONE Kubernetes Native Phoenix Apps: Introduction :docker:elixir:phoenix:umbrella:kubernetes:
+    CLOSED: [2018-10-28 Sun 11:00]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-28
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-introduction
+    :END:
+
+    I'm kicking off a new blog series that focuses on the intersection of Elixir
+    and Kubernetes. This is becoming a more and more popular deployment target
+    for companies and developers who don't find a comfortable fit with
+    [[#alternate-deployment-tooling][other options]] that make different
+    trade-offs.
+
+    <!--more-->
+
+    #+begin_quote
+    <strong>2019-10-31: Please note that due to multiple personal factors, this
+     blog series has been discontinued without being completed. You can visit
+     [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][this post]] for a slightly longer note about this.</strong>
+    #+end_quote
+
+    I've spent most of the last two years helping several companies leverage
+    Kubernetes effectively, both as a direct employee on a systems/platform team
+    and as a specialized consultant, and I'd like to share some of those
+    learnings with the community that is nearest and dearest to my heart:
+    Elixir. These companies varied in size and scope, but their chief
+    commonality is that Kubernetes has proved to be an accelerant for their
+    business goals.
+
+    In particular, I consider Kubernetes an excellent target for deployment when
+    dealing with teams that are shipping polygot solutions, teams who are
+    managing multiple products without a dedicated team for each product,
+    organizations looking to achieve better infrastructure density or
+    standardization, or organizations who highly value infrastructure agility.
+
+    Elixir's deployment story has come a long way since I started working with
+    the language in 2015, but depending on your needs, there is still a *lot* of
+    information to assimilate, and a lot of practices to synthesize into a
+    unified, effective solution.
+
+**** Prerequisites
+
+    Infrastructure and deployment practices are not and can not be a
+    one-size-fits-all problem space, so I'm going to focus on presenting an
+    opinionated, focused, and polished approach that makes a few simplifying
+    assumptions:
+
+    - You have at least one Elixir app that leverages Phoenix for a web
+      interface
+    - You are already using, prepared to upgrade to, or are otherwise capable of
+      using Distillery 2.x in your project
+    - You are deploying your product on one of the infrastructure-as-a-service
+      platforms that are suitable for use with production-grade Kubernetes,
+      such as:
+      - AWS via [[https://github.com/kubernetes/kops][Kops]]/[[https://aws.amazon.com/eks/][EKS]]
+      - GCP via [[https://cloud.google.com/kubernetes-engine/][GKE]]
+      - Azure via [[https://docs.microsoft.com/en-us/azure/aks/][AKS]]
+    - Importantly, you *already have* a viable Kubernetes cluster in place with
+      ~kubectl~ access ready to go
+    - You are already comfortable with Kubernetes primitives or are capable of
+      learning these from [[https://kubernetes.io/docs/][another reference]]
+
+**** Planned series content
+     - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/][Part 1]]
+       - New [[https://phoenixframework.org/][Phoenix]] 1.4 project
+       - [[https://github.com/bitwalker/distillery/][Distillery]] 2
+         - [[https://hexdocs.pm/distillery/config/runtime.html#config-providers][Configuration Providers]]
+         - [[https://hexdocs.pm/distillery/guides/running_migrations.html][Database Migrations/Seeds]]
+       - [[https://docs.docker.com/develop/develop-images/multistage-build/][Multi-stage Docker build]]
+         - Dockerfile
+         - Dockerignore
+         - [[https://elixir-lang.org/getting-started/mix-otp/dependencies-and-umbrella-projects.html#umbrella-projects][Umbrella]] support
+         - [[https://webpack.js.org/][Webpack]] assets
+         - Caching image stages
+     - [[/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/][Part 2]]
+       - Running your application via [[https://docs.docker.com/compose/][Docker Compose]]
+       - Running migrations/seeds via Docker Compose
+       - Configuring secrets and runtime data via volumes
+     - [[/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/][Part 3]]
+       - Building your image on [[https://github.com/kubernetes/minikube][Minikube]]
+       - [[https://github.com/helm/helm][Helm]] introduction
+         - Deploy [[https://www.postgresql.org/][Postgres]] via [[https://github.com/helm/charts/tree/master/stable/postgresql][community Helm chart]]
+       - Deploy your application via YAML
+         - Configuring runtime data via ConfigMap
+         - Configuring secrets vai Secret
+         - Expose your application via Service
+       - Running migrations/seeds via ~kubectl exec~
+       - Running migrations/seeds via Job
+     - +Part 4+
+       - Deploying your application via Helm
+         - [[https://github.com/futuresimple/helm-secrets][Helm-secrets]]
+         - [[https://github.com/roboll/helmfile][Helmfile]]
+       - Seeds during Helm install
+       - Migrations during Helm upgrades
+     - +Part 5+
+       - Expose your application via Ingress
+       - Managing DNS with [[https://github.com/kubernetes-incubator/external-dns][external-dns]]
+       - Managing HTTPS with [[https://github.com/jetstack/cert-manager/][cert-manager]]
+     - +Part 6+
+       - Clustering your application with [[https://github.com/bitwalker/libcluster][libcluster]]
+       - DNS- vs RBAC-based Kubernetes integration
+       - Phoenix PubSub / Channels / Presence
+       - ETS/Registry implications
+     - +Part 7+
+       - Local HTTPS via ~mix phx.gen.cert~ or [[https://github.com/FiloSottile/mkcert][mkcert]]
+       - HTTP2 with [[https://ninenines.eu/docs/en/cowboy/2.5/guide/][Cowboy 2]]
+       - Exposing HTTP2 via Service
+       - HTTP2 Ingress ramifications
+     - +Part 8+
+       - HTTP2 with [[https://istio.io/][Istio]]
+     - +Part 9+
+       - Metrics with [[https://prometheus.io/][Prometheus]] and [[https://github.com/coreos/prometheus-operator][Prometheus Operator]]
+       - Visualization with [[https://grafana.com/][Grafana]] and [[https://github.com/weaveworks/grafanalib][Grafanalib]]/[[https://github.com/grafana/grafonnet-lib][Grafonnet]]
+       - Quality of service with Resource Request/Limits
+       - Cluster-wide resource constraints with LimitRange
+     - +Part 10+
+       - Remote Observer via [[https://www.telepresence.io/][Telepresence]]
+
+**** Off-topic Subjects
+     This series will avoid deep coverage of a few topics that are worthy
+     of their own separate coverage and will distract from the ideas being
+     presented here:
+
+     - CI/CD practices or tooling recommendations - I've worked with almost all
+       of them by now other than GoCD, and I've assumed the position that these
+       needs are heavily informed by your organizational structure and tolerance
+       for certain constraints or limitations, and aren't able to be addressed
+       in a generalized way
+     - Automating the actual deployment workflows from SCM - similar to the
+       above, it's hard to cover this adequately in a generic way
+     - Kubernetes-as-development-environment tools - Tools like [[https://github.com/azure/draft][Draft]], [[https://github.com/GoogleContainerTools/skaffold/][Skaffold]],
+       Knative, along with some of the other features of Telepresence, don't
+       currently offer a compelling use-case for me. I've attempted several
+       iterations where I've tried to evaluate them in earnest, and I
+       unfortunately found them to be feature-incomplete, unreliable, hard to
+       triage without RTFS, and high-friction to use.
+
+     Additionally, I will avoid covering subjects that I consider to be
+     out-of-scope:
+     - Elixir/Phoenix fundamentals
+     - Elixir/Phoenix development environment
+     - Kubernetes fundamentals
+     - A direct treatment of the pros/cons of using containers with the BEAM
+     - Individual merits of alternate container schedulers (K8s vs GKE/AKS/EKS
+       vs OpenShift vs ECS vs Mesos vs Nomad)
+     - Hot code upgrades in the context of Docker/Kubernetes
+
+**** Other Caveats
+     This series will avoid documenting certain practices that I strongly
+     consider to be development or deployment antipatterns. I'm aware that there
+     are some situations where they are more appropriate, or at very least more
+     expedient under the constraints in play, but these are generally to be
+     avoided if you have the opportunity to choose otherwise.
+
+     - Long-term use of Docker images and long-lived containers as your actual
+       development environment - stick with native development practices for
+       best productivity
+     - Single-stage Docker images which include a full development/compilation
+       toolchain in the final product
+     - Building Docker images *on* your Kubernetes cluster by mounting the
+       Docker daemon's socket into a container (with a partial exception for the
+       Minikube phase)
+     - Raw YAML templates as a long-term solution for managing Kubernetes
+       workloads
+     - Tools such as Kompose which translate directly from ~docker-compose.yml~
+       to Kubernetes resource manifests
+     - Namespaces and RBAC as your sole boundary between logical environments
+       (such as dev/staging/production as implied by ~MIX_ENV~ conventions)
+
+**** Alternate Deployment Tooling
+     :PROPERTIES:
+     :CUSTOM_ID: alternate-deployment-tooling
+     :END:
+
+   - Platform-as-a-service offerings
+     - [[https://github.com/dokku/dokku][Dokku]]
+     - [[https://github.com/flynn/flynn][Flynn]]
+     - [[https://gigalixir.com/][Gigalixir]]
+     - [[https://github.com/nanobox-io/nanobox][Nanobox]]
+     - [[https://www.heroku.com/][Heroku]]
+   - Imperative tools which espouse a Capistrano-like workflow
+     - [[https://github.com/annkissam/akd][akd]]
+     - [[https://github.com/labzero/bootleg][bootleg]]
+     - [[https://github.com/edeliver/edeliver][edeliver]]
+     - [[https://github.com/hashrocket/gatling][gatling]] (possibly unmaintained)
+   - Specialized configuration management
+     - [[https://github.com/HashNuke/ansible-elixir-stack][ansible-elixir-stack]]
+
+*** DONE Kubernetes Native Phoenix Apps: Part 1 :docker:elixir:phoenix:umbrella:kubernetes:
+    CLOSED: [2018-10-28 Sun 14:15]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-10-26
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-part-1
+    :END:
+
+    As described in the introductory post, this article will briefly outline
+    the installation of Distillery 2 as well as including a deeper philosophical
+    and technical explanation of how I structure multi-stage Docker images for
+    Elixir/Phoenix applications.
+
+    <!--more-->
+
+    #+begin_quote
+    <strong>2019-10-31: Please note that due to multiple personal factors, this
+     blog series has been discontinued without being completed. You can visit
+     [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][this post]] for a slightly longer note about this.</strong>
+    #+end_quote
+
+    Published articles in this series:
+
+    - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/][Introduction]]
+    - Part 1 (this post)
+    - [[/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/][Part 2]]
+    - [[/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/][Part 3]]
+    - [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][Discontinuation]]
+
+**** Our Application
+
+     The [[https://github.com/shanesveller/kube-native-phoenix][application]] we're going to be working with throughout this series was
+     created as follows:
+
+     - Phoenix 1.4 (RC2 at the time of writing)
+     - Umbrella application
+     - Using default components (Ecto, Postgres, Webpack)
+
+     Its actual content and functionality will intentionally be kept very
+     sparse, other than to demonstrate certain common scenarios, such as native
+     dependencies of well-known Hex packages.
+
+     We'll start from the initial commit ~4b2e2cb~ or the tag ~part-1-start~ if
+     you're following along from the [[https://github.com/shanesveller/kube-native-phoenix/tree/part-1-start][companion repository]].
+
+**** Installing Distillery 2
+
+     Generally speaking, we'll closely follow the existing Distillery 2
+     [[https://hexdocs.pm/distillery/introduction/installation.html][installation guide]]. Paul and the other contributors have produced very
+     high-quality documentation as part of the 2.x release cycle. I'll call
+     specific attention to a few sections of these guides:
+
+     - [[https://hexdocs.pm/distillery/introduction/installation.html][Installation guide]]
+     - [[https://hexdocs.pm/distillery/introduction/walkthrough.html][Walkthrough]]
+     - [[https://hexdocs.pm/distillery/introduction/umbrella_projects.html][Umbrella Projects]]
+     - [[https://hexdocs.pm/distillery/guides/phoenix_walkthrough.html][Phoenix guide]]
+     - [[https://hexdocs.pm/distillery/guides/working_with_docker.html][Deploying with Docker]]
+
+     The last guide is perhaps where we will diverge the most from the upstream
+     documentation. As I mentioned previously, this blog series will present an
+     opinionated and optimized experience, so we're going to make a few
+     different choices in how to structure our Docker image.
+
+     Before continuing, please make sure that you have completed the
+     installation of Distillery within your application, and that you can
+     successfully run ~mix release~ and get a working application.
+
+     For an example of what this looks like in our live application, please see
+     the git tree at commits ~4b2e2cb..aa6c54e~ [[https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-distillery][here]].
+
+**** Creating our first Docker image
+
+     While there are many options and many opinions on how to construct an
+     optimal Docker image, here are my personal recommended priorities:
+
+     - Strict compatibility with vanilla ~docker build~ commands on a recent
+       version of the Docker daemon (~17.05+), which implies compatibility with
+       a broad variety of CI/CD tools and environments
+     - Smallest reasonable resulting image, achieved primarily through
+       multi-stage builds and intentional choice of base images
+     - High cache hit rate during iterative builds
+     - No mixing of runtimes in build stages, i.e. no adding Node.js to an
+       Elixir base image
+     - Alpine Linux-based, with a pivot to the ~-slim~ images when absolutely
+       necessary
+     - Final image should have minimal system-level packages installed and rely
+       on Distillery's ability to package the Erlang runtime system with a
+       release
+
+***** Dockerfile
+
+      As mentioned, we're targeting ~docker build~ compatibility rather than one
+      of the other, possibly more sophisticated approaches.
+
+      Let's see the complete file first and then walk through it together in
+      small steps.
+
+      #+BEGIN_SRC dockerfile -n 1
+        # docker build -t kube_native:builder --target=builder .
+        FROM elixir:1.7.3-alpine as builder
+        RUN apk add --no-cache \
+            gcc \
+            git \
+            make \
+            musl-dev
+        RUN mix local.rebar --force && \
+            mix local.hex --force
+        WORKDIR /app
+        ENV MIX_ENV=prod
+
+        # docker build -t kube_native:deps --target=deps .
+        FROM builder as deps
+        COPY mix.* /app/
+        # Explicit list of umbrella apps
+        RUN mkdir -p \
+            /app/apps/kube_native \
+            /app/apps/kube_native_web
+        COPY apps/kube_native/mix.* /app/apps/kube_native/
+        COPY apps/kube_native_web/mix.* /app/apps/kube_native_web/
+        RUN mix do deps.get --only prod, deps.compile
+
+        # docker build -t kube_native:frontend --target=frontend .
+        FROM node:10.12-alpine as frontend
+        WORKDIR /app
+        COPY apps/kube_native_web/assets/package*.json /app/
+        COPY --from=deps /app/deps/phoenix /deps/phoenix
+        COPY --from=deps /app/deps/phoenix_html /deps/phoenix_html
+        RUN npm ci
+        COPY apps/kube_native_web/assets /app
+        RUN npm run deploy
+
+        # docker build -t kube_native:releaser --target=releaser .
+        FROM deps as releaser
+        COPY . /app/
+        COPY --from=frontend /priv/static apps/kube_native_web/priv/static
+        RUN mix do phx.digest, release --env=prod --no-tar
+
+        # docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+        FROM alpine:3.8 as runner
+        RUN addgroup -g 1000 kube_native && \
+            adduser -D -h /app \
+              -G kube_native \
+              -u 1000 \
+              kube_native
+        RUN apk add -U bash libssl1.0
+        USER kube_native
+        WORKDIR /app
+        COPY --from=releaser /app/_build/prod/rel/kube_native_umbrella /app
+        EXPOSE 4000
+        ENTRYPOINT ["/app/bin/kube_native_umbrella"]
+        CMD ["foreground"]
+      #+END_SRC
+
+      Code samples are described by their preceding text below.
+
+****** Build environment
+
+       First, we prepare a build stage named ~builder~ with the basic
+       prerequisites of an Elixir development environment, including some fairly
+       universally-required tooling for native extensions. This is where we'll
+       insert any additional development packages needed to compile certain Hex
+       dependencies in the future.
+
+       Note also that we don't get Hex or Rebar automatically installed with
+       this base image, and need to trigger those installations ourselves.
+
+       Finally, we'll be building our project inside the ~/app~ working
+       directory and defaulting to the ~prod~ Mix environment during Hex package
+       compilation. *This image is not intended for development purposes
+       whatsoever* and is fairly unsuitable for that use-case.
+
+       #+BEGIN_SRC dockerfile -n 2
+         FROM elixir:1.7.3-alpine as builder
+         RUN apk add --no-cache \
+             gcc \
+             git \
+             make \
+             musl-dev
+         RUN mix local.rebar --force && \
+             mix local.hex --force
+         WORKDIR /app
+         ENV MIX_ENV=prod
+       #+END_SRC
+
+       I'm using a specific tagged Elixir release here, targeting the ~-alpine~
+       variant to build on top of Alpine Linux. The maintainers of this
+       "official" Docker image are not affiliated with Plataformatec or Erlang
+       Solutions, and one downside of this image stream is that they treat
+       certain tags as mutable.
+
+       At different calendar dates, the ~1.7.3-alpine~ image tag has included
+       differing versions of the underlying Erlang runtime. One way to hedge
+       against this would be to be more precise in our FROM line:
+
+       #+BEGIN_SRC dockerfile
+         FROM elixir:1.7.3-alpine@sha256:4eb30b05d0acc9e8821dde339f0e199ae616e0e9921fd84822c23fe6b1f81b6d
+       #+END_SRC
+
+       You can determine the digest to include by running ~docker images
+       --digests elixir~.
+
+       While it would be totally valid to install and compile both Erlang and
+       Elixir from source during this build phase, I do not consider this to be
+       at all necessary or a particularly valuable effort for most companies or
+       scenarios. Doing so requires you to absorb the maintenance burden of
+       "keeping up with the Joneses" and incorporating any necessary security
+       patches yourself, tracking the current release versions, and
+       understanding their own build-time dependencies.
+
+       If you find yourself with a requirement that cannot be satisfied under
+       Alpine Linux, or feel an anti-affinity for Alpine, or an affinity for
+       Debian, using a ~-slim~ base image variant will be largely identical to
+       this process. Start with replacing ~apk~ commands with their semantic
+       equivalent using ~apt-get~ (because ~apt~ makes no stability guarantees
+       about its input/output). You'll potentially have broader compatibility
+       with some corners of the software industry, at the cost of a slightly
+       larger runtime image.
+
+****** Hex Dependencies
+
+       Next we acquire and compile all known Hex dependencies. This slightly
+       verbose layering structure allows us to get a very high cache hit rate
+       during Docker builds, because our dependencies are some of the slowest
+       and least-frequently changing portions of our application development
+       work.
+
+       Note here that for an umbrella application, we also need to descend into
+       each umbrella app and include its ~mix.exs~ content as well. In a
+       non-umbrella application, it's likely sufficient to only include the
+       highlighted lines.
+
+       Lines 17-21 are an unfortunate necessity for Umbrella applications, as
+       the ~COPY~ directive for Dockerfiles doesn't support multiple
+       destinations per the [[https://docs.docker.com/engine/reference/builder/#copy][documentation]], only multiple sources. As you add
+       more applications to your umbrella, new lines will need to be added here.
+       (I'm working on a Mix task library that will embody this and other
+       operational knowledge, which will be released to Hex in the coming
+       weeks.)
+
+       Now, this seems like an awful lot of ceremony, doesn't it? Here's the
+       payoff: without a technique that is similar to this in spirit,
+       application-level changes such as new behavior in a Phoenix controller or
+       new markup in a view template will *bust the Docker build cache* and
+       require all of the Hex dependencies to be downloaded and compiled anew.
+
+       This is a very common pattern across many programming languages when
+       creating Docker images, not just Elixir, so I'm satisfied with including
+       it here. You'll also see it again in the next section.
+
+       #+BEGIN_SRC dockerfile +n 2 :hl_lines 1-3,10
+         # docker build -t kube_native:deps --target=deps .
+         FROM builder as deps
+         COPY mix.* /app/
+         # Explicit list of umbrella apps
+         RUN mkdir -p \
+           /app/apps/kube_native \
+           /app/apps/kube_native_web
+         COPY apps/kube_native/mix.* /app/apps/kube_native/
+         COPY apps/kube_native_web/mix.* /app/apps/kube_native_web/
+         RUN mix do deps.get --only prod, deps.compile
+       #+END_SRC
+
+****** NPM/Asset Dependencies
+
+       Similar to how we constructed the ~deps~ phase just above, we're pulling
+       in a language-specific but otherwise unadorned base image to do the heavy
+       lifting, as I don't wish to maintain or even be particularly
+       familiar with packing Node when it's not a *runtime* dependency.
+
+       We grab the *package.json* and *package-lock.json* files from our project
+       to describe our JavaScript-ecosystem dependencies, and also bundle in the
+       Javascript assets that are included with our previously-acquired Hex
+       packages. Following that, we use the somewhat-recent ~npm ci~ command,
+       which is optimal for the scenario where we're not looking to upgrade or
+       otherwise change our JS dependencies, merely reproduce them as-is.
+
+       After the NPM dependency tree is resolved, we pull in the rest of our
+       locally-authored frontend content and then use an NPM task to run a
+       production-friendly Webpack build of our assets.
+
+       #+BEGIN_SRC dockerfile +n 2
+         # docker build -t kube_native:frontend --target=frontend .
+         FROM node:10.12-alpine as frontend
+         WORKDIR /app
+         COPY apps/kube_native_web/assets/package*.json /app/
+         COPY --from=deps /app/deps/phoenix /deps/phoenix
+         COPY --from=deps /app/deps/phoenix_html /deps/phoenix_html
+         RUN npm ci
+         COPY apps/kube_native_web/assets /app
+         RUN npm run deploy
+       #+END_SRC
+
+****** Compile release
+
+       Now it's time to tie all of this together into a Distillery release! We
+       pull in our Elixir dependencies from the previous phase as our new base
+       image, and then include only the compiled assets from the Node stage in
+       our ~/priv/static~ directory. ~mix phx.digest~ takes those in and
+       fingerprints them, and then finally we run ~mix release~ to build our
+       package without ~tar~ring it up, as we'd just have to unpack again in the
+       next and final stage.
+
+       #+BEGIN_SRC dockerfile +n 2
+         # docker build -t kube_native:releaser --target=releaser .
+         FROM deps as releaser
+         COPY . /app/
+         COPY --from=frontend /priv/static apps/kube_native_web/priv/static
+         RUN mix do phx.digest, release --env=prod --no-tar
+       #+END_SRC
+
+****** Build runtime image
+
+       Here's how we achieve our minimal runtime image sizes. At the time of
+       writing, the previous stage produces a Docker image weighing at about
+       240MB, and with 20 separate image layers. For our final image, we start
+       over from a compatible release of Alpine Linux. It's a strong
+       recommendation that whenever possible, we not run containerized processes
+       as the root user within the image, so we create a static group and user
+       for this application, each with ID ~1000~, and switch to that user. The
+       particular number likely will not matter up until the point that you need
+       to reconcile file ownership across Docker volumes or between host and
+       container.
+
+       We pull in the uncompressed release built in the previous stage, expose
+       the default Phoenix port, and set our ~ENTRYPOINT~ to launch the script
+       provided by Distillery. The ~CMD~ directive tells the image that by
+       default it should launch the application in the foreground without
+       interactivity.
+
+       We'll see later in the series that this opens up the opportunity to run
+       custom commands more easily within our image, specified at runtime,
+       without altering the image.
+
+       #+BEGIN_SRC dockerfile +n 2
+         # docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+         FROM alpine:3.8 as runner
+         RUN addgroup -g 1000 kube_native && \
+             adduser -D -h /app \
+               -G kube_native \
+               -u 1000 \
+               kube_native
+         RUN apk add -U bash libssl1.0
+         USER kube_native
+         WORKDIR /app
+         COPY --from=releaser /app/_build/prod/rel/kube_native_umbrella /app
+         EXPOSE 4000
+         ENTRYPOINT ["/app/bin/kube_native_umbrella"]
+         CMD ["foreground"]
+       #+END_SRC
+
+***** Dockerignore
+
+     We'll continue the process of Dockerizing this Phoenix application with an
+     oft-forgotten step: the ~.dockerignore~ file. This file will feel similar to
+     the syntax of a ~.gitignore~ file, but does not intentionally mimic its
+     structure [[https://docs.docker.com/engine/reference/builder/#dockerignore-file][as documented by Docker]].
+
+     We can start ourselves on good footing by copying the existing ~.gitignore~
+     provided by the ~phx.new~ task when we started our project:
+
+     #+BEGIN_SRC shell
+       echo '# Default gitignore content' > .dockerignore
+       cat .gitignore >> .dockerignore
+     #+END_SRC
+
+     And next we'll customize it for our needs by adding the following content:
+
+     #+BEGIN_SRC gitignore -n :hl_lines 2,6,8,11-14
+       # Developer tools
+       .git
+       .tool-versions
+
+       # Umbrella structure
+       apps/**/config/*.secret.exs
+       apps/**/node_modules
+       apps/**/priv/cert
+       apps/**/priv/static
+
+       # Docker
+       .dockerignore
+       Dockerfile
+       docker-compose.yml
+     #+END_SRC
+
+     The value in a well-formed ~.dockerignore~ file is two-fold in my eyes. It
+     prevents local content that shouldn't be persisted from appearing in Docker
+     images that were built locally, such as secrets, tooling/editor artifacts,
+     or compiled content like our static assets. (We're just going to recompile
+     those in a build stage, anyway!) It also minimizes the local changes that
+     will contribute to a cache miss when building updated versions of an
+     existing Docker image.
+
+     The logic here is fairly subjective, but I feel that the following tasks
+     should not /inherently/ cause a fresh image build:
+
+     - Git commits persisting your changes, without other filesystem changes
+       (line 2)
+     - Non-semantic changes to how we define the Dockerfile, such as whitespace
+       or comments (lines 12-13)
+       - Docker will automatically cache-bust for us if the changes are meaningful
+     - Changes to a Docker Compose environment definition (line 14)
+     - Changes to development-only or gitignored secrets files (lines 6, 8)
+
+***** Caveats
+
+      This approach comes with a lot of benefits, but it was at least one
+      significant drawback - "cold" builds, that don't have applicable caches
+      present, are just as slow as a single-stage linear approach. Thankfully,
+      this can be mitigated via workflow changes.
+
+      If you build your images with this command or similar, you'll notice that
+      you also get some "dangling" images on your Docker host:
+
+      #+BEGIN_SRC shell
+        docker build -t kube_native:$git_sha .
+      #+END_SRC
+
+      These images are ephemeral outputs of the stages of our build, and can be
+      intentionally captured as a differently-tagged image. One thing this
+      avoids, other than ambiguity in ~docker images~ command output, is that
+      these images would then no longer be cleared by mechanisms like ~docker
+      system prune~, without the ~-a~ flag.
+
+      These preliminary stage images could even be pushed to the same Docker
+      image registry that your runtime image goes to, so that multiple
+      developers can share the existing cached work without repeating it until
+      necessary.
+
+      There were comments throughout the above Dockerfile section, but here's
+      the alternate workflow I'm proposing:
+      #+BEGIN_SRC shell
+        docker build -t kube_native:builder --target=builder .
+        docker build -t kube_native:deps --target=deps .
+        docker build -t kube_native:frontend --target=frontend .
+        docker build -t kube_native:releaser --target=releaser .
+        docker build -t kube_native:$git_sha .
+        docker tag kube_native:builder my.registry.com/kube_native:builder
+        docker push my.registry.com/kube_native:builder
+        docker tag kube_native:deps my.registry.com/kube_native:deps
+        docker push my.registry.com/kube_native:deps
+        # ...
+        docker push my.registry.com/kube_native:$git_sha
+      #+END_SRC
+
+      This is verbose, but precise, and ripe for automation via Makefile, Mix
+      tasks, etc. You can also introduce a growing list of ~--cache-from~ flags
+      to the above commands to specify what images are considered "upstream" of
+      a given target.
+
+      Other developers, and your CI/CD systems, can first ~docker pull~ the
+      above tagged images to speed up their local builds. Anecdotally, I saw
+      Google Cloud Builder save around 2/3 of my build time by following this
+      technique.
+
+**** Code Checkpoint
+
+     The work presented in this post is reflected in git commit ~d239377~ or tag
+     ~part-1-end~ available [[https://github.com/shanesveller/kube-native-phoenix/tree/part-1-end][here]]. You can compare these changes to the initial
+     commit [[https://github.com/shanesveller/kube-native-phoenix/compare/part-1-start...part-1-end][here]].
+
+**** Appendix
+
+***** Software/Tool Versions
+      | Software   |    Version |
+      |------------+------------|
+      | Distillery |     2.0.10 |
+      | Docker     | 18.06.1-ce |
+      | Elixir     |      1.7.3 |
+      | Erlang     |     21.1.1 |
+      | Phoenix    |   1.4-rc.2 |
+
+***** Identifying Alpine base release
+
+      #+BEGIN_SRC shell
+        docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+      #+END_SRC
+
+***** Shell Transcript                                             :noexport:
+      #+BEGIN_SRC shell
+        # Prerequisites
+        ## PostgreSQL
+        brew install postgresql
+        brew services start postgresql
+        ## Elixir
+        asdf update
+        asdf plugin-update erlang
+        asdf plugin-update elixir
+        asdf install erlang 21.1.1
+        asdf global erlang 21.1.1
+        asdf install elixir 1.7.3-otp-21
+        asdf global elixir 1.7.3-otp-21
+
+        ## Phoenix
+        mix archive.install hex phx_new 1.4.0-rc.2
+
+        # Create Project
+        mix phx.new kube_native --binary-id --umbrella
+        cd kube_native_umbrella
+        git init
+        git add .
+        git commit -am 'Initial commit'
+        ## Edit config/dev.exs, delete username/password/hostname
+
+        # Release
+        mix hex.info distillery
+        ## Edit root mix.exs
+        mix do deps.get, deps.compile
+        mix release.init
+
+        # Dockerize
+        sed -e 's/^\///' .gitignore > .dockerignore
+        touch Dockerfile
+        docker-show-context
+      #+END_SRC
+
+      #+BEGIN_SRC gitignore
+        # .dockerignore content
+
+        # Developer tools
+        .git
+        .tool-versions
+
+        # Umbrella
+        apps/**/config/*.secret.exs
+        apps/**/node_modules
+        apps/**/priv/cert
+        apps/**/priv/static
+
+        # Docker
+        .dockerignore
+        Dockerfile
+        docker-compose.yml
+      #+END_SRC
+
+      #+BEGIN_SRC dockerfile
+        FROM elixir:1.7.3-alpine as builder
+        RUN apk add --no-cache \
+            gcc \
+            git \
+            make \
+            musl-dev
+        RUN mix local.rebar --force && \
+            mix local.hex --force
+        WORKDIR /app
+        ENV MIX_ENV=prod
+        # docker build -t kube_native:builder --target=builder .
+
+        FROM builder as deps
+        COPY mix.* /app/
+        # Explicit list of umbrella apps
+        RUN mkdir -p \
+            /app/apps/kube_native \
+            /app/apps/kube_native_web
+        COPY apps/kube_native/mix.* /app/apps/kube_native/
+        COPY apps/kube_native_web/mix.* /app/apps/kube_native_web/
+        RUN mix do deps.get --only prod, deps.compile
+        # docker build -t kube_native:deps --target=deps .
+
+        FROM node:10.12-alpine as frontend
+        WORKDIR /app
+        COPY apps/kube_native_web/assets/package*.json /app/
+        COPY --from=deps /app/deps/phoenix /deps/phoenix
+        COPY --from=deps /app/deps/phoenix_html /deps/phoenix_html
+        RUN npm ci
+        COPY apps/kube_native_web/assets /app
+        RUN npm run deploy
+        # docker build -t kube_native:frontend --target=frontend .
+
+        FROM deps as releaser
+        COPY . /app/
+        COPY --from=frontend /priv/static apps/kube_native_web/priv/static
+        RUN mix do phx.digest, release --env=prod --no-tar
+        # docker build -t kube_native:releaser --target=releaser .
+
+        # docker run -it --rm elixir:1.7.3-alpine sh -c 'head -n1 /etc/issue'
+        FROM alpine:3.8 as runner
+        RUN apk add -U bash libssl1.0
+        WORKDIR /app
+        COPY --from=releaser /app/_build/prod/rel/kube_native_umbrella /app
+        EXPOSE 4000
+        ENTRYPOINT ["/app/bin/kube_native"]
+        CMD ["foreground"]
+      #+END_SRC
+
+      #+BEGIN_SRC elixir
+        # Config providers
+        # https://hexdocs.pm/distillery/2.0.10/config/runtime.html#config-providers
+        # https://hexdocs.pm/distillery/2.0.10/config/runtime.html#mix-config-provider
+
+        # rel/config.exs
+        environment :prod do
+          set include_erts: true
+          set include_src: false
+          set cookie: :hunter2
+
+          # highlight below
+          set config_providers: [
+            {Mix.Releases.Config.Providers.Elixir, ["${RELEASE_ROOT_DIR}/etc/config.exs"]}
+          ]
+          set overlays: [
+            {:copy, "rel/config/config.exs", "etc/config.exs"}
+          ]
+        end
+
+        release :kube_native_umbrella do
+          set version: current_version(:kube_native) # highlight
+          set applications: [
+            :runtime_tools,
+            kube_native: :permanent,
+            kube_native_web: :permanent
+          ]
+        end
+
+        # rel/config/config.exs
+        config :kube_native, KubeNative.Repo,
+          url: System.get_env("DATABASE_URL")
+
+        # apps/kube_native_web/config/prod.exs
+        config :phoenix, :serve_endpoints, true
+      #+END_SRC
+
+      Migrations:
+      #+BEGIN_SRC elixir
+        defmodule KubeNative.ReleaseTasks do
+          @start_apps [
+            :crypto,
+            :ssl,
+            :postgrex,
+            :ecto,
+            :telemetry
+          ]
+
+          @repos Application.get_env(:kube_native, :ecto_repos, [])
+
+          def migrate(_argv) do
+            start_services()
+
+            run_migrations()
+
+            stop_services()
+          end
+
+          def seed(_argv) do
+            start_services()
+
+            run_migrations()
+
+            run_seeds()
+
+            stop_services()
+          end
+
+          defp start_services do
+            IO.puts("Starting dependencies..")
+            # Start apps necessary for executing migrations
+            Enum.each(@start_apps, &Application.ensure_all_started/1)
+
+            # Start the Repo(s) for app
+            IO.puts("Starting repos..")
+            Enum.each(@repos, & &1.start_link(pool_size: 2))
+          end
+
+          defp stop_services do
+            IO.puts("Success!")
+            :init.stop()
+          end
+
+          defp run_migrations do
+            Enum.each(@repos, &run_migrations_for/1)
+          end
+
+          defp run_migrations_for(repo) do
+            app = Keyword.get(repo.config, :otp_app)
+            IO.puts("Running migrations for #{app}")
+            migrations_path = priv_path_for(repo, "migrations")
+            Ecto.Migrator.run(repo, migrations_path, :up, all: true)
+          end
+
+          defp run_seeds do
+            Enum.each(@repos, &run_seeds_for/1)
+          end
+
+          defp run_seeds_for(repo) do
+            # Run the seed script if it exists
+            seed_script = priv_path_for(repo, "seeds.exs")
+
+            if File.exists?(seed_script) do
+              IO.puts("Running seed script..")
+              Code.eval_file(seed_script)
+            end
+          end
+
+          defp priv_path_for(repo, filename) do
+            app = Keyword.get(repo.config, :otp_app)
+
+            repo_underscore =
+              repo
+              |> Module.split()
+              |> List.last()
+              |> Macro.underscore()
+
+            priv_dir = "#{:code.priv_dir(app)}"
+
+            Path.join([priv_dir, repo_underscore, filename])
+          end
+        end
+      #+END_SRC
+      #+BEGIN_SRC shell
+        mix run -e "KubeNative.ReleaseTasks.migrate([])"
+        mix run -e "KubeNative.ReleaseTasks.seed([])"
+      #+END_SRC
+      #+BEGIN_SRC shell
+        #!/bin/sh
+
+        release_ctl eval --mfa "KubeNative.ReleaseTasks.migrate/1" --argv -- "$@"
+      #+END_SRC
+      #+BEGIN_SRC elixir
+        # rel/config.exs
+        release :kube_native do
+          # ...
+          set commands: [
+            migrate: "rel/commands/migrate.sh",
+            seed: "rel/commands/seed.sh",
+          ]
+        end
+      #+END_SRC
+      #+BEGIN_SRC shell
+        docker-compose run --rm kube_native migrate
+      #+END_SRC
+      #+BEGIN_SRC shell
+        cd apps/kube_native_web
+        mix phx.gen.cert
+      #+END_SRC
+      #+BEGIN_SRC elixir
+        # apps/kube_native_web/config/dev.exs
+        # ...
+        config :kube_native_web, KubeNativeWeb.Endpoint,
+          http: [port: 4000],
+          https: [
+            port: 4001,
+            cipher_suite: :strong,
+            certfile: "priv/cert/selfsigned.pem",
+            keyfile: "priv/cert/selfsigned_key.pem"
+          ],
+        # ...
+      #+END_SRC
+      #+BEGIN_SRC yaml
+        steps:
+          - name: 'gcr.io/cloud-builders/docker'
+            args: ['build', '-t', 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA', '.']
+          - name: 'gcr.io/cloud-builders/docker'
+            args: ['tag', 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA', 'gcr.io/$PROJECT_ID/kube_native:latest']
+        images:
+          - 'gcr.io/$PROJECT_ID/kube_native:$COMMIT_SHA'
+          - 'gcr.io/$PROJECT_ID/kube_native:latest'
+      #+END_SRC
+      #+BEGIN_SRC gitignore
+
+      #+END_SRC
+      #+BEGIN_SRC shell
+        # https://cloud.google.com/cloud-build/docs/build-debug-locally
+        cloud-build-local -config=cloudbuild.yaml -substitutions=COMMIT_SHA=(hub rev-parse HEAD) --dryrun=false .
+        gcloud builds submit --config=cloudbuild.yaml --substitutions=COMMIT_SHA=(hub rev-parse HEAD) .
+      #+END_SRC
+      #+BEGIN_SRC shell
+        mkdir -p .deployment/chart
+        cd .deployment/chart
+        helm create kube_native
+      #+END_SRC
+      #+BEGIN_SRC shell
+        helm init --upgrade --skip-refresh --history-max 10 --service-account tiller --wait --replicas=2 -i gcr.io/kubernetes-helm/tiller:v2.11.0
+        helm install stable/postgresql --name kube-native-postgresql --set 'imageTag=10.5-alpine,postgresDatabase=kube-native,postgresPassword=kube-native,postgresUser=kube-native'
+      #+END_SRC
+      https://hexdocs.pm/libcluster/Cluster.Strategy.Gossip.html#content
+      #+BEGIN_SRC elixir
+        use Mix.Config
+
+        config :libcluster,
+          debug: true
+      #+END_SRC
+
+*** DONE Kubernetes Native Phoenix Apps: Part 2 :docker:docker_compose:elixir:phoenix:umbrella:kubernetes:
+    CLOSED: [2018-11-13 Tue 09:00]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-part-2
+    :EXPORT_DATE: 2018-11-13
+    :END:
+
+    One of the quickest ways to rapidly prototype and confirm that your new
+    Docker image is viable is to stand it up in a Docker-Compose environment. I
+    often skip this step nowadays but it's still a very useful validation step,
+    and is more generally applicable in open source projects where we can't
+    fully assume Kubernetes as a target.
+
+    <!--more-->
+
+    #+begin_quote
+    <strong>2019-10-31: Please note that due to multiple personal factors, this
+     blog series has been discontinued without being completed. You can visit
+     [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][this post]] for a slightly longer note about this.</strong>
+    #+end_quote
+
+    That said, *Docker Compose is in no way an appropriate mechanism for
+    production-grade deployments* serving paying customers. This phase of the
+    series is provided purely for educational purposes.
+
+    Some of these principles and some of the required Elixir code changes will
+    carry forward directly into the Kubernetes-based model later in the series -
+    particularly around how we configure our database connection and perform
+    seeds/migrations.
+
+    Published articles in this series:
+
+    - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/][Introduction]]
+    - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/][Part 1]]
+    - Part 2 (this post)
+    - [[/blog/2018/11/16/kubernetes-native-phoenix-apps-part-3/][Part 3]]
+    - [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][Discontinuation]]
+
+**** Runtime Configuration
+
+     In order to make our application slightly more viable in different
+     deployment environments, we're going to borrow a page from the [[https://12factor.net/][Twelve
+     Factor Apps]] model, starting with the configuration for our database
+     connection.
+
+***** Ecto Database Connection
+
+     For this first pass, we'll follow [[https://hexdocs.pm/ecto/3.0.1/Ecto.Repo.html#module-urls][Ecto's documentation]] to enable
+     runtime-configured ~DATABASE_URL~ during an ~init/2~ callback on our ~Repo~:
+
+     #+BEGIN_SRC elixir -n :hl_lines 6-8
+       defmodule KubeNative.Repo do
+         use Ecto.Repo,
+           otp_app: :kube_native,
+           adapter: Ecto.Adapters.Postgres
+
+         def init(_type, config) do
+           {:ok, Keyword.put(config, :url, System.get_env("DATABASE_URL"))}
+         end
+       end
+     #+END_SRC
+
+     Unfortunately, not every piece of our project can be configured as
+     gracefully using similar techniques. This especially includes external
+     libraries - which is something Ecto core team member Michał Muskała has
+     [[https://michal.muskala.eu/2017/07/30/configuring-elixir-libraries.html][written passionately and intelligently about]] in the not-too-distant past.
+     I'm still hoping to see some conventions on this subject emerge from the
+     community at large, but we are much closer to having adequate tooling on
+     this topic today than we were in 2017 when Michał's post was written.
+
+***** Other Configuration and Secrets
+      :PROPERTIES:
+      :CUSTOM_ID: other-configuration-and-secrets
+      :END:
+
+      Here's one of the first instances where I'm going to genuinely cut some
+      corners and gloss over a little bit, because there's not as much
+      educational value in the Docker-Compose way of doing this. Some of it won't
+      survive intact into the Kubernetes-based implementation. Additionally,
+      since we're directly targeting Kubernetes in a later blog post, I will be
+      bypassing Docker's support for secrets management as part of their Swarm
+      offering.
+
+      Prior to the advent of Distillery 2, it was much harder for the community
+      to grok the available means to provide "late-binding" runtime-specific
+      information that isn't, shouldn't be, and perhaps *can't* be available at
+      build-time. This distinction between build-time and run-time configuration
+      challenged newcomers and even experienced Elixir developers. That
+      situation is much improved with the introduction of Distillery's
+      [[https://hexdocs.pm/distillery/config/runtime.html#config-providers][Configuration Providers]], which provide an extensible hook for sourcing
+      runtime information as the application starts up.
+
+      This next snippet uses the built-in [[https://hexdocs.pm/distillery/config/runtime.html#mix-config-provider][Mix Configuration Provider]] to keep us
+      in familiar territory for now. What the configuration instructs Distillery
+      to do is to include an in-repository file named ~rel/config/config.exs~
+      into the release at the relative path ~etc/config.exs~, and to consume
+      that content via the Mix configuration provider at boot-time.
+
+      Notably, *this file's contents can be extended or replaced* /after/ the
+      release is built, giving us a means to introduce certain configuration
+      details as late as possible, just before the BEAM runtime starts.
+
+      If you read the documentation about configuration providers, you'll learn
+      that most of the various commands are actually starting a separate BEAM
+      process first that *does* have access to ~Mix~, calculating the derived
+      information, and writing it out to disk for the release to consume when it
+      starts "for real" moments later.
+
+      #+BEGIN_SRC elixir
+        # rel/config.exs
+        environment :prod do
+          set config_providers: [
+            {Mix.Releases.Config.Providers.Elixir, ["${RELEASE_ROOT_DIR}/etc/config.exs"]}
+          ]
+          set overlays: [
+            {:copy, "rel/config/config.exs", "etc/config.exs"}
+          ]
+        end
+      #+END_SRC
+
+      The content of the file is, for now, based once again on Distillery's
+      documentation, which highlights a few Phoenix-isms that are desirable
+      examples for runtime configuration.
+
+      #+BEGIN_SRC elixir
+        # rel/config/config.exs
+        use Mix.Config
+
+        port = String.to_integer(System.get_env("PORT") || "4000")
+
+        config :kube_native_web, KubeNativeWeb.Endpoint,
+          http: [port: port],
+          url: [host: System.get_env("HOSTNAME"), port: port],
+          secret_key_base: System.get_env("SECRET_KEY_BASE")
+      #+END_SRC
+
+      Later in the series, we'll introduce actual data here.
+
+**** Docker Compose Environment Definition
+
+     #+BEGIN_QUOTE
+     Our [[https://github.com/shanesveller/kube-native-phoenix][application]] relies on PostgreSQL 10, so we'll want to account for that
+     in the ~docker-compose.yml~ we create.
+     #+END_QUOTE
+
+     This Docker-Compose environment is going to be extremely simple and
+     minimal, and as I mentioned at the beginning of the post, *is not
+     production ready*. Please don't use it for anything more than a learning
+     exercise or validating step on your way to Kubernetes.
+
+     Code samples are described by their preceding text below.
+
+     Full sample:
+
+     #+BEGIN_SRC yaml -n
+       # https://docs.docker.com/compose/compose-file/
+       version: '3.7'
+       services:
+         kube_native:
+           build: .
+           depends_on:
+             - postgres
+           environment:
+             DATABASE_URL: ecto://kube_native:kube_native@postgres/kube_native
+             HOSTNAME: localhost
+             PORT: 4000
+             # mix phx.gen.secret
+             SECRET_KEY_BASE: fzBk8OEcI8thGxlypWPUqfR2w2WopdN8v8pmpuy2JNj2eerbYFnlecuVMrFPGYnW
+           ports:
+             - 4000:4000
+
+         postgres:
+           image: postgres:10.5-alpine
+           environment:
+             POSTGRES_DB: kube_native
+             POSTGRES_PASSWORD: kube_native
+             POSTGRES_USER: kube_native
+           ports:
+             - 15432:5432
+           volumes:
+             - postgres-data:/var/lib/postgresql/data
+
+       volumes:
+         postgres-data: {}
+     #+END_SRC
+
+     We're specifying that this file should be parsed as Docker Compose's YAML
+     format with version ~3.7~ of the schema specifically, which requires Docker
+     ~18.06~ or newer. In this usage, we're not doing anything sophisticated and
+     it would be possible to migrate the file to an older standard without much
+     trouble. The compatibility matrix between Docker-Compose and Docker is
+     available [[https://docs.docker.com/compose/compose-file/#compose-and-docker-compatibility-matrix][here]]. This same page describes all of the available keys in the
+     YAML schema as well as what values are acceptable for each, so it's a
+     valuable resource during our time with Docker-Compose.
+
+     Next up we start a YAML list of ~services~, which are reflected as running
+     Docker containers after running commands such as ~docker-compose up~.
+
+     #+BEGIN_SRC yaml -n 1
+       # https://docs.docker.com/compose/compose-file/
+       version: '3.7'
+       services:
+     #+END_SRC
+
+***** Application Container
+
+     We define a *service* for the application itself, and tell it to build the
+     Docker image from the local working directory using the Dockerfile we
+     authored during [[/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/][Part 1]]. This syntax also describes a logical dependency on
+     another *service* within this file, as our Phoenix app won't be very happy
+     without its database. This syntax will influence the order of operations
+     during the ~docker-compose up~ command and also ensure that the ~postgres~
+     service is running whenever we try to start the ~kube_native~ service.
+
+     We set an environment variable named ~DATABASE_URL~ using [[https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls][Ecto's URL
+     syntax]]. The hostname can be ~postgres~ here because we're trying to reach a
+     sibling container that is defined within the same ~docker-compose.yml~
+     file. The credentials are given in the form
+     ~user:password@hostname/database_name~, prefixed with a pseudo-protocol of
+     ~ecto://~, and we're going to preset those details in the Postgres
+     container farther down.
+
+     Matching the content from our [[#other-configuration-and-secrets][Other Conifguration and Secrets]] section
+     above, we've also set environment variables governing the hostname and port
+     the application should use in calculating its own URLs, and we've set a
+     ~SECRET_KEY_BASE~ with a fresh value provided by the ~mix phx.gen.secret~
+     task. This last information should be considered sensitive and would not
+     typically be committed with the application's source, except perhaps in an
+     encrypted form.
+
+     Lastly, we expose the running application on the host machine (which will
+     be OSX itself for Docker For Mac users) on TCP port 4000 so that we can
+     contact it with a regular browser.
+
+     #+BEGIN_SRC yaml +n :hl_lines 6-10
+       kube_native:
+         build: .
+         depends_on:
+           - postgres
+         environment:
+           DATABASE_URL: ecto://kube_native:kube_native@postgres/kube_native
+           HOSTNAME: localhost
+           PORT: 4000
+           # mix phx.gen.secret
+           SECRET_KEY_BASE: fzBk8OEcI8thGxlypWPUqfR2w2WopdN8v8pmpuy2JNj2eerbYFnlecuVMrFPGYnW
+         ports:
+           - 4000:4000
+     #+END_SRC
+
+***** PostgreSQL Container
+
+     We set some *insecure* but human-friendly values in the Postgres container
+     in order to pre-populate the existence of a database, and a less-privileged
+     user with a known password. These details were provided to Phoenix above
+     using the ~DATABASE_URL~ environment variable.
+
+     The ~port~ here demonstrates the syntax one would use to avoid port
+     collisions with existing Postgres installs on the host machine - the
+     Dockerized version will listen on ~5432~ within the container, but that
+     will be mapped to ~15432~ when considered from outside the container.
+
+     #+BEGIN_SRC yaml +n 2 :hl_lines 4-6,9-10
+         postgres:
+           image: postgres:10.5-alpine
+           environment:
+             POSTGRES_DB: kube_native
+             POSTGRES_PASSWORD: kube_native
+             POSTGRES_USER: kube_native
+           ports:
+             - 15432:5432
+           volumes:
+             - postgres-data:/var/lib/postgresql/data
+     #+END_SRC
+
+**** Running Migrations and Seeds
+
+     The Distillery documentation has an excellent [[https://hexdocs.pm/distillery/guides/running%255Fmigrations.html][guide on running migrations]]
+     in a release context, where *we don't have access to any Mix tasks* or Mix
+     Elixir modules. The included snippet on that page can be adopted close to
+     as-is for our efforts.
+
+***** Migration Module
+
+      Since we won't have Mix available for our trusty ~ecto.migrate~ task, we
+      need a relatively-pure Elixir approach that will provide similar behavior
+      without depending on Mix.
+
+      Very little of this content, derived from the [[https://github.com/bitwalker/distillery/blob/2.0.12/docs/guides/running_migrations.md][Distillery 2.0.12
+      documentation]], needed to change for either our specific application name or
+      Phoenix 1.4. At the time of writing, this code snippet currently doesn't
+      render correctly on HexDocs, but is [[https://github.com/bitwalker/distillery/blob/2.0.12/docs/guides/running_migrations.md#migration-module][still available on GitHub]].
+
+     #+BEGIN_SRC elixir -n :hl_lines 2,3-9,11,38
+       # apps/kube_native/lib/kube_native/release_tasks.ex
+       defmodule KubeNative.ReleaseTasks do
+         @start_apps [
+           :crypto,
+           :ssl,
+           :postgrex,
+           :ecto,
+           :ecto_sql
+         ]
+
+         @repos Application.get_env(:kube_native, :ecto_repos, [])
+
+         def migrate(_argv) do
+           start_services()
+
+           run_migrations()
+
+           stop_services()
+         end
+
+         def seed(_argv) do
+           start_services()
+
+           run_migrations()
+
+           run_seeds()
+
+           stop_services()
+         end
+
+         defp start_services do
+           IO.puts("Starting dependencies..")
+           # Start apps necessary for executing migrations
+           Enum.each(@start_apps, &Application.ensure_all_started/1)
+
+           # Start the Repo(s) for app
+           IO.puts("Starting repos..")
+           Enum.each(@repos, & &1.start_link(pool_size: 2))
+         end
+
+         defp stop_services do
+           IO.puts("Success!")
+           :init.stop()
+         end
+
+         defp run_migrations do
+           Enum.each(@repos, &run_migrations_for/1)
+         end
+
+         defp run_migrations_for(repo) do
+           app = Keyword.get(repo.config, :otp_app)
+           IO.puts("Running migrations for #{app}")
+           migrations_path = priv_path_for(repo, "migrations")
+           Ecto.Migrator.run(repo, migrations_path, :up, all: true)
+         end
+
+         defp run_seeds do
+           Enum.each(@repos, &run_seeds_for/1)
+         end
+
+         defp run_seeds_for(repo) do
+           # Run the seed script if it exists
+           seed_script = priv_path_for(repo, "seeds.exs")
+
+           if File.exists?(seed_script) do
+             IO.puts("Running seed script..")
+             Code.eval_file(seed_script)
+           end
+         end
+
+         defp priv_path_for(repo, filename) do
+           app = Keyword.get(repo.config, :otp_app)
+
+           repo_underscore =
+             repo
+             |> Module.split()
+             |> List.last()
+             |> Macro.underscore()
+
+           priv_dir = "#{:code.priv_dir(app)}"
+
+           Path.join([priv_dir, repo_underscore, filename])
+         end
+       end
+
+     #+END_SRC
+
+     I've set the overall module namespace to ~KubeNative~ to match our
+     application, and ensured that both ~ecto~ and ~ecto_sql~ appear in the list
+     of applications to start before executing the meaningful code. These two
+     entries also ensure that a new dependency introduced with Ecto 3,
+     ~telemetry~, will be started, preventing any related errors.
+
+     #+BEGIN_SRC elixir -n :hl_lines 2-8
+       defmodule KubeNative.ReleaseTasks do
+         @start_apps [
+           :crypto,
+           :ssl,
+           :postgrex,
+           :ecto,
+           :ecto_sql
+         ]
+     #+END_SRC
+
+     We also need to ensure that the code looks in the correct application's
+     configuration data to get the list of Ecto Repos that need to be present.
+
+     #+BEGIN_SRC elixir -n 10
+       @repos Application.get_env(:kube_native, :ecto_repos, [])
+     #+END_SRC
+
+     As of Ecto 3, the connection pool needs to be at least ~2~ rather than ~1~
+     with Ecto 2.
+
+     #+BEGIN_SRC elixir -n 30 :hl_lines 8
+       defp start_services do
+         IO.puts("Starting dependencies..")
+         # Start apps necessary for executing migrations
+         Enum.each(@start_apps, &Application.ensure_all_started/1)
+
+         # Start the Repo(s) for app
+         IO.puts("Starting repos..")
+         Enum.each(@repos, & &1.start_link(pool_size: 2))
+       end
+     #+END_SRC
+
+***** Custom Commands
+
+    We also need to create the two custom commands and enable them per the
+    [[https://hexdocs.pm/distillery/extensibility/custom_commands.html][Distillery documentation]].
+
+    We need one for migrations:
+
+    #+BEGIN_SRC shell
+      # rel/commands/migrate.sh
+
+      #!/bin/sh
+
+      release_ctl eval --mfa "KubeNative.ReleaseTasks.migrate/1" --argv -- "$@"
+    #+END_SRC
+
+    We also need one for seeds:
+
+    #+BEGIN_SRC shell
+      # rel/commands/seed.sh
+
+      #!/bin/sh
+
+      release_ctl eval --mfa "KubeNative.ReleaseTasks.seed/1" --argv -- "$@"
+    #+END_SRC
+
+    And we need to ensure that these scripts are packaged with the release:
+
+    #+BEGIN_SRC elixir
+      # rel/config.exs
+
+      # ...
+      release :kube_native_umbrella do
+        # ...
+        set commands: [
+          migrate: "rel/commands/migrate.sh",
+          seed: "rel/commands/seed.sh"
+        ]
+      end
+
+    #+END_SRC
+
+***** Running The Migrations
+
+    Finally, we can put this into practice, so let's start our database and run
+    our migrations and seeds, both of which are currently empty.
+
+    #+BEGIN_SRC shell
+      docker-compose pull
+      docker-compose build --pull kube_native
+      docker-compose up -d postgres
+      docker-compose run --rm kube_native migrate
+      docker-compose run --rm kube_native seed
+    #+END_SRC
+
+**** Booting the application in Docker-Compose
+
+     #+BEGIN_SRC shell
+       docker-compose up kube_native
+     #+END_SRC
+
+     You can then browse the application by visiting [[http://localhost:4000][http://localhost:4000]] as
+     normal, and should see the typical (production-style) log output in the
+     shell session that's running the above ~docker-compose~ command.
+
+     Note that this running container will not pick up any new file changes,
+     perform live-reload behavior, and is generally not useful for development
+     purposes. It's primary value is ensuring that your release is properly
+     configured via Distillery, and that your Dockerfile remains viable.
+
+***** Cleaning Up
+
+      If you'd like to reset the database, or otherwise clean up after the
+      Docker-Compose environment, you can use the ~down~ subcommand, optionally
+      including a flag to clear the data volume as well. Without the flag, it
+      will still remove the containers and Docker-specific network that was
+      created for you.
+
+      #+BEGIN_SRC shell
+        docker-compose down --volume
+      #+END_SRC
+
+**** Code Checkpoint
+
+     The work presented in this post is reflected in git tag ~part-2-end~
+     available [[https://github.com/shanesveller/kube-native-phoenix/tree/part-2-end][here]]. You can compare these changes to the previous post [[https://github.com/shanesveller/kube-native-phoenix/compare/part-2-start...part-2-end][here]].
+
+**** Appendix
+
+***** Software/Tool Versions
+
+      | Software       |    Version |
+      |----------------+------------|
+      | Distillery     |     2.0.12 |
+      | Docker         | 18.06.1-ce |
+      | Docker-Compose |     1.22.0 |
+      | Ecto           |      3.0.1 |
+      | Elixir         |      1.7.4 |
+      | Erlang         |     21.1.1 |
+      | Phoenix        |      1.4.0 |
+      | PostgreSQL     |       10.5 |
+
+*** DONE Kubernetes Native Phoenix Apps: Part 3 :docker:elixir:helm:phoenix:umbrella:kubernetes:
+    CLOSED: [2018-11-16 Fri 12:25]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2018-11-16
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-part-3
+    :END:
+
+    Now that we've established a viable workflow for building and running our
+    application in Docker containers, it's time to take our first pass at
+    running those containers on Kubernetes!
+
+    <!--more-->
+
+    #+begin_quote
+    <strong>2019-10-31: Please note that due to multiple personal factors, this
+     blog series has been discontinued without being completed. You can visit
+     [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][this post]] for a slightly longer note about this.</strong>
+    #+end_quote
+
+    Published articles in this series:
+
+    - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/][Introduction]]
+    - [[/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/][Part 1]]
+    - [[/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/][Part 2]]
+    - Part 3 (this post)
+    - [[/blog/2019/10/31/kubernetes-native-phoenix-apps-series-discontinued/][Discontinuation]]
+
+    To test our application in a Kubernetes environment, we have two available
+    routes: we can publish our Docker images to a public or private Docker
+    registry, and then deploy those images to a "real" cluster, or we can use
+    [[https://github.com/kubernetes/minikube][Minikube]] and build our images directly on the Minikube VM. For illustrative
+    purposes, let's start with the latter approach first.
+
+    As a reminder of what I wrote in the Introduction post, we will be glossing
+    over a lot of Kubernetes/Elixir/Phoenix fundamentals in this series and
+    trying to refer to existing documentation as often as possible. The purpose
+    of this series is more oriented around synthesizing a working solution from
+    disparate learnings. If you have unanswered questions, please feel free to
+    leave a comment and I'll try to direct you to the right learning resources.
+
+**** Building Docker images for Minikube
+
+     I'm using a [[#preferred-minikube-config][mildly customized Minikube configuration]] that more closely
+     matches my long-term target environment, which is [[https://cloud.google.com/kubernetes-engine/][Google Container Engine]].
+     However, one of the powerful benefits of targeting Kubernetes as a platform
+     is that the the content below is, for most purposes, compatible across many
+     different cloud providers as long as you're running a conformant cluster.
+
+     To build Docker images for Minikube specifically, we can directly re-use
+     the Docker daemon that is installed as part of the Minikube virtual
+     machine. This method can be very expedient, but is not compatible with a
+     "real" cluster, so we will need another path forward later on in the
+     series.
+
+     First, we use ~eval~ to set some environment variables that tell the local
+     ~docker~ CLI, perhaps the one included with Docker For Mac, how to talk to
+     the VM's Docker daemon. You don't need the actual Docker for Mac
+     application running to use this technique, but you do need to have it
+     installed. If you're using my specific Minikube config, you'll also want to
+     install the Hyperkit driver [[https://github.com/kubernetes/minikube/blob/v0.30.0/docs/drivers.md#hyperkit-driver][as documented by the Minikube project]].
+
+     After using the ~eval~ command, most if not all standard Docker CLI
+     subcommands should work correctly, so you can use ~ps~ to inspect running
+     containers (and get a glimpse of the inner structure of a Pod), or ~images~
+     to inspect locally available Docker images. You can obtain extra images
+     with ~pull~ or ~build~, and so on. In our case, we're going to use ~build~
+     to construct our local image for our [[https://github.com/shanesveller/kube-native-phoenix][application]], which will then be
+     available to the Kubernetes scheduler for use with Pods later on.
+
+    #+BEGIN_SRC shell
+      eval $(minikube docker-env)
+      docker build -t kube-native:latest .
+    #+END_SRC
+
+    At the time of writing, we can't use ~docker-compose~ directly with Minikube
+    due to version incompatibilities, but we could ostensibly use ~docker run~
+    with some extra arguments to match the container definition from our
+    ~docker-compose.yml~ file. However, this knowledge doesn't transfer
+    especially well into Kubernetes usage, and won't integrate at all with the
+    networking abstractions provided by Service objects, so I will leave that
+    step as an optional exercise for the reader.
+
+**** A taste of Helm
+
+     In order to successfully deploy our application, we need access to a
+     PostgreSQL database. There are a lot of avenues available to us, including
+     managed offerings like [[https://aws.amazon.com/rds/][Amazon RDS]] or [[https://cloud.google.com/sql/docs/][Google Cloud SQL]]. Those services are
+     definitely where I would direct most people for production purposes.
+     Running your own highly-available database is challenging, isn't
+     particularly differentiating for most businesses, and isn't within most
+     organization's core competencies. Doing so within a containerized
+     environment is still more challenging, and usually isn't recommended.
+
+     Later on in this series, we'll touch on the topic of "controllers" and
+     "operators" for Kubernetes, which can distill and embody human expertise to
+     make managing containerized software more successful. Among those available
+     tools are a few options for managing containerized databases. We likely
+     won't tackle that specific example directly, but we will definitely
+     leverage a few of the other operators.
+
+     For our purposes, all we specifically care about at the moment are that
+     there is a database available for our use, and that our running Pods can
+     connect to it. Since we're not being picky about the other details, let's
+     go ahead and run a database on our Kubernetes cluster anyway.
+
+     We could synthesize the necessary Kubernetes YAML to do so on our own, but
+     we're about to do that for our in-house application in another section of
+     this post, so let's use the "off-the-shelf" approach made possible by the
+     community tool [[https://github.com/helm/helm][Helm]]. The Helm user community contributes a fairly robust
+     body of packages for use with Helm, called Charts, which are available on
+     [[https://github.com/helm/charts][GitHub]]. Later on in the series, we'll be authoring our own Chart for our
+     application.
+
+****** Helm Glossary
+
+       - Tiller :: server-side component of the Helm suite, which runs
+                   on-cluster and interacts with the Kubernetes API on our
+                   behalf
+       - Helm :: CLI component of the Helm suite, which communicates with Tiller
+                 via gRPC
+       - Chart :: a package of templatized Kubernetes YAML which can be managed
+                  via Helm/Tiller to provide functionality to your cluster, or
+                  to your customers
+       - Repository :: Collection of Helm charts made available directly for use
+                       via the Helm CLI
+       - Release :: an instantiated/deployed copy of a Chart, which represents a
+                    collection of Kubernetes resources and can be managed in an
+                    ongoing fashion with the Helm CLI for upgrades, rollbacks,
+                    and deletion
+
+****** Installing Tiller
+
+     Helm needs a server-side component named Tiller, and there's a lot of
+     reading to be done about how to manage this component safely and securely
+     for production use, and the practices there will likely change drastically
+     when Helm v3 releases in the next year or two. This example configuration
+     does *not* include TLS support and uses cluster-wide administrative
+     privileges, so it is not particularly reflective of good production
+     practices.
+
+     For more information, see the Helm documentation around [[https://docs.helm.sh/using_helm/#role-based-access-control][RBAC]], [[https://docs.helm.sh/using_helm/#using-ssl-between-helm-and-tiller][TLS]], and
+     [[https://docs.helm.sh/using_helm/#securing-your-helm-installation][general security models]]. Angus Lees of Bitnami also wrote [[https://engineering.bitnami.com/articles/helm-security.html][a really nice
+     piece]] about hardening Helm.
+
+     We need a ServiceAccount for Tiller to use in its API calls, and that
+     ServiceAccount needs to have administrative privileges on the cluster. We
+     also don't want to keep an unbounded amount of history around for Helm
+     releases, so we cap that at 10 historical versions per Release.
+
+     #+BEGIN_SRC shell
+       kubectl -n kube-system create sa tiller
+       kubectl create clusterrolebinding tiller \
+               --clusterrole cluster-admin \
+               --serviceaccount=kube-system:tiller
+       helm init --history-max 10 \
+            --service-account tiller \
+            --skip-refresh --upgrade --wait
+     #+END_SRC
+
+****** Installing PostgreSQL
+
+       Public repositories of Helm Charts can be managed through the ~helm repo~
+       subcommands, and we need to make sure that the "stable" repository, which
+       matches the content of the ~helm/charts~ GitHub repository, are available
+       for use.
+
+       #+BEGIN_SRC shell
+         helm repo add stable https://kubernetes-charts.storage.googleapis.com
+       #+END_SRC
+
+       Then, we're going to look at what configuration options, or Values, are
+       included with the Chart we want to use. Much like other content in the
+       Kubernetes ecosystem, these are always rendered and authored using the
+       YAML format. Many Charts have fairly descriptive names and even
+       documentation comments on their Values files, but you ultimately may need
+       to visit the Chart's README or even peruse the source of the Chart to
+       determine exactly what tunable variables are available and what values
+       are acceptable to use.
+
+       #+BEGIN_SRC yaml
+         helm inspect values stable/postgresql --version 0.19.0
+       #+END_SRC
+
+       Finally, after identifying the immediately-relevant settings from the
+       Values data, we're going to tweak some of those Values as part of the
+       ~helm install~ command that is used to deploy the PostgreSQL container.
+       The first pass uses the flags ~--debug~ and ~--dry-run~ to emit the
+       generated YAML to STDOUT for inspection, then the command is repeated
+       without those flags in order to actually enact the changes. A ~--wait~
+       flag is included in order to block the completion of the command until
+       those new resources are fully ready. Later on we'll see how a tool called
+       ~helmfile~ can expedite this inspect-and-approve workflow.
+
+       #+BEGIN_SRC shell
+         helm install stable/postgresql \
+              --name kube-native-postgresql \
+              --namespace kube-native \
+              --set-string imageTag=10.5-alpine \
+              --set-string postgresUser=kube_native \
+              --set-string postgresDatabase=kube_native \
+              --set-string postgresPassword=kube_native \
+              --version 0.19 \
+              --debug --dry-run
+         helm install stable/postgresql \
+              --name kube-native-postgresql \
+              --namespace kube-native \
+              --set-string imageTag=10.5-alpine \
+              --set-string postgresUser=kube_native \
+              --set-string postgresDatabase=kube_native \
+              --set-string postgresPassword=kube_native \
+              --version 0.19 \
+              --wait
+       #+END_SRC
+
+       You'll notice that I'm choosing a particular, and rather outdated,
+       version of the Chart in the commands above. That's because in the pre-1.0
+       series of this chart, its functionality was based directly on the
+       official ~postgres~ Docker image from [[https://hub.docker.com/_/postgres/][Docker Hub]]. Later iterations of the
+       chart, particularly the 1.x and 2.x series, made drastic changes to both
+       the Values schema and to the base image, which was moved to [[https://github.com/bitnami/bitnami-docker-postgresql][a
+       Bitnami-managed image]].
+
+       In my recent experiences, these newer Chart versions and the Bitnami
+       image were both somewhat brittle and proved to be fast-moving targets,
+       while the 0.x series of the Chart and the official Hub image have proved
+       satisfactory for several months. I opted for a lower maintenance burden
+       for the purposes of this series.
+
+       #+BEGIN_QUOTE
+       Note that release names and namespaces both cannot contain underscores,
+       only hyphens.
+       #+END_QUOTE
+
+       If we want to perform a quick sanity check of our new database, we can
+       use ~kubectl port-forward~ to connect to it directly with the
+       preconfigured credentials.
+
+       #+BEGIN_SRC shell
+         # straight from the Helm chart's install notes
+         # helm status kube-native-postgresql
+         export POD_NAME=$(kubectl get pods --namespace kube-native -l "app=postgresql,release=kube-native-postgresql" -o jsonpath="{.items[0].metadata.name}")
+         kubectl port-forward --namespace kube-native $POD_NAME 15432:5432
+
+         # new shell session
+         psql postgres -U kube_native -p 15432 -h localhost
+         \l
+         \q
+       #+END_SRC
+
+**** Describing our application on Kubernetes' terms
+
+     Now that we have a viable database to work with, let's set about actually
+     running our application using standard Kubernetes primitives and unadorned
+     YAML. We'll introduce some more refined workflows and tools later in the
+     series.
+
+***** ConfigMap
+
+      First up is creating a home for our non-sensitive configuration details
+      that are supplied via environment variables. We set the stage for the
+      Elixir side of this 12-factor-ish configuration style [[/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/#other-configuration-and-secrets][back in Part 2]].
+
+      These values are intentionally very similar to what we included in
+      the ~docker-compose.yml~'s ~environment~ block for the application
+      container.
+
+      Farther down in the Deployment manifest, you'll see that each entry within
+      ~data~ appears within the container as an environment variable with the
+      same name and the associated value, via ~envFrom~. As all environment
+      variables in the Deployment manifest must be strings, we have to quote any
+      ambiguous values that could be inferred as another value type.
+
+      #+BEGIN_SRC yaml -n
+        apiVersion: v1
+        kind: ConfigMap
+        metadata:
+          name: kube-native-env
+          labels:
+            app: kube-native
+        data:
+          HOSTNAME: localhost
+          # cannot be a YAML number, thus the quotes
+          PORT: "4000"
+          # cannot be a YAML boolean true, thus the quotes
+          REPLACE_OS_VARS: "true"
+      #+END_SRC
+
+      We instantiate this ConfigMap with ~kubectl apply~:
+
+      #+BEGIN_SRC shell
+        kubectl apply -n kube-native -f configmap.yaml
+      #+END_SRC
+
+***** Secret
+
+      We also already have a few pieces of sensitive information that need to be
+      supplied as environment variables as well, and for that we'll use a
+      Kubernetes Secret. It's worthwhile to remind readers that Secrets are not
+      without flaws, and chief among them is that their YAML representation
+      isn't truly encrypted, merely a base64 encoding of their contents.
+      Permissions for accessing a Secret are essentially only constrained by
+      your cluster's RBAC rules, and anyone with a ~cluster-admin~ Role can
+      essentially read any Secret they like. It also takes [[https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/][a fair amoung of
+      extra effort]] to ensure that both your ~etcd~ data and Secrets data within
+      etcd are encrypted at rest, and some platforms intentionally don't even
+      allow you to interact with etcd directly.
+
+      A step up from Kubernetes Secrets, which potentially entails quite a bit
+      more infrastructure and cognitive/technical burden, would be to use
+      something like [[https://www.vaultproject.io/][Vault]] that provides more robust secrets management. There
+      are open-source tools available for managing a Vault cluster on top of
+      Kubernetes, including an [[https://github.com/coreos/vault-operator][Operator]] that configures Vault to use etcd for
+      its internal storage instead of [[https://www.consul.io/][Consul]].
+
+      In the sample below, each entry within ~data~ represents an environment
+      variable, while its value is a base64-encoded form of the raw string like
+      we used with ~docker-compose.yml~. In each case, it's generally important
+      to ensure that no wayward newlines wind up as part of the encoded value,
+      because tools like Ecto won't appreciate trying to parse that. As with the
+      ConfigMap above, these correspond with keys we provided in the
+      ~docker-compose.yml~'s ~environment~ section.
+
+      Among other techniques, you can encode a value for use in a Secret by
+      using ~echo -n~ and piping it to ~base64~, and you can decode it by piping
+      the encoded string to ~base64 -D~ instead. Note that these commands are
+      very likely to be persisted into your local shell history. Anyone with
+      access to your shell and a bit of knowledge could read them back out.
+      Right now that doesn't matter because they'd only be able to compromise
+      our Minikube environment, but this is still a drawback to be aware of.
+      Check the appendix for [[#preventing-shell-history][some references]] around preventing this information
+      from entering your shell history. Several text editors, Emacs in
+      particular, have direct support for base64 encoding and decoding strings
+      in-line.
+
+      #+BEGIN_SRC yaml -n
+        apiVersion: v1
+        kind: Secret
+        type: Opaque
+        metadata:
+          name: kube-native-env-secret
+          labels:
+            app: kube-native
+            data:
+              # echo -n "string" | base64
+              # ecto://kube_native:kube_native@kube-native-postgresql.kube-native.svc.cluster.local/kube_native
+              DATABASE_URL: ZWN0bzovL2t1YmVfbmF0aXZlOmt1YmVfbmF0aXZlQGt1YmUtbmF0aXZlLXBvc3RncmVzcWwua3ViZS1uYXRpdmUuc3ZjLmNsdXN0ZXIubG9jYWwva3ViZV9uYXRpdmU=
+              # "cookie"
+              ERLANG_COOKIE: Y29va2ll
+              # value from docker-compose.yml, base64-encoded
+              SECRET_KEY_BASE: ZnpCazhPRWNJOHRoR3hseXBXUFVxZlIydzJXb3BkTjh2OHBtcHV5MkpOajJlZXJiWUZubGVjdVZNckZQR1luVw==
+      #+END_SRC
+
+      The first substantial change from our ~docker-compose.yml~ content is to
+      make sure that we're referring to the new PostgreSQL Service we
+      provisioned via Helm above, by using its DNS hostname.
+
+      The default domain suffix on every Kubernetes cluster is
+      ~svc.cluster.local~, so referring to any Service via DNS takes the
+      following form:
+
+      ~service-name.namespace.svc.cluster.local~
+
+      For our PostgreSQL service, that gives us:
+
+      ~kube-native-postgresql.kube-native.svc.cluster.local~
+
+      You can verify that you have the right Service name with:
+
+      #+BEGIN_SRC shell
+        kubectl get svc -n kube-native
+      #+END_SRC
+
+      Among the output of the above is the service's ClusterIP, which should
+      directly match how the DNS name resolves inside your container, unless
+      you've customized a Pod's ~dnsConfig~ or ~dnsPolicy~ via its ~spec~.
+
+      Once again, we install this Secret with ~kubectl apply~:
+
+      #+BEGIN_SRC shell
+        kubectl apply -n kube-native -f secret.yaml
+      #+END_SRC
+
+      There are also several variations of ~kubectl create secret~ that would
+      allow you to supply raw values and it will base64-encode them for you, but
+      this is less conducive to iterative updates. I find that approach the most
+      helpful when dealing with pre-existing TLS certificates and keys, as we'll
+      see later in the series.
+
+***** Deployment
+
+      Now that the necessary configuration data has been written, we need to
+      define the actual behavior of the running container. This is noticeably
+      more verbose than a comparable ~docker-compose.yml~ service, but every
+      piece has its purpose, and much of it represents functionality that
+      Docker Compose does not provide.
+
+      The complete file:
+
+      #+BEGIN_SRC yaml -n
+        apiVersion: apps/v1beta2
+        kind: Deployment
+        metadata:
+          name: kube-native
+          labels:
+            app: kube-native
+        spec:
+          replicas: 1
+          revisionHistoryLimit: 10
+          selector:
+            matchLabels:
+              app: kube-native
+          strategy:
+            rollingUpdate:
+              maxSurge: 10%
+              maxUnavailable: 0
+            type: RollingUpdate
+          template:
+            metadata:
+              labels:
+                app: kube-native
+            spec:
+              containers:
+                - name: kube-native
+                  image: kube-native:latest
+                  imagePullPolicy: Never # Always, IfNotPresent, Never
+                  env:
+                    - name: POD_IP
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: status.podIP
+                  envFrom:
+                    - configMapRef:
+                        name: kube-native-env
+                    - secretRef:
+                        name: kube-native-env-secret
+                  ports:
+                    - name: http
+                      containerPort: 4000
+                      protocol: TCP
+                  livenessProbe:
+                    exec:
+                      command:
+                        - /app/bin/kube_native_umbrella
+                        - ping
+                    initialDelaySeconds: 5
+                    periodSeconds: 30
+                    timeoutSeconds: 5
+                  readinessProbe:
+                    httpGet:
+                      path: /
+                      port: http
+                    initialDelaySeconds: 5
+                  resources:
+                    limits:
+                      cpu: 1000m
+                      memory: 256Mi
+                    requests:
+                      cpu: 250m
+                      memory: 128Mi
+      #+END_SRC
+
+      We'll work our way through the highlights of this content, little by
+      little. Much of the prose description will describe fields using a
+      dot-separated notation, such as ~spec.template.metadata~, which matches
+      the syntax you can use with the *incredibly handy* ~kubectl explain~
+      command to see more detail about that portion of the manifest schema.
+
+      #+BEGIN_QUOTE
+      Please forgive the lack of proper indentation on each smaller snippet - I
+      don't appear to have enough control with Hugo to force indentation without
+      introducing extra content that wasn't really there in the complete example.
+      #+END_QUOTE
+
+      This first section of the ~spec~ describes "meta" behavior around the
+      Deployment and how it manages its underlying ReplicaSets. Specifically, it
+      caps the historical limit to 10 unique iterations, and asserts that
+      rolling updates must be performed in an *additive* way. Rather than taking
+      down old Pods and replacing them with new ones, in that order, it instead
+      will launch new Pods running any updated image or behavior, wait for them
+      to validate as healthy, and /then/ remove an equivalent number of old
+      Pods. As written, it allows up to 10% of your stable target capacity to be
+      duplicated with newer Pods during the upgrade process, and when a
+      successful deploy is complete, you should be back at your target number of
+      replicas.
+
+      For ~spec.selector~, make sure that you have *just enough* labels to
+      uniquely identify your workload compared to any of its siblings from the
+      same Kubernetes namespace, without being too precise. In particular, omit
+      any labels that you might change with each iterative deployment of your
+      application, such as a version number. If you include such details, you
+      are running the risk of creating "orphaned" ReplicaSets that don't get
+      properly reaped or managed by the Deployment object.
+
+      #+BEGIN_SRC yaml -n 7 :hl_lines 3,7-11
+        spec:
+          replicas: 1
+          revisionHistoryLimit: 10
+          selector:
+            matchLabels:
+              app: kube-native
+          strategy:
+            rollingUpdate:
+              maxSurge: 10%
+              maxUnavailable: 0
+            type: RollingUpdate
+      #+END_SRC
+
+      The ~spec.template.metadata.labels~ should be either an exact match or
+      superset of the ~spec.selector.matchLabels~ above. It's fine to include
+      additional labels as well. Some sorts of information belong in
+      ~annotations~ instead. One useful heuristic is the following question: *Do
+      I need to query and filter my Pods by this property?* If the answer is
+      yes, the information probably belongs in a label, if no, it probably
+      belongs in an annotation.
+
+      Note that just about any property within the ~spec.template~ that gets
+      changed will trigger a rollout of new Pods, so be mindful of what
+      information you include. Volatile details like a CI/CD build number may
+      cause unnecessary churn of your running Pods when their configuration has
+      not changed in other, more semantically meaningful ways.
+
+      ~spec.template.spec.containers.image~ and ~.imagePullPolicy~ are how we
+      dictate which image should be running within the Pod. I've included a
+      traditionally-reviled practice in this snippet, which is using the
+      ~latest~ tag on my Docker image. There are almost no circumstances where
+      you actually want to use this ~latest~ tag for serious work, however
+      expedient it may be. A more sustainable approach is to tag your images
+      semantically - perhaps with version numbers for your project, a time or
+      date stamp, a git SHA, or even some combination of the proceeding
+      identifiers. This lets you reason very specifically about what iteration
+      of your application is currently running or meant to be running, without
+      using information that you can only obtain after building the image, such
+      as its built-in SHA256 digest.
+
+      Because we're using a Minikube-based environment in this phase, I've also
+      set the ~imagePullPolicy~ to a value of ~Never~, because there's nowhere
+      for the VM to obtain this image if it's not already built locally. In a
+      live cluster with a remote Docker image registry, we'd generally use one
+      of ~IfNotPresent~, if we're treating image tags as immutable, or ~Always~,
+      if we treat some or all image tags as mutable.
+
+      #+BEGIN_SRC yaml +n :hl_lines 8-9
+        template:
+          metadata:
+            labels:
+              app: kube-native
+          spec:
+            containers:
+              - name: kube-native
+                image: kube-native:latest
+                imagePullPolicy: Never # Always, IfNotPresent, Never
+     #+END_SRC
+
+     Within ~spec.template.spec.containers.env~ we're using the [[https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/][Downward API]] to
+     expose the Pod's own IP address as an environment variable, which will be
+     consumed by our Distillery-managed configuration to set the BEAM node name.
+
+     We're also using ~.envFrom~ to source environment variables directly from
+     our ConfigMap and Secret above.
+
+     #+BEGIN_SRC yaml +n
+       env:
+         - name: POD_IP
+           valueFrom:
+             fieldRef:
+               fieldPath: status.podIP
+       envFrom:
+         - configMapRef:
+             name: kube-native-env
+         - secretRef:
+             name: kube-native-env-secret
+     #+END_SRC
+
+     In order to actually serve traffic from our Pod, we need to expose our HTTP
+     listener port ~4000~ to the private network. We give each port a ~name~ so
+     that we can refer to it later in the Service declaration, without needing
+     to remember to update both places if and when a port number changes. Port
+     names have to be viable for use with DNS notation, so there are some
+     restrictions on what non-alphanumeric characters can be included.
+
+     Notice that we're not making any mention of any of the ports that are
+     necessary for Distributed Erlang, EPMD, etc. This is intentional! We'll see
+     later in the series that clustering and distribution don't need those ports
+     to be formally exposed, because we have a fully routable private network
+     space to communicate within. This is somewhat unique compared to other
+     platforms, such as Amazon ECS.
+
+     If you have sudden doubts about the security posture of this private
+     networking model, you'll want to brush up on the [[https://kubernetes.io/docs/concepts/services-networking/network-policies/][NetworkPolicy]] resource
+     type, which requires a supported CNI driver for enforcement. Many
+     Kubernetes providers support this out of the box or with opt-in
+     configuration. At the time of writing, GKE uses [[https://www.projectcalico.org/][Calico]] and an opt-in flag
+     at cluster creation time, which can also be enabled for existing clusters.
+
+     #+BEGIN_SRC yaml +n
+       ports:
+         - name: http
+           containerPort: 4000
+           protocol: TCP
+     #+END_SRC
+
+     One of the ways that Kubernetes can help us manage our application's
+     availability is by continually performing regular health-checking tasks on
+     our behalf, and responding appropriately to indications of bad container
+     health.
+
+     The YAML below describes two classes of Probes. Failures of a *readiness
+     probe* will remove the Pod for consideration by Service network traffic,
+     while a sufficient number of failures of a *liveness probe* will cause
+     Kubernetes to *restart the container*. A good heuristic to follow is that
+     readiness probes should fail in circumstances that are possible to
+     self-heal from without restarting your application, while a liveness probe
+     should represent a very real failure that can't be resolved with patience
+     or internal behavior.
+
+     Note also that these automatic restarts from liveness probes will contribue
+     to ~CrashLoopBackOff~ conditions, and a poorly-tuned or misconfigured probe
+     may inadvertantly cause more availability problems than they solve.
+
+     Our ~readinessProbe~ currently issues a GET request directly to the root
+     URL of our Phoenix application. This is a somewhat useful litmus test, but
+     be wary if the query footprint or other performance characteristics of that
+     root URL start to grow - these probes are tunable but by default those
+     requests happen *every 10 seconds, per-Pod*. If the homepage gets to be too
+     heavy, it's common to create a specific Plug endpoint just for
+     health-checking purposes, but ideally that endpoint should perform a quick
+     round-trip to the database to ensure correct credentials.
+
+     The ~livenessProbe~ uses a facility built into the Distillery-provided CLI
+     to ~ping~ our BEAM process and wait for a response. If the BEAM is in a
+     truly bad state this will fail as intended, but under heavy workloads it
+     potentially can exceed the default timeout of 1 second to come back.
+
+     #+BEGIN_SRC yaml +n
+       livenessProbe:
+         exec:
+           command:
+             - /app/bin/kube_native_umbrella
+             - ping
+         initialDelaySeconds: 5
+         periodSeconds: 30
+         timeoutSeconds: 5
+       readinessProbe:
+         httpGet:
+           path: /
+           port: http
+         initialDelaySeconds: 5
+     #+END_SRC
+
+     Finally, we can help maintain the quality-of-service within the overall
+     cluster by describing the resources that need to be allocated on a per-Pod
+     basis. The cluster's scheduler uses this information to determine which
+     Pods, how many Pods, and so on that each available Node can execute without
+     becoming overloaded. If you provide matching values for both ~limits~ and
+     ~requests~, your pod is treated as having a guaranteed quality of service,
+     while any mismatch between the two allows for "bursting" behavior but a
+     less stringent QOS. Take a look at the [[https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/][Kubernetes documentation]] for more
+     details.
+
+     These specific numbers are both arbitrary and generous for the content of
+     the example application. The units are expressed in "millicores" for CPU,
+     where 1000 represents one full second of one full CPU core, and
+     [[https://en.wikipedia.org/wiki/Mebibyte][mebibytes/gibibytes/etc]]. for memory. Ideally, you should perform empirical
+     measurements against an un-constrained version of your application in a
+     live cluster with meaningful traffic to determine more appropriate values
+     for your use-case.
+
+     Later in the series we'll discuss how to do this with a tool called
+     Prometheus, which is very popular to use in conjunction with Kubernetes. It
+     would also be a fairly reasonable starting point to base these figures on
+     your observed metrics from Erlang's Observer, provided you're running on a
+     similar OS with the right ~MIX_ENV~ and representative samples of traffic.
+     It's even possible to perform Pod-level autoscaling based on these metrics,
+     which is a very exciting opportunity and can be much more meaningful than
+     pure CPU/Memory utilization figures.
+
+     In practical terms it's not really possible to exceed the supplied CPU
+     limits due to how they're applied via ~cgroups~, but you may find the
+     application becomes "starved" or unable to sustain the expected throughput.
+     Your main options there are to allocate more CPU and/or memory per-Pod, or
+     perhaps more readily available, to just run more Pod replicas to distribute
+     the traffic evenly across a larger pool of application Pods. If you'd like
+     to see the specifics of how CPU shares are enforced, take a look at the
+     [[https://docs.docker.com/config/containers/resource_constraints/#cpu][Docker documentation]].
+
+     Memory is a slightly more nuanced constraint that is [[https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory][documented on Docker's
+     site]], where Kubernetes is applying the ~--memory~ flag for you based on the
+     Pod's resource allocation. One thing to note if the ~limit~ and ~request~
+     differ is that your Pod can attempt and sometimes even succeed at
+     allocating more memory than the ~request~ value, and will be allowed to
+     continue using it for as long as it does not exceed the ~limit~, and for as
+     long as there aren't low-memory conditions on the Node's host OS.
+
+     #+BEGIN_SRC yaml +n
+       resources:
+         limits:
+           cpu: 1000m
+           memory: 256Mi
+         requests:
+           cpu: 250m
+           memory: 128Mi
+     #+END_SRC
+
+     We can start a running Pod on our cluster using ~kubectl~, and tweak its
+     replica count on the fly without using ~kubectl edit~ or ~kubectl apply~
+     again later, including scaling the Deployment to ~0~ replicas if that's an
+     appropriate move.
+
+     #+BEGIN_SRC shell
+       kubectl apply -n kube-native -f deployment.yaml
+       kubectl scale deployment -n kube-native kube-native --replicas=3
+     #+END_SRC
+
+***** Service
+
+      Now that we have running containers, we want to distribute incoming
+      traffic across the ready replicas equally. For that we'll create a
+      Service, which targets a similar ~selector~ as the Deployment used, and
+      exposes a *Service* port that forwards traffic to the *Pod* port. The
+      exposed port on the service does not have to match the Pod's port in
+      number, but every Service port must target an existing port name or number
+      on the Pod.
+
+      In Minikube, we must use ClusterIP or NodePort services as it doesn't have
+      any facilities for managing an external LoadBalancer. ClusterIP would only
+      allow traffic from other Pods, so we'll go with NodePort, which will
+      expose a high-numbered port on the Minikube VM itself for external traffic.
+
+      #+BEGIN_SRC yaml -n
+        apiVersion: v1
+        kind: Service
+        metadata:
+          name: kube-native
+          labels:
+            app: kube-native
+        spec:
+          type: NodePort # LoadBalancer, NodePort, ClusterIP
+          ports:
+            - port: 80
+              targetPort: http
+              protocol: TCP
+              name: http
+          selector:
+            app: kube-native
+      #+END_SRC
+
+      Our trusty ~kubectl apply~ comes to our rescue again:
+
+      #+BEGIN_SRC shell
+        kubectl apply -n kube-native -f service.yaml
+      #+END_SRC
+
+**** Running Migrations
+
+      With our application running, we still need to perform our database
+      migrations. There are two techniques that are readily available to us for
+      this purpose, with different trade-offs.
+
+      You'll recall that we created our ~ReleaseTasks~ module and the associated
+      Distillery custom commands in [[/blog/2018/11/13/kubernetes-native-phoenix-apps-part-2/#running-migrations-and-seeds][Part 2]], so now we need to trigger that
+      behavior in a Kubernetes Pod context instead.
+
+***** Running migrations/seeds via ~kubectl exec~
+
+      The first and simplest technique is to simply connect to a running
+      application Pod via ~kubectl exec~, and trigger our migrations via the
+      Distillery-provided CLI:
+
+      #+BEGIN_SRC shell
+        kubectl get pods -o wide -n kube-native
+        kubectl exec -it $pod_name sh
+        bin/kube_native_umbrella migrate
+        bin/kube_native_umbrella seed
+      #+END_SRC
+
+      This isn't super sustainable and can be quite error-prone, and if our
+      application fails to boot successfully without its migrations, we'd be
+      unable to use this approach without resolving that first, which may be a
+      chicken-and-egg problem. The next section introduces a more complex but
+      more satisfactory approach.
+
+***** Running migrations/seeds via Jobs
+
+      A preferable method to perform our migrations is to create a Job object
+      that executes the same Docker image as our deployment, but uses its
+      ~migrate~ or ~seed~ subcommand and doesn't expose any ports. A sample
+      appears below, with highlights on the meaningfully different lines. In
+      most ways, this directly resembles the Deployment template above, adjusted
+      for the schema for a Job object and omitting the ports list and probes.
+      All we care about here is whether our command eventually exits 0.
+
+      Note that the Job name should be unique per-namespace, or else you'll need
+      to delete and recreate the resource to run another round of migrations,
+      which is tedious if not actually problematic. We'll see a convenient way
+      to automate this as part of the next post in the series, covering Helm.
+
+      #+BEGIN_SRC yaml -n :hl_lines 13,18
+        apiVersion: batch/v1
+        kind: Job
+        metadata:
+          name: kube-native-migration-0
+          labels:
+            app: kube-native
+        spec:
+          template:
+            metadata:
+              labels:
+                app: kube-native
+            spec:
+              restartPolicy: OnFailure
+              containers:
+                - name: kube-native
+                  image: kube-native:latest
+                  imagePullPolicy: IfNotPresent
+                  args: ["migrate"]
+                  env:
+                    - name: POD_IP
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: status.podIP
+                  envFrom:
+                    - configMapRef:
+                        name: kube-native-env
+                    - secretRef:
+                        name: kube-native-env-secret
+                  resources:
+                    limits:
+                      cpu: 1000m
+                      memory: 256Mi
+                    requests:
+                      cpu: 250m
+                      memory: 128Mi
+      #+END_SRC
+
+      Once last time, we create the Job resource with ~kubectl apply~:
+
+      #+BEGIN_SRC shell
+        kubectl apply -n kube-native -f job.yaml
+      #+END_SRC
+
+**** Browsing the live application
+
+      With our migrations applied and the Service has ready Endpoints, you can
+      visit the application in your browser with a single command, or just echo
+      the appropriate URL in your shell for later reference:
+
+      #+BEGIN_SRC shell
+        minikube service -n kube-native kube-native
+        minikube service -n kube-native kube-native --url
+      #+END_SRC
+
+**** Code Checkpoint
+
+     The work presented in this post is reflected in git tag ~part-3-end~
+     available [[https://github.com/shanesveller/kube-native-phoenix/tree/part-3-end][here]]. You can compare these changes to the previous post [[https://github.com/shanesveller/kube-native-phoenix/compare/part-3-start...part-3-end][here]].
+
+**** Acknowledgements
+
+     Thanks to early readers Eric Oestrich, Dan Lindeman, and Justin Nauman for
+     their feedback. Any remaining flaws are my own.
+
+**** Appendix
+
+***** Software/Tool Versions
+
+      | Software   |    Version |
+      |------------+------------|
+      | Distillery |     2.0.12 |
+      | Docker     | 18.06.1-ce |
+      | Ecto       |      3.0.1 |
+      | Elixir     |      1.7.4 |
+      | Erlang     |     21.1.1 |
+      | Helm       |     2.11.0 |
+      | Minikube   |     0.30.0 |
+      | Phoenix    |      1.4.0 |
+      | PostgreSQL |       10.5 |
+
+***** Preferred Minikube config                                    :minikube:
+      :PROPERTIES:
+      :CUSTOM_ID: preferred-minikube-config
+      :END:
+
+      #+BEGIN_SRC shell
+        minikube config set bootstrapper kubeadm
+        minikube config set kubernetes-version v1.11.2
+        minikube config set cpus 4
+        minikube config set memory 8192
+        minikube config set vm-driver hyperkit
+        minikube config set v 4
+        minikube config set WantReportErrorPrompt false
+      #+END_SRC
+
+***** Preventing Shell History
+      :PROPERTIES:
+      :CUSTOM_ID: preventing-shell-history
+      :END:
+
+      One technique to avoid this is to prefix the command with a space, which
+      instructs appropriately-configured shells to omit the following command
+      from persisted history.
+
+      Bash users should take a look at the documentation around [[https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html][history
+      facilities]], paying close attention to environment variables such as
+      ~HISTFILE~, ~HISTIGNORE~ and ~HISTCONTROL~.
+
+      ZSH users similarly can look at [[http://zsh.sourceforge.net/Doc/Release/Options.html#History][their own documentation]], such as the
+      variable ~HIST_IGNORE_SPACE~.
+
+      Fish users like myself can be smug about this behavior being built in.
+
+*** DONE Kubernetes Native Phoenix Apps: Series Discontinued :elixir:kubernetes:phoenix:
+    CLOSED: [2019-10-31 Thu 11:38]
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2019-10-31
+    :EXPORT_FILE_NAME: kubernetes-native-phoenix-apps-series-discontinued
+    :END:
+
+    It is clear to me and to everyone else that I have not completed the
+    ambitious outline I proposed at [[/blog/2018/10/28/kubernetes-native-phoenix-apps-part-1/][the beginning of this series]], and after
+    close to a full year of neglect, I feel I owe it to readers to be honest
+    about the fact that *no more posts in this series are forthcoming*.
+
+    <!--more-->
+
+    Due to a variety of personal factors, I have not been able to invest the
+    time, energy, and research necessary to continue to write posts in this
+    series while preserving the existing levels of accuracy and thoroughness.
+    Rather than compromise on the quality of the work, *I am discontinuing the
+    series* and do not intend to add more content or revise existing posts except
+    to correct any discovered security flaws.
+
+    Thank you very much to various commenters who have reached out here or
+    elsewhere with words of praise and encouragement, including the hopeful
+    queries about the next post. I'm sorry to let you down, but the most
+    rewarding feedback I can ever receive is that the information I shared has
+    helped you succeed.
+
+**** Outlook
+     In case anyone is curious, *I still believe Elixir is an excellent language
+     for developing networked services.* *I also still believe Kubernetes is an
+     excellent deployment target for such services.*
+
+     I was very grateful to see Jose Valim's /excellent/ post titled
+     [[http://blog.plataformatec.com.br/2019/10/kubernetes-and-the-erlang-vm-orchestration-on-the-large-and-the-small/][Kubernetes and the Erlang VM: orchestration on the large and the small]]. It
+     is a great resource to help clear the air for people who suspected that
+     using one of the two obviated the need for or the benefits of the other,
+     from a respected voice.
+
+**** Hindsight
+     Regarding the [[/blog/2018/10/28/kubernetes-native-phoenix-apps-introduction/#planned-series-content][original planned content]] for the series, I would probably
+     change a few things if I could, but the overall scope would remain largely
+     intact.
+
+     In this past June, [[https://elixir-lang.org/blog/2019/06/24/elixir-v1-9-0-released/][Elixir 1.9 introduced native support]] for building
+     releases without using Distillery, and while it doesn't do everything
+     Distillery supports, you may find it sufficient depending on your needs.
+
+     My previous employer has found great success in the usage of Job resources
+     for actions that need to occur once per logical deployment, such as
+     database migrations and seeds. Previously they were using ~initContainers~
+     for this, which was an expensive repetition of work that was executed both
+     during deployments and during normal scale-up events in between deploys.
+
+     It has also been highly effective to expose system metrics using [[https://github.com/deadtrickster/prometheus.ex][Prometheus]]
+     together with instrumenting line-of-business code via the [[https://github.com/beam-telemetry/telemetry][telemetry]]
+     library. If you're curious what that looks like, my friend [[https://twitter.com/ericoestrich][Eric]] has a great
+     guide [[https://blog.smartlogic.io/instrumenting-with-telemetry/][here]].
+
+     On the "misses" side, I would avoid recommending people adopt Istio because
+     I think it's clear by now that most organizations do not need its
+     complexity and would find it difficult to reap much benefit. I think this
+     applies largely to all "Service Mesh" projects, but to Istio in particular.
+     If I felt I had a need that could be solved by Service Mesh, I'd
+     investigate [[https://linkerd.io/][linkerd 2.x]] instead.
+
+     Next, a word on tooling: Helm 3 is [[https://github.com/helm/helm/releases/tag/v3.0.0-rc.1][around the corner]] and comes with
+     [[https://helm.sh/blog/helm-3-preview-pt2/][significant changes to the execution model]] of the tool. Most people I've
+     spoken with are really optimistic about the security improvements that stem
+     from this change, but aren't looking forward to the migration process.
+     Meanwhile, [[https://kustomize.io/][kustomize]] has been gaining traction and some users are
+     considering it sufficient versus a more robust/complex templating solution.
+     Very-recent versions of the ~kubectl~ CLI even include native support for
+     Kustomize-based approaches.
+
+     Folks who are willing to explore more unconventional tools that are more
+     functional in approach may find [[https://github.com/xtruder/kubenix][kubenix]] or [[https://github.com/dhall-lang/dhall-kubernetes][dhall-kubernetes]] of interest.
+     Ksonnet was [[https://blogs.vmware.com/cloudnative/2019/02/05/welcoming-heptio-open-source-projects-to-vmware/][cancelled outright]] during VMWare's acquisition of Heptio
+     earlier this year. Jsonnet still exists, but I'm not seeing wide adoptions
+     in my little microcosm of the ecosystem.
+
+**** Still Have Questions?
+     I really recommend you try posting on either the Elixir Forum, or the
+     [[https://elixir-slackin.herokuapp.com/][community Slack]] in #deployment and/or #kubernetes. There's a non-zero
+     chance I might be the one to see your question and respond! I am passionate
+     about the subject and do quite a bit of research and POCs to stay current,
+     but I am not unique in my expertise on this intersection, and getting input
+     from diverse viewpoints would be beneficial regardless.
+
+**** Up Next
+     A lot of my personal interests and professional focus have changed in the
+     last year, and I've delayed writing about any of them here due to the angst
+     about this unfinished series. Now that I've unburdened my conscience, I've
+     got a few areas that I might potentially touch on here as future blog
+     posts. I'm not committing to writing all or any of these, but this is the
+     list of topics that are tumbling around in my head.
+
+***** Kubernetes Operators
+      Cory O'Daniel has a library called [[https://github.com/coryodaniel/bonny/][bonny]] for authoring Kubernetes
+      operators using Elixir itself, and some cursory exploration on my part
+      made me really optimistic about the project. Unfortunately, I don't have a
+      use-case for creating an internal operator today, and I would still be
+      strongly considering one of the Golang-based toolkits if I had to start
+      one in the next 3-6 months, as it would be the path of least resistance
+      (and most documentation).
+
+***** Elixir Docker Images
+      The state of the official Elixir Docker images has caused me some personal
+      and professional grief over the years due to their use of mutable tags. As
+      an example, the image ~elixir:1.9.2-alpine~ might include various versions
+      of Erlang/OTP depending on when you first pulled the image. I've resorted
+      to pinning my ~FROM~ images with the full ~image:tag@sha256:checksum~
+      syntax to counteract this.
+
+      I've been exploring performing "matrix" or cartesian-product Docker image
+      builds using the [[https://nixos.org/nix/][Nix]] language together with its direct support for
+      [[https://nixos.org/nixpkgs/manual/#sec-pkgs-dockerTools][producing Docker images declaratively]]. This means I could readily build
+      images with the same essential content but including any specific pair of
+      Erlang and Elixir versions. The work necessary to support this also enables
+      the possibility of my replacing [[https://github.com/asdf-vm/asdf-elixir][asdf-elixir]] and [[https://github.com/asdf-vm/asdf-erlang][asdf-erlang]] with Nix-based
+      tooling instead.
+
+***** Nix
+      On the topic of Nix, I have greatly expanded my use of the language and of
+      supporting tools like [[https://github.com/LnL7/nix-darwin][nix-darwin]] and [[https://github.com/rycee/home-manager][home-manager]]. I'm down to roughly
+      &tilde;15 packages installed via [[https://brew.sh/][homebrew]] directly, and ~home-manager~
+      maintains about &tilde;150 packages for me in its stead. I hope to share
+      some trip reports and snippets here in the future.
+
+***** Kubernetes-native CI
+      I hope to examine some of the Kubernetes-native CI solutions that are
+      cropping up, such as [[https://tekton.dev/][Tekton]], because I'm not content with either Jenkins
+      or GitLab CI, who are currently dominating the self-hosted space. GitHub
+      Actions has also recently become generally-available and my initial
+      experiments are pretty positive, although there is /zero/ support for
+      caching at the moment.
+
+***** MUD Engine
+      I don't talk about it much because it's quite content-free and incomplete,
+      but like my friend Eric and other members of the [[https://mudcoders.com/][MUD Coders Guild]], I have a
+      nearly-from-scratch game engine for multiplayer text RPGs that I've been
+      working at off-and-on for the better part of two years. The ultimate goal
+      is to support the many magic systems of Brandon Sanderson's Cosmere book
+      universe, and to hopefully recapture some of the joy I experienced while
+      playing /Wheel of Time/ MUDs as a teenager.
+
+      I've recently started the MUD project over [[https://www.commitstrip.com/en/2014/11/25/west-side-project-story/][yet again]] to benefit from my
+      recent experience with building headless networked services, and I hope to
+      not repeat past mistakes, only make new ones! I previously burnt myself out
+      on the project by focusing on technically-challenging but less-rewarding
+      topics that were very low-level concerns, prior to incorporating actual
+      gameplay mechanics that would make it feel like a /game/. That said, it's
+      been a great testbed project for Distributed-Erlang techniques and other
+      libraries, and is where I first cut my teeth on ~libcluster~.
+
+***** Rust
+      In 2019 I have been revisiting my self-study of [[https://www.rust-lang.org/][Rust]]. So far my favorite
+      Rust resource to keep my motivation up is a [[https://bfnightly.bracketproductions.com/rustbook/chapter_0.html][tutorial for building
+      roguelike games]] created by Herbert Wolverson, and this is a relatively
+      recent discovery for me. I also found the original edition and 2018
+      edition of /The Rust Programming Language/ to be one of the
+      highest-quality programming textbooks I've experienced thus far. I've made
+      exactly one appearance at our local Rust meetup in Chicago, and I hope to
+      hit up more as time allows.
+
+***** Haskell
+      I've also been very enthralled while studying [[https://www.haskell.org/][Haskell]], and Haskell has
+      exposed me to quite a bit of further computer-science research I hope to
+      do in the future. In particular, I picked up the /Purely Functional Data
+      Structures/ textbook by Chris Okasaki, /Thinking With Types/ by Sandy
+      Maguire, and early access to /Optics By Example/ by Chris Penner via his
+      [[https://www.patreon.com/ChrisPenner][Patreon]]. I'm still working through all of them but I feel like I'm
+      learning and appreciating so much already.
+
+***** Self-Care
+     Around the beginning of the year I started to experience moderate RSI
+     symptoms and made some equipment changes to counteract the pain. I switched
+     to using an [[https://ergodox-ez.com/][Ergodox EZ]] keyboard at work and at home, as well as a [[https://www.logitech.com/en-us/product/mx-vertical-ergonomic-mouse][Logitech
+     MX Vertical]] mouse at the office, and I consider them both to be successful
+     as I have been pain- and numbness-free for months. There is a definite
+     adjustment period to both, and it unfortunately means my home-office desk
+     is less-than-useful to my partner if she wished to use it on occassion. I
+     might one day write up some of my conceptual decisions in how to structure
+     my keyboard layout, how I manage it technically, the advantages offered by
+     a keyboard with programmable firmware, and gotchas to look out for.
+
+***** Non-technical Hobbies
+     My partner is currently embarking on the journey to read my beloved /Wheel
+     of Time/ book series, and I have re-read it so often (once per book release
+     of the final four entries) that I needed a way to keep things fresh while
+     also following along with her progress. I've never consumed books in
+     audiobook form before, but Michael Kramer and Kate Reading have
+     well-deserve reputations for enriching [[https://www.audible.com/series/Wheel-of-Time-Audiobooks/B005NB81EI][the experience]]. I've had a fresh
+     sense of enjoyment from revisiting such familiar stories this way, and
+     they're a sure-fire way to elevate my mood on a melancholy day. I'm looking
+     forward to and/or dreading the launch of [[https://twitter.com/wotonprime][Amazon's TV adaptation]] and the
+     inevitable comparisons to ASOIAF/Game of Thrones, even though the WoT
+     series is older, *finished*, and IMHO, executed much better.
+
+     I'm also a giant sucker for the /Star Wars/ franchise, which has a
+     [[https://twitter.com/StarWarsExplain/status/1189943612576059393][startling amount of content coming out next month]]. I've read a non-trivial
+     fraction of the available EU material, most of the new canon through 2018,
+     and am currently working my way through several of the classic and modern
+     comic series as well. We also recently attended our third annual
+     performance of the original trilogy movies with the music performed
+     by a live orchestra, in Kalamazoo, MI. It's been a great trip every year.
+
+     In a shocking turn of events for a household of two software developers, we
+     play a fair amount of board games, and I'm particularly looking forward to
+     starting a [[http://www.cephalofair.com/gloomhaven][Gloomhaven]] campaign with friends early next year. We also had
+     our first session of the /Sherlock Holmes: Consulting Detective/ game
+     series a little while back, which I loved, partially because we picked a
+     great group to play it with. Old standbys like /Century: Spice Road/ and
+     /Roll for the Galaxy/ still make frequent appearances, too. I have
+     aspirations of making some digital utilities to improve our tableside
+     experiences in the future, particularly for RPG campaigns.
+** Emacs                                                             :@emacs:
+*** DONE Blogging with org-mode and ox-hugo      :hugo:netlify:org:spacemacs:
+    CLOSED: [2018-02-13 Tue 12:30]
+    :PROPERTIES:
+    :EXPORT_DATE: 2018-02-13
+    :EXPORT_FILE_NAME: blogging-with-org-mode-and-ox-hugo
+    :END:
+
+    I've recently assembled a workflow for blogging with [[https://gohugo.io/][Hugo]], [[http://orgmode.org/][org-mode]], and
+    [[https://www.netlify.com/][Netlify]] via a single ~.org~ document, with live reload during writing and ~git
+    push~ driven deployments.
+
+    <!--more-->
+
+**** Recommended Reading                                   :noexport:rewrite:
+
+     Before pursing a workflow like this, you should be somewhat familiar with
+     the separate behaviors of [[https://www.gnu.org/software/emacs/][Emacs]], [[http://orgmode.org/][org-mode]], org's [[http://orgmode.org/manual/Exporting.html#Exporting][Exporting]] functionality,
+     and the [[https://gohugo.io][Hugo]] static site generator.
+
+**** Requirements
+
+     I've detailed my current environment in the
+     [[#ox-hugo-software-tool-versions][Software/Tool Versions]] appendix below.
+     Strictly speaking, the hard requirements of the
+     [[https://melpa.org/#/ox-hugo][ox-hugo]] package are:
+
+     - Emacs 24.4+
+     - org-mode 9.0+
+
+     To use the ~git~-based publishing part of this workflow, you'll also need:
+
+     - A GitHub account (free or otherwise)
+     - A Netlify account (free or otherwise)
+
+**** Features
+
+     - Compose and organize content in a single Org file
+     - Each post automatically gets a Table of Contents if sub-headings are present
+     - Preview in your local browser including live-reload behavior
+     - Syntax highlighting, including custom line numbers and line highlights
+     - Manage draft / publication status
+     - Manage categories and tags
+     - Manage post aliases
+     - Manage custom front-matter
+     - Publish via ~git push~, perhaps via [[https://magit.vc/][Magit]]
+     - Free hosting via Netlify (dear Netlify, please let me give you money
+       without a multi-user/Pro account!)
+     - Free HTTPS via Netlify's Lets Encrypt integration
+
+**** Installation
+
+     I've included snippets for ~use-package~ users and Spacemacs users - others
+     should look at the [[https://github.com/kaushalmodi/ox-hugo][repository]] for the ~ox-hugo~ package for more
+     information.
+
+***** ~use-package~ Users
+
+      #+BEGIN_SRC emacs-lisp
+        (use-package ox-hugo
+          :after ox)
+      #+END_SRC
+
+***** Spacemacs Users
+
+      Use @@html:<kbd>@@ SPC f e d @@html:</kbd>@@ to open ~~/.spacemacs~ (or
+      ~~/.spacemacs/init.el~) and within the ~dotspacemacs/layers~ function, add or
+      update an entry to the ~dotspacemacs-configuration-layers~ list like so:
+
+      #+BEGIN_SRC emacs-lisp
+        (org :variables
+             org-enable-hugo-support t)
+      #+END_SRC
+
+      Restart Emacs or use @@html:<kbd>@@ SPC f e R @@html:</kbd>@@ to reload your
+      configuration on-the-fly. If you already have an entry for the ~org~ layer,
+      just include the variable ~org-enable-hugo-support~ with value ~t~.
+
+**** Workflow
+***** Project Structure
+
+      I'm working within a vanilla Hugo project with the following structure,
+      similar to what you'd see right after a ~hugo new site~ command:
+
+      #+BEGIN_SRC sh
+        $ tree -d -L 2
+        .
+        ├── archetypes
+        ├── content
+        │   ├── blog
+        │   └── pages
+        ├── data
+        ├── layouts
+        ├── static
+        │   └── images
+        └── themes
+            └── hugo-redlounge
+      #+END_SRC
+
+      My ~blog.org~ file sits at the root of my repository, but could be placed
+      nearly anywhere within and re-targeted with the ~HUGO_BASE_DIR~ setting.
+      Subtrees get exported to a subdirectory of ~content~ based on their
+      ~EXPORT_HUGO_SECTION~ property.
+
+***** File Structure
+
+      There are several options for organizing the ~.org~ file you store your
+      blog posts and pages in, but here's a single-file structure that works
+      well for me.
+
+****** Global settings and metadata
+
+       #+BEGIN_SRC org -n 1
+         ,#+STARTUP: content
+         ,#+AUTHOR: Shane Sveller
+         ,#+HUGO_BASE_DIR: .
+         ,#+HUGO_AUTO_SET_LASTMOD: t
+       #+END_SRC
+
+       Line 1 is an ~org-mode~ setting that tells Emacs that upon opening this
+       file, default to showing all headings and subheadings but not the inner
+       content until @@html:<kbd>@@ TAB @@html:</kbd>@@ is pressed while the
+       pointer is on a particular heading.
+
+       Line 2 sets my global author information, which propagates into each post
+       and page I manage with this ~.org~ file.
+
+       Line 3 tells ~ox-hugo~ that the current ~.org~ file is located in the
+       root of the overall Hugo project, which means that exported data will
+       be saved into the ~content~ directory and appropriate subdirectory that
+       reside next to the ~.org~ file. Relative and absolute paths both work here.
+
+       Finally line 4 tells ~ox-hugo~ to update the ~lastmod~ property of each
+       exported item to match the current time and date, which can be reflected
+       on your site in various ways based on your theme and configuration.
+
+****** Creating a page
+       :PROPERTIES:
+       :END:
+
+       #+BEGIN_SRC org -n 5
+         ,* Pages
+           :PROPERTIES:
+           :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+           :EXPORT_HUGO_MENU: :menu main
+           :EXPORT_HUGO_SECTION: pages
+           :EXPORT_HUGO_WEIGHT: auto
+           :END:
+       #+END_SRC
+
+       My ~.org~ file has a dedicated top-level Org heading to contain my ~Page~
+       content, and this heading sets a number of shared *properties* that are
+       inherited by the individual sub-headings representing each page.
+
+       Line 7 includes multiple key-value pairs that get inserted as-is into the
+       [[https://gohugo.io/content-management/front-matter/#front-matter-variables][Hugo
+       front matter]]. It largely disables all the "frills" one might typically
+       associate with a regular blog post - commenting, pagination, metadata, etc.
+
+       Line 8 indicates that Hugo should include a link to this content on the
+       ~main~ menu of my site, which is currently displayed on the left sidebar
+       of every page.
+
+       Line 9 tells ~ox-hugo~ to export the files into the ~/content/pages~
+       subdirectory of my Hugo project, which has a slightly different Hugo
+       template file than a standard blog post.
+
+       Line 10 tells ~ox-hugo~ to manage the ~weight~ property of the Hugo
+       front matter data. It will calculate the appropriate relative numbers to
+       fill in during the export process.
+
+       #+BEGIN_SRC org -n12
+         ,** Page Title
+            :PROPERTIES:
+            :EXPORT_FILE_NAME: page-title
+            :END:
+
+            Page content
+       #+END_SRC
+
+       To create a new ~page~ on my Hugo site, I insert a new sub-heading under
+       the ~Pages~ heading from the snippet just above. That heading's title is
+       somewhat arbitrary, but this sub-heading will directly inform the ~title~
+       of the exported content.
+
+       Line 14 demonstrates the first truly required property,
+       ~EXPORT_FILE_NAME~, with tells ~ox-hugo~ what filename under
+       ~/content/pages~ to export this sub-tree to. Under my current settings
+       this also directly determines the actual path portion of the resulting
+       URL. For example, this one would be visible at ~/pages/page-title/~.
+
+       Pages can include fairly arbitrary content below the sub-heading,
+       including further sub-headings to break up a longer page or post. You can
+       include links, images, and formatting, all using standard Org syntax.
+
+****** Creating posts
+       :PROPERTIES:
+       :END:
+
+       #+BEGIN_SRC org -n 19
+         ,* Posts
+           :PROPERTIES:
+           :EXPORT_HUGO_SECTION: blog
+           :END:
+       #+END_SRC
+
+       As with Pages above, I create a top-level Org heading to contain my
+       standard blog posts.
+
+       Line 20 configures ~ox-hugo~ to export any sub-headings to
+       ~/content/blog~ in my Hugo project, versus ~pages~ above.
+
+      #+BEGIN_SRC org -n 23
+        ,** Topic                                                             :@topic:
+      #+END_SRC
+
+      I sort my posts into categories by topic and create sub-headings for each
+      topic, and assign Org tags to each sub-heading that are prefixed with ~@~.
+      Org tags on a post that have an ~@~ prefix will generate a ~category~
+      entry in the exported front matter, which is one of the [[https://gohugo.io/content-management/taxonomies/#hugo-taxonomy-defaults][default taxonomies]]
+      built into a new Hugo project. Org tags are inherited from parent headings
+      by sub-headings, so all further subheadings under this subheading will
+      include the ~@topic~ tag.
+
+      #+BEGIN_SRC org -n 24
+        ,*** DONE Post Title                                               :post:tags:
+            CLOSED: [2017-12-19 Tue 17:00]
+            :PROPERTIES:
+            :EXPORT_DATE: 2017-12-19
+            :EXPORT_FILE_NAME: post-title-in-slug-form
+            :END:
+      #+END_SRC
+
+      This sub-heading begins a new post, and is marked as *DONE* in Org syntax
+      with a *CLOSED* timestamp. It also has Org tags named ~post~ and ~tags~
+      which will be inserted into the exported front matter as ~tags~. It
+      includes an ~EXPORT_DATE~ property, which would be used as the post's
+      publication date in the absense of the *CLOSED* timestamp on line 25.
+      Finally it includes the same ~EXPORT_FILE_NAME~ property as mentioned
+      above under Page management.
+
+      #+BEGIN_SRC org -n31
+        Content
+
+        More content
+
+        ,#+BEGIN_SRC bash -l 7 :hl_lines 8
+          echo 'Some source code content'
+          echo 'This line will be highlighted'
+          echo "This one won't"
+        ,#+END_SRC
+      #+END_SRC
+
+      This snippet demonstrates the syntax needed to include a
+      syntax-highlighted code snippet within a post. You can quickly start a
+      code block with @@html:<kbd>@@ < s TAB @@html:</kbd>@@.
+
+      If you append a valid language to ~#+BEGIN_SRC~, and your copy of Emacs
+      has an associated major mode that is named ~$language-mode~, you'll get
+      automatic syntax highlighting while composing the post, and the exported
+      markdown will include either the ~highlight~ [[https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode][shortcode]] or [[https://gohugo.io/content-management/syntax-highlighting/#highlight-in-code-fences][Markdown "code
+      fences"]]. As an added bonus, you can use ~org-edit-special~ (@@html:<kbd>@@
+      , ' @@html:</kbd>@@ for Spacemacs or @@html:<kbd>@@ C-c ' @@html:</kbd>@@
+      for vanilla Emacs) to open a new popover window that lets you edit that
+      code snippet in a separate Emacs buffer. This will behave nearly
+      identically to editing a standalone file with that major mode, including
+      any extra behavior like auto-complete, linting, etc.
+
+****** Excluding/heading sub-headings from export
+
+       On some posts I like to create a private space to jot down ad hoc notes,
+       research and reference links, unrefined code snippets, etc. that
+       shouldn't appear in the final product but are useful to me during the
+       writing process. By configuring the ~org-export-exclude-tags~ variable,
+       or an ~EXCLUDE_TAGS~ file variable, then inserting a matching Org tag on
+       a sub-heading, that content will not appear in the exported Markdown or
+       in the published post, but will remain intact in the original ~.org~
+       file. In my case, it's a ~:noexport:~ tag.
+
+****** Automatic export on save
+
+       The ox-hugo site includes [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][great documentation]] for adding a local variable
+       to your ~.org~ file to enable automatic "what I mean" export whenever you
+       save the file.
+
+       The resulting syntax after following these instructions is:
+
+       #+BEGIN_SRC org -n 51
+         ,* Footnotes
+         ,* COMMENT Local Variables                                           :ARCHIVE:
+         # Local Variables:
+         # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+         # eval: (auto-fill-mode 1)
+         # End:
+       #+END_SRC
+
+****** Full Sample
+       :PROPERTIES:
+       :END:
+
+      #+BEGIN_SRC org -n 1 :hl_lines 3,4,7,9,10,21,24-29,35-39,44,51-56
+        ,#+STARTUP: content
+        ,#+AUTHOR: Shane Sveller
+        ,#+HUGO_BASE_DIR: .
+        ,#+HUGO_AUTO_SET_LASTMOD: t
+        ,* Pages
+          :PROPERTIES:
+          :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+          :EXPORT_HUGO_MENU: :menu main
+          :EXPORT_HUGO_SECTION: pages
+          :EXPORT_HUGO_WEIGHT: auto
+          :END:
+        ,** Page Title
+           :PROPERTIES:
+           :EXPORT_FILE_NAME: page-title
+           :END:
+
+           Page content
+
+        ,* Posts
+          :PROPERTIES:
+          :EXPORT_HUGO_SECTION: blog
+          :END:
+        ,** Topic                                                             :@topic:
+        ,*** DONE Post Title                                               :post:tags:
+            CLOSED: [2017-12-19 Tue 17:00]
+            :PROPERTIES:
+            :EXPORT_DATE: 2017-12-19
+            :EXPORT_FILE_NAME: post-title-in-slug-form
+            :END:
+
+            Content
+
+            More Content
+
+            ,#+BEGIN_SRC bash -l 7 :hl_lines 8
+              echo 'Some source code content'
+              echo 'This line will be highlighted'
+              echo "This one won't"
+            ,#+END_SRC
+
+        ,**** Post Sub-Heading
+             This is another section within the post.
+
+        ,*** TODO Draft Post Title
+            :PROPERTIES:
+            :EXPORT_FILE_NAME: draft-post-title
+            :END:
+
+            This article *will* be exported but will be marked ~draft = true~ in the front matter.
+
+        ,* Footnotes
+        ,* COMMENT Local Variables                                           :ARCHIVE:
+        # Local Variables:
+        # eval: (add-hook 'after-save-hook #'org-hugo-export-wim-to-md-after-save :append :local)
+        # eval: (auto-fill-mode 1)
+        # End:
+      #+END_SRC
+
+***** Marking a post as a Draft
+
+      To create a new draft post, add a new heading or subheading, and set it to
+      *TODO* status, perhaps via ~M-x org-todo~ or @@html:<kbd>@@ C-c C-t
+      @@html:</kbd>@@.
+
+      *TODO* status ensures that the post will be rendered to Markdown with
+      ~draft = true~ in its frontmatter, which configures Hugo itself to prevent
+      a premature publish of the article to your live site unless specifically
+      instructed to include draft content.
+
+      /A heading without *TODO* or *DONE* is *not* considered a draft/.
+
+***** Publishing a Draft
+
+      To publish a draft post, toggle its *TODO* state to *DONE*. If you have
+      ~org-log-done~ set to ~'time~, toggling to *DONE* automatically adds a
+      *CLOSED:* timestamp that will be respected in favor of ~EXPORT_DATE~
+      property for setting the ~date~ in the rendered post's front matter.
+
+***** Creating a draft with =org-capture=                          :noexport:
+
+***** Optional: Live reload without a separate shell tab
+      :PROPERTIES:
+      :CUSTOM_ID: prodigy-hugo-service
+      :END:
+
+      If you enable the ~prodigy~ layer in Spacemacs, or install the ~Prodigy~
+      package manually, you can define a process in your
+      ~dotspacemacs/user-config~ function like so:
+
+      #+BEGIN_SRC emacs-lisp -n1
+        (prodigy-define-service
+          :name "Hugo Personal Blog"
+          :command "/usr/local/bin/hugo"
+          :args '("server" "-D" "--navigateToChanged" "-t" "hugo-redlounge")
+          :cwd "~/src/shanesveller-dot-com"
+          :tags '(personal)
+          :stop-signal 'sigkill
+          :kill-process-buffer-on-stop t)
+      #+END_SRC
+
+      Then, to manage the process while editing with Emacs, I use @@html:<kbd>@@ SPC a
+      S @@html:</kbd>@@ to open the Prodigy buffer, highlight the service entry, and
+      use @@html:<kbd>@@ s @@html:</kbd>@@ to start the process, @@html:<kbd>@@ S
+      @@html:</kbd>@@ to stop the service, and @@html:<kbd>@@ $ @@html:</kbd>@@ to
+      view process output. @@html:<kbd>@@ q @@html:</kbd>@@ will back out of any
+      Prodigy-generated buffers.
+
+***** TODO Bonus: Publishing Your Blog With Netlify                :noexport:
+
+**** Room for Improvement                                          :noexport:
+
+     /Ed: These are candidates for inclusion before this post goes live./
+
+     - Linking to headings, other posts, and headings in other posts
+       (~CUSTOM_ID~ property seems to work within a document)
+     - Emacs-lisp function to view Netlify preview URL by Git SHA
+     - Emacs-lisp function to open your browser when opening the ~.org~ file and
+       Hugo is running
+     - [[https://ox-hugo.scripter.co/doc/images-in-content/][Screenshot capture workflow]]
+     - [[http://orgmode.org/worg/org-contrib/org-protocol.html][Org-protocol workflow]]
+     - [[https://ox-hugo.scripter.co/doc/org-capture-setup/][Org-capture templates]]
+     - CI workflow if not using the Netlify / GitHub webhooks integration
+
+**** Software/Tool Versions
+     :PROPERTIES:
+     :CUSTOM_ID: ox-hugo-software-tool-versions
+     :END:
+
+     | Software  |       Version |
+     |-----------+---------------|
+     | Emacs     |        25.3.1 |
+     | Spacemacs |       0.300.0 |
+     | Org       |         9.1.2 |
+     | Hugo      |        0.31.1 |
+     | ox-hugo   | 20171026.1402 |
+     | prodigy   | 20170816.1114 |
+
+**** Emacs Lisp Snippets
+
+     Here's a snippet that can build off of [[#prodigy-hugo-service][the Prodigy service snippet]] to
+     automatically visit your local Hugo server in a browser once it's running.
+
+     I'm still learning emacs-lisp, and will probably find in the future that
+     this style doesn't suit me, particularly the trailing parentheses.
+
+     I'd also like to investigate ~defcustom~ to allow these default values to
+     be more configurable.
+
+     #+BEGIN_SRC emacs-lisp
+       (defun browse-hugo-maybe ()
+         (interactive)
+         (let ((hugo-service-name "Hugo Personal Blog")
+               (hugo-service-port "1313"))
+           (if (prodigy-service-started-p (prodigy-find-service hugo-service-name))
+               (progn
+                 (message "Hugo detected, launching browser...")
+                 (browse-url (concat "http://localhost:" hugo-service-port))))))
+     #+END_SRC
+
+**** Credits
+
+Thank you to [[https://twitter.com/jrnt30][Justin Nauman]] for great feedback on an early version of this
+article. Any remaining flaws are my own.
+
+**** Reference Links                                               :noexport:
+     - https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives
+     - https://github.com/kaushalmodi/ox-hugo/blob/dffb7e970f33959a0b97fb8df267a54d01a98a2a/ox-hugo.el#L2570
+**** Emacs-Lisp Scratch Pad                                        :noexport:
+
+     #+BEGIN_SRC emacs-lisp
+       (defun browse-hugo-maybe ()
+         (interactive)
+         (let ((hugo-service-name "Hugo Personal Blog")
+               (hugo-service-port "1313"))
+           (if (prodigy-service-started-p (prodigy-find-service hugo-service-name))
+               (progn
+                 (message "Hugo detected, launching browser...")
+                 (browse-url (concat "http://localhost:" hugo-service-port))))))
+
+       (defun current-magit-commit ()
+         (interactive)
+         (progn
+           (message "Current file: %s" (buffer-file-name))
+           (message "Current file status: %s" (vc-working-revision (buffer-file-name)))
+           (let '(short-name "shanesveller-dot-com")
+             (browse-url (format "https://%s--%s.netlify.com" (truncate-string-to-width (vc-working-revision (buffer-file-name)) 24) short-name))
+             )
+           )
+         )
+
+       ;; https://5a3998c20b79b7514937073d--shanesveller-dot-com.netlify.com/
+       ;; 5a3998c20b79b7514937073d
+
+       (defun toolbox ()
+         (interactive)
+
+         (save-excursion
+           (org-back-to-heading :invisible-ok)
+           (let* (
+                  (this-element (org-element-at-point))
+                  (prop-name :EXPORT_FILE_NAME)
+                  (element-prop (org-element-property prop-name this-element))
+                  )
+             (message "%s" element-prop)
+             )
+           )
+         )
+
+       (defun format-subtree-permalink (date filename)
+         (let* (
+                (split-date (split-string date "-"))
+                (date-year (nth 0 split-date))
+                (date-month (nth 1 split-date))
+                (date-day (nth 2 split-date))
+                )
+           (message "%s/%s/%s/%s" date-year date-month date-day filename)
+           )
+         )
+
+       (defun destructure-test (date filename)
+         (require 'cl)
+         (destructuring-bind (date-year date-month date-day)
+             (split-string date "-")
+           (message "%s/%s/%s/%s" date-year date-month date-day filename)
+           )
+         )
+
+       ;; (destructure-test "2017-12-29" "my-filename")
+
+       ;; https://5a3af02a4c4b932e03d474a9--shanesveller-dot-com.netlify.com/
+       (defun browse-netlify-branch-deploy (git-sha site-name &optional sub-path)
+         (let* (
+                (netlify-proto "https")
+                (netlify-hostname "netlify.com")
+                (netlify-url-format "%s://%s--%s.%s%s")
+                )
+           ;; (browse-url (format netlify-url-format netlify-proto git-sha site-name netlify-hostname (or sub-path "")))
+           (message netlify-url-format netlify-proto git-sha site-name netlify-hostname (or sub-path ""))
+           )
+         )
+
+       (browse-netlify-branch-deploy "5a3af02a4c4b932e03d474a9" "shanesveller-dot-com")
+
+       ;; https://www.shanesveller.com/blog/2017/12/19/blogging-with-org-mode-and-ox-hugo/
+       (defun my/preview-post-on-netlify ()
+         (interactive)
+
+         (save-excursion
+           (ignore-errors
+             (org-back-to-heading :invisible-ok))
+           (let* (
+                  (post-element (org-hugo--get-valid-subtree))
+                  (post-filename (org-element-property :EXPORT_FILE_NAME post-element))
+                  ;; (upstream (magit-get-upstream-remote))
+                  ;; (remote-url (magit-git-string "remote" "get-url" upstream))
+                  ;; (remote-components (split-string remote-url "/"))
+                  ;; (raw-repo (car (last remote-components)))
+                  ;; (repo (replace-regexp-in-string "\.git$" "" raw-repo))
+                  (branch (magit-get-current-branch))
+                  (upstream-remote (magit-get-upstream-remote branch))
+                  (upstream-branch (magit-get-upstream-branch branch))
+                  ;; (sanitized-branch (url-hexify-string branch))
+                  (git-sha (magit-rev-parse-safe upstream-branch))
+                  (sub-path (format "/blog/%s/%s/%s/%s/" "2017" "12" "19" "blogging-with-org-mode-and-ox-hugo"))
+                  )
+             (message "%s/%s/%s/%s" branch upstream-remote upstream-branch (magit-get-upstream-ref branch))
+             ;; (message "%s" (browse-netlify-branch-deploy git-sha "shanesveller-dot-com" sub-path))
+             )
+           )
+         )
+     #+END_SRC
+
+** Productivity                                               :@productivity:
+*** TODO Managing shell dotfiles with thoughbot's rcm  :@shells:dotfiles:rcm:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-shell-dotfiles-with-thoughtbots-rcm
+    :END:
+
+** Terraform                            :@terraform:infrastructure__as__code:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** DONE Managing GitLab groups and projects with Terraform          :gitlab:
+    CLOSED: [2017-12-17 Sun 11:26]
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-17
+    :EXPORT_FILE_NAME: managing-gitlab-with-terraform
+    :END:
+
+    I've begun using GitLab to host some of my personal projects on my own
+    domain, sometimes as a mirror of a GitHub repository and sometimes as the
+    primary home of the project.
+
+    <!--more-->
+
+**** Configuring the provider
+
+     The following Terraform syntax can be used with the public/commercial
+     GitLab.com service or with a self-hosted installation, as long as you have
+     network connectivity and a token with the correct permissions. I'm using
+     the latter.
+
+     In my case, I used a *Personal Access Token* associated with my individual
+     administrative account, with these permissions:
+
+     - ~api~
+     - ~read_user~
+
+     #+BEGIN_SRC hcl
+       variable "gitlab_token" {
+         type    = "string"
+         default = "hunter2"
+       }
+
+       variable "gitlab_url" {
+         type    = "string"
+         default = "https://gitlab.mydomain.com/api/v4/"
+       }
+
+       provider "gitlab" {
+         base_url = "${var.gitlab_url}"
+         token    = "${var.gitlab_token}"
+         version  = "~> 1.0.0"
+       }
+     #+END_SRC
+
+     If you'd like to keep these out of your source code, Terraform also allows
+     setting variables in shell environment variables by prefixing them with
+     ~TF_VAR_~, as in ~TF_VAR_gitlab_token~ and ~TF_VAR_gitlab_url~. You can
+     manage these manually or with a tool like [[https://direnv.net/][direnv]],
+     and keep the latter's ~.envrc~ file in your ~.gitignore~.
+
+**** Creating a group
+
+     #+BEGIN_SRC hcl
+       resource "gitlab_group" "blogs" {
+         name        = "blogs"
+         path        = "blogs"
+         description = "Public blog repositories"
+       }
+     #+END_SRC
+
+***** Creating a nested group
+
+      I have a group on my GitLab site for ~infrastructure~ projects, and a
+      nested group on my site for [[https://helm.sh/][Helm]] charts within that ~infrastructure~
+      group. Here's the Terraform code that manages those two groups and their
+      relationship:
+
+      #+BEGIN_SRC hcl
+        resource "gitlab_group" "infrastructure" {
+          name        = "infrastructure"
+          path        = "infrastructure"
+        }
+
+        resource "gitlab_group" "helm-charts" {
+          name        = "helm-charts"
+          path        = "helm-charts"
+          parent_id   = "${gitlab_group.infrastructure.id}"
+        }
+      #+END_SRC
+
+      Projects created within this child group will appear on the site at
+      paths that look like ~/infrastructure/helm-charts/foo-chart~.
+
+**** Creating a project within a group
+
+     Here's an example, a mirror of my public blog that is hosted on GitHub as
+     well. Because of the nature of its contents, I've disabled most of the
+     extra features offered by GitLab for this particular repository.
+
+     #+BEGIN_SRC hcl :hl_lines 2,7
+       resource "gitlab_project" "blogs-shanesveller-dot-com" {
+         name                   = "shanesveller-dot-com"
+         default_branch         = "master"
+         description            = ""
+         issues_enabled         = false
+         merge_requests_enabled = false
+         namespace_id           = "${gitlab_group.blogs.id}"
+         snippets_enabled       = false
+         visibility_level       = "public"
+         wiki_enabled           = false
+       }
+     #+END_SRC
+
+     With the highlighted lines in place, the repository path on the site
+     becomes ~/blogs/shanesveller-dot-com~.
+
+**** Closing Comments
+
+     The GitLab provider as of 1.0.0 is missing some API coverage for what
+     GitLab offers, and has some bugs associated with things like a project's
+     default branch. Often I use ~git-flow~ and want to set a project's default
+     branch to ~develop~, but that feature does not currently seem to work
+     reliably due to
+     [[https://github.com/terraform-providers/terraform-provider-gitlab/pull/41][this
+     code typo]].
+
+**** Software/Tools Versions
+     :PROPERTIES:
+     :CUSTOM_ID: gitlab-terraform-software-tools-versions
+     :END:
+
+     | Software                  | Version |
+     |---------------------------+---------|
+     | GitLab                    |  10.2.4 |
+     | Terraform                 |  0.10.7 |
+     | Terraform GitLab Provider |   1.0.0 |
+
+**** Reference Links                                               :noexport:
+
+     - https://www.terraform.io/docs/providers/gitlab/index.html
+
+* Page Ideas                                                       :noexport:
+  :PROPERTIES:
+  :VISIBILITY: content
+  :END:
+** Networking                                                   :@networking:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** TODO Home Network
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_FILE_NAME: home-network
+    :END:
+
+My home network is largely made up of Ubiquiti Unifi equipment.
+
+**** Router
+
+My router is a UBNT USG 3-port. I also own a 4-port USG Pro but cannot currently
+tolerate the fan noise in an apartment, so that's still in the box.
+
+**** Switching
+
+I have a UBNT 24-port 250W POE switch for my main hub, as well as a UBNT 8-port
+switch with POE passthrough for my TV stand so I can hard-wire my game consoles and
+media devices.
+* Post Ideas                                                       :noexport:
+** Elixir                                                           :@elixir:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** TODO Managing Elixir runtime version with Nix                :elixir:nix:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_DATE: 2017-12-15
+    :EXPORT_FILE_NAME: managing-elixir-runtime-version-with-nix
+    :END:
+
+ I've experimented recently with managing multiple versions of Erlang and Elixir with Nix.
+
+ <!--more-->
+
+**** Software/Tool Versions
+
+ | Software | Verison |
+ |----------+---------|
+ | OSX      | 10.12.6 |
+ | Nix      | 1.11.16 |
+
+**** Installation
+
+ #+BEGIN_SRC shell-script
+ brew cask install nix
+ #+END_SRC
+
+**** Getting Started
+
+**** References
+*** TODO Testing Phoenix applications with GitLab CI on Kubernetes :ci:gitlab:kubernetes:phoenix:testing:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: testing-phoenix-applications-with-gitlab-ci-on-kubernetes
+    :END:
+** Emacs                                                             :@emacs:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** TODO Spaced repitition with =org-drill=                       :education:
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-17
+    :EXPORT_FILE_NAME: org-drill
+    :END:
+
+    My team at [[https://www.raise.com/][work]] has previously used
+    [[http://orgmode.org/worg/org-contrib/org-drill.html][org-drill]] to study
+    less-familiar subjects, initially focused on Kubernetes during our early
+    adoption process. Its documentation is largely excellent, but here's a few
+    extra details we've learned over time.
+
+**** Installation
+
+     #+BEGIN_SRC emacs-lisp
+       (with-eval-after-load 'org
+         (require 'cl)
+         (require 'org-drill))
+     #+END_SRC
+
+**** Usage
+***** Creating cards
+****** Single File
+       Here's what the raw ~org~ source looks like:
+
+       #+BEGIN_SRC org
+         ,* Cards
+
+         ,** Card 1                                                             :drill:
+
+         ,*** Card 1 Answer
+       #+END_SRC
+****** Directory of Files
+**** Software/Tools Versions
+     :PROPERTIES:
+     :CUSTOM_ID: org-drill-software-tools-versions
+     :END:
+
+     | Software  | Version |
+     |-----------+---------|
+     | Emacs     |  25.3.1 |
+     | Spacemacs | 0.300.0 |
+     | Org       |   9.1.2 |
+**** Reference Links                                               :noexport:
+     - http://orgmode.org/worg/org-contrib/org-drill.html
+*** TODO Presentations with org-mode and org-reveal :org:mode:presentation:reveal_js:slideshow:
+    :PROPERTIES:
+    :EXPORT_DATE: 2017-12-26
+    :EXPORT_FILE_NAME: presentations-with-org-mode-and-org-reveal
+    :END:
+*** TODO Literate Emacs configuration with org-mode                     :org:
+    :PROPERTIES:
+    :EXPORT_DATE:
+    :EXPORT_FILE_NAME: literate-emacs-configuration-with-org-mode
+    :END:
+*** TODO Emacs package management with straight.el
+    :PROPERTIES:
+    :EXPORT_DATE:
+    :EXPORT_FILE_NAME: emacs-package-management-with-straight-el
+    :END:
+** Kubernetes                                                   :@kubernetes:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** TODO Allowing HTTP traffic with nginx-ingress
+*** TODO Securing HTTPS traffic with cert-manager
+*** TODO Monitoring GKE with CoreOS' Prometheus Operator :coreos:monitoring:prometheus:gke:kubernetes:
+    :PROPERTIES:
+    :EXPORT_AUTHOR: Shane Sveller
+    :EXPORT_FILE_NAME: monitoring-gke-with-coreos-prometheus-operator
+    :EXPORT_HUGO_WEIGHT: auto
+    :END:
+
+**** Background
+
+ [[https://prometheus.io/][Prometheus]] is all the rage in the Kubernetes community, especially after
+ becoming a Cloud Native Computing Foundation [[https://www.cncf.io/projects/][hosted project]].
+
+ CoreOS has a project called [[https://github.com/coreos/prometheus-operator][prometheus-operator]] which helps manage instances
+ of a Prometheus server, or its compatriot AlertManager, via Kubernetes manifests.
+
+**** Getting Started
+
+ I've chosen to install the Operator via the project's provided [[https://github.com/coreos/prometheus-operator/tree/v0.15.0/helm/prometheus-operator][Helm Chart]].
+
+ First, install CoreOS' Helm repository
+
+ #+BEGIN_SRC shell-script
+   helm init --client-only
+   helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+ #+END_SRC
+
+ I've also provided some customized values:
+
+ #+BEGIN_SRC yaml
+   global:
+     ## Hyperkube image to use when getting ThirdPartyResources & cleaning up
+     ##
+     hyperkube:
+       repository: quay.io/coreos/hyperkube
+       # https://quay.io/repository/coreos/hyperkube?tag=latest&tab=tags
+       tag: v1.8.4_coreos.0
+       pullPolicy: IfNotPresent
+
+   ## Prometheus-operator image
+   ##
+   image:
+     repository: quay.io/coreos/prometheus-operator
+     # https://quay.io/repository/coreos/prometheus-operator?tag=latest&tab=tags
+     tag: v0.15.0
+     pullPolicy: IfNotPresent
+ #+END_SRC
+
+ Finally, I install the chart with my supplied values in a ~monitoring~ namespace:
+
+ #+BEGIN_SRC shell-script
+   helm install --name prometheus-operator \
+        --namespace monitoring \
+        --values prometheus-operator-values.yaml \
+        coreos/prometheus-operator
+ #+END_SRC
+
+**** Using kube-prometheus for basic cluster metrics
+
+ #+BEGIN_SRC shell-script
+   helm install --name kube-prometheus \
+        --namespace monitoring \
+        --values kube-prometheus-values.yaml \
+        coreos/kube-prometheus
+ #+END_SRC
+
+**** Software/Tool Versions
+
+ | Project                   |     Version |
+ |---------------------------+-------------|
+ | Google Cloud SDK          |     182.0.0 |
+ | Kubernetes                | 1.8.3-gke.0 |
+ | Helm                      |       2.7.2 |
+ | Prometheus Operator       |      0.15.0 |
+ | Prometheus Operator Chart |       0.0.7 |
+ | Prometheus                |       1.8.2 |
+
+*** TODO Building and testing software with Jenkins on Kubernetes
+*** TODO Managing Minikube with asdf
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-minikube-with-asdf
+    :END:
+** Nix
+*** TODO Managing OSX dotfiles with home-manager
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: managing-osx-dotfiles-with-home-manager
+    :END:
+*** TODO Packaging versioned Golang binaries with Nix
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: packaging-versioned-golang-binaries-with-nix
+    :END:
+*** TODO Perfect development environments with shell.nix and direnv
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: perfect-development-environemnts-with-shell-nix-and-direnv
+    :END:
+** Shell Programming                                                :@shells:
+   :PROPERTIES:
+   :VISIBILITY: children
+   :END:
+*** Fish Shell                                                        :@fish:
+    :PROPERTIES:
+    :VISIBILITY: children
+    :END:
+**** TODO Getting your feet wet with Fish Shell
+     :PROPERTIES:
+     :EXPORT_AUTHOR: Shane Sveller
+     :EXPORT_FILE_NAME: getting-your-feet-wet-with-fish-shell
+     :EXPORT_HUGO_WEIGHT: auto
+     :END:
+
+***** Software/Tool Versions
+
+ | Software   | Version |
+ |------------+---------|
+ | OSX        | 10.12.6 |
+ | iTerm 2    |   3.1.5 |
+ | Fish       |   2.7.0 |
+ | Oh My Fish |       6 |
+
+***** Installation
+
+ #+BEGIN_SRC shell-script
+   brew install fish
+ #+END_SRC
+
+ Now, install oh-my-fish via ~git~ because curl-bash is for suckers!
+
+ #+BEGIN_SRC shell-script
+   git clone https://github.com/oh-my-fish/oh-my-fish
+   cd oh-my-fish
+   bin/install --offline
+ #+END_SRC
+
+* Footnotes
+* COMMENT Local Variables                                                   :ARCHIVE:
+  # Local Variables:
+  # eval: (org-hugo-auto-export-mode 1)
+  # End:
