@@ -9,5 +9,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "tailwindcss": "^2.0.1"
+  },
+  "scripts": {
+    "watch": "parcel watch styles/styles.css --out-dir static/styles --no-hmr --no-source-maps"
   }
 }
