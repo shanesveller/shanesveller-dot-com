@@ -1,0 +1,13 @@
+{
+  "name": "shanesveller-dot-com",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:shanesveller/shanesveller-dot-com.git",
+  "author": "Shane Sveller <shanesveller@gmail.com>",
+  "license": "N/A",
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "tailwindcss": "^2.0.1"
+  }
+}
