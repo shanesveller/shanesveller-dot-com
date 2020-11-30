@@ -6,3 +6,6 @@ yarn-error.log*
 *.tsbuildinfo
 .npm
 .eslintcache
+
+# Stylesheet toolchain
+/.cache/
